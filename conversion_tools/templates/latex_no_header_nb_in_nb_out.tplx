@@ -1,0 +1,57 @@
+% Custom notebook output style, no header section, black and white, nb_in, nb_out for cell wrappers
+((* if not cell_style is defined *))
+    ((* set cell_style = 'style_bw_ipython.tplx' *))
+((* endif *))
+
+% Inherit from the specified cell style.
+((* extends cell_style *))
+
+
+%===============================================================================
+% Latex Fragment, no header, no defined styles
+%===============================================================================
+
+((* block header *))
+    ((* block docclass *))
+    ((* endblock docclass *))
+
+    ((* block packages *))
+    ((* endblock packages *))
+
+    ((* block definitions *))
+        ((* block title *))
+        ((* endblock title *))
+
+        ((* block date *))
+        ((* endblock date*))
+
+        ((* block author *))
+        ((* endblock author *))
+    ((* endblock definitions *))
+
+    ((* block commands *))
+        ((* block margins *))
+        ((* endblock margins *))
+    ((* endblock commands *))
+
+((* endblock header *))
+
+((* block body *))
+    ((* block predoc *))
+        ((* block maketitle *))
+        ((* endblock maketitle *))
+        ((* block abstract *))
+        ((* endblock abstract *))
+    ((* endblock predoc *))
+
+    ((( super() )))
+
+    % Add a bibliography block to the postdoc
+    ((* block postdoc *))
+        ((* block bibliography *))
+        ((* endblock bibliography *))
+    ((* endblock postdoc *))
+
+((* endblock body *))
+
+

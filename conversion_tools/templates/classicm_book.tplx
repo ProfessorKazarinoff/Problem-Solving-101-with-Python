@@ -1,0 +1,22 @@
+((*- extends 'classicm.tplx' -*))
+
+((* block docclass *))
+\documentclass[11pt]{book}
+((* endblock docclass *))
+
+
+
+((* block title *))
+    \title{Python for Undergradute Engineers, 1st Edition}
+    ((*- endblock title *))
+    ((* block date *))
+    \date{July 20,2018}
+    ((* endblock date *))
+    ((* block author *))
+    \author{Peter D. Kazarinoff, PhD.}
+    ((* endblock author *))
+((* endblock title *))
+
+((* block markdowncell scoped *))
+    ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--chapters"]) )))
+((* endblock markdowncell *))

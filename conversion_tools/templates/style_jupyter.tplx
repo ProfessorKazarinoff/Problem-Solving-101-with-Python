@@ -1,0 +1,145 @@
+((= IPython input/output style =))
+
+((*- extends 'base.tplx' -*))
+
+% Custom definitions
+
+((* block packages *))
+    %\usepackage{fancybox}
+    \usepackage[breakable]{tcolorbox}
+    \tcbset{nobeforeafter}
+    \usepackage{needspace}
+    ((( super() )))
+((* endblock packages*))
+
+((* block definitions *))
+    ((( super() )))
+    % Pygments definitions
+    ((( resources.latex.pygments_definitions )))
+
+    ((* block repygments *))
+%Reconfigured pygments
+\makeatletter
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[HTML]{008800}{##1}}} %numbers
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[HTML]{008800}{##1}}} %numbers
+\expandafter\def\csname PY@tok@nn\endcsname{\def\PY@tc##1{\textcolor[HTML]{000000}{##1}}} %imports
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[HTML]{008000}{##1}}} %in
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{\codetrue##1\codefalse}}} %operators
+\makeatother
+
+\newif\ifcode
+\codefalse
+\definecolor{purp}{HTML}{AA22FF}
+%If using XeLaTeX, use magic to highlight operators in purple.
+\ifdefined\XeTeXcharclass
+\XeTeXinterchartokenstate = 1
+\newXeTeXintercharclass \mycharclassPurple
+\XeTeXcharclass `\* \mycharclassPurple
+\XeTeXcharclass `\/ \mycharclassPurple
+\XeTeXcharclass `\+ \mycharclassPurple
+\XeTeXcharclass `\- \mycharclassPurple
+\XeTeXcharclass `\@ \mycharclassPurple
+\XeTeXcharclass `\% \mycharclassPurple
+\XeTeXcharclass `\& \mycharclassPurple
+\XeTeXcharclass `\| \mycharclassPurple
+\XeTeXcharclass `\! \mycharclassPurple
+\XeTeXcharclass `\< \mycharclassPurple
+\XeTeXcharclass `\> \mycharclassPurple
+\XeTeXcharclass `\~ \mycharclassPurple
+\XeTeXcharclass `\^ \mycharclassPurple
+\XeTeXcharclass `\? \mycharclassPurple
+
+\XeTeXinterchartoks 0 \mycharclassPurple   = {\bgroup\ifcode\color{purp}\else\fi}
+\XeTeXinterchartoks 4095 \mycharclassPurple = {\bgroup\ifcode\color{purp}\else\fi}
+
+\XeTeXinterchartoks \mycharclassPurple 0   = {\egroup}
+\XeTeXinterchartoks \mycharclassPurple 4095 = {\egroup}
+\fi %end magical operator highlighting
+%End Reconfigured Pygments
+((* endblock repygments *))
+   
+    % Exact colors from NB
+    \definecolor{incolor}{HTML}{303F9F}
+    \definecolor{outcolor}{HTML}{D84315}
+    \definecolor{grey}{HTML}{CFCFCF}
+    \definecolor{light-grey}{HTML}{F7F7F7}
+    
+    % needed definitions
+    \newif\ifleftmargins
+    \newlength{\promptlength}
+    % cell style settings
+    ((* block style_settings *))
+        \leftmarginsfalse
+    ((* endblock style_settings *))
+    
+    % environments
+    \newenvironment{InVerbatim}{\VerbatimEnvironment%
+		\begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,
+			colback=light-grey,colframe=grey]
+			\begin{Verbatim}
+			}{%
+			\end{Verbatim}%
+		\end{tcolorbox}%
+	}
+	\newenvironment{OutVerbatim}{\VerbatimEnvironment%
+		\begin{tcolorbox}[breakable,boxrule=.5pt, size=fbox, pad at break*=1mm, opacityfill=0]
+			\begin{Verbatim}
+			}{%
+			\end{Verbatim}%
+		\end{tcolorbox}%
+	}
+    
+((* endblock definitions *))
+
+%===============================================================================
+% Input
+%===============================================================================
+
+((* block input scoped *))
+    ((( draw_cell(cell.source | highlight_code(strip_verbatim=True), cell, 'In', 'incolor') )))
+((* endblock input *))
+
+
+%===============================================================================
+% Output
+%===============================================================================
+
+((* block execute_result scoped *))
+    ((*- for type in output.data | filter_data_type -*))
+        ((*- if type in ['text/plain']*))
+            ((( draw_cell(output.data['text/plain'] | escape_latex, cell, 'Out', 'outcolor') )))
+        ((* else -*))
+            ((( " " )))
+            ((( draw_prompt(cell, 'Out', 'outcolor') )))((( super() )))
+        ((*- endif -*))
+    ((*- endfor -*))
+((* endblock execute_result *))
+
+
+%==============================================================================
+% Support Macros
+%==============================================================================
+
+% Name: draw_cell
+% Purpose: Renders an output/input prompt
+((* macro draw_cell(text, cell, prompt, prompt_color) -*))
+((( draw_prompt(cell, prompt, prompt_color) )))
+\begin{((( prompt ~ 'Verbatim')))}[commandchars=\\\{\}]
+((( text )))
+\end{((( prompt ~ 'Verbatim')))}
+((*- endmacro *))
+
+% Name: draw_prompt
+% Purpose: Renders an output/input prompt
+((* macro draw_prompt(cell, prompt, prompt_color) -*))
+    ((*- if cell.execution_count is defined -*))
+    ((*- set execution_count = "" ~ (cell.execution_count | replace(None, " ")) -*))
+    ((*- else -*))
+    ((*- set execution_count = " " -*))
+    ((*- endif -*))
+\needspace{1.1cm}
+\settowidth{\promptlength}{ ((( prompt ~ ' [' ~ execution_count ~ ']' ))) }
+\ifleftmargins\hspace{-\promptlength}\hspace{-5pt}\fi
+((('{\color{' ~ prompt_color ~ '}' ~ prompt ~ ' [{\\color{' ~ prompt_color ~ '}' ~ execution_count ~ '}]:}' )))
+\ifleftmargins\vspace{-2.7ex}\fi
+((*- endmacro *))

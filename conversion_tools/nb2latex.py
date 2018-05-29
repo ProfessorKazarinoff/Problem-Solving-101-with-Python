@@ -10,6 +10,7 @@ import nbformat
 from nbformat import NotebookNode
 from nbformat.v4 import new_notebook, new_markdown_cell
 from nbconvert import LatexExporter, NotebookExporter  # , #HTMLExporter #PDFExporter,
+#from nbconvert.exporters import NotebookExporter
 from nbconvert.writers import FilesWriter
 from nbconvert.utils.pandoc import pandoc
 import re
@@ -117,12 +118,16 @@ def convertNotebooktoLaTeX(notebookPath, outfilePath='latex_out1', template='cla
 
 def main():
 
+    #notebooks_dir = os.path.join(os.path.basename(os.getcwd()),'notebooks')
     nb_path_lst = iter_notebook_paths('notebooks')
     print(len(nb_path_lst))
+    for nb in nb_path_lst:
+        print(nb)
     nbnode = combine_notebooks(nb_path_lst)
     print(type(nbnode))
     exporter = NotebookExporter
-    body, resources = exporter.from_notebook_node(nbnode)
+    print(type(exporter))
+    #body, resources = exporter.from_notebook_node(nbnode)
     #writer = FilesWriter()
     #writer.write(body, resources, notebook_name='whole_book')
 

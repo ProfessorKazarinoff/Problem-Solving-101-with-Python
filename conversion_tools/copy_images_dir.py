@@ -46,7 +46,7 @@ def copy_image_dirs(notebook_dir_name='notebooks', docs_dir_name='docs'):
                     shutil.rmtree(dst)
                 try:
                     shutil.copytree(scr,dst)
-                    print("coppied the directory: {}".format(str(scr)))
+                    print("copied the directory: {}".format(str(scr)))
                 except:
                     print("can't copy the directory: {}".format(str(scr)))
             else:

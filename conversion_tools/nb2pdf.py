@@ -15,6 +15,7 @@ from nbconvert.utils.pandoc import pandoc
 from filter_links import convert_links
 import re
 import os
+import shutil
 
 from nb_list_tools import iter_notebook_paths
 
@@ -153,6 +154,32 @@ def export(combined_nb: NotebookNode, output_file: Path, pdf=False,
     output, resources = exporter.from_notebook_node(combined_nb, resources)
     writer.write(output, resources, notebook_name=output_file.stem)
 
+
+def copy_all_images_to_dir(notebook_dir_name='notebooks', images_dir='images'):
+    """
+    a function to copy the all of the images out of notebooks/subdir/images into
+    one big folder in pdf/images
+    """
+    nb_dir = os.path.join(os.pardir, notebook_dir_name)
+    images_dir = os.path.join(os.pardir, 'pdf', images_dir)
+    REG_nb_dir = re.compile((r'(\d\d)-*'))
+
+    # erase the /pdf/images dir if it exists
+    if os.path.exists(images_dir):
+        shutil.rmtree(images_dir)
+
+    for dir in os.listdir(nb_dir):
+        if REG_nb_dir.match(dir):
+            if os.path.exists(os.path.join(nb_dir, dir, 'images')):
+                scr_dir = os.path.join(nb_dir, dir, 'images')
+                dst_dir = images_dir
+                for f in os.listdir(scr_dir):
+                    shutil.copy(os.path.join(scr_dir,f),dst_dir)
+                    print(f"copied {f} into {dst_dir}")
+            else:
+                print("no images folder in directory: {}".format(str(dir)))
+
+
 def main():
 
     #notebooks_dir = os.path.join(os.path.basename(os.getcwd()),'notebooks')
@@ -173,6 +200,7 @@ def main():
     # consider copying over all images from notebooks/subdir/images to /pdf/images all images in one dir
     outfile_Path = Path(pdf_filepath)
     export(nbnode,outfile_Path,pdf=False,template_file=None)
+    copy_all_images_to_dir()
 
 if __name__ == '__main__':
     main()

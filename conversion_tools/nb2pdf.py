@@ -103,6 +103,18 @@ def nbnode_to_pdf(nb_node,filename="pdfout"):
     writer = FilesWriter()
     writer.write(body, resources, notebook_name=filename)
 
+def nbnode_to_tex(nb_node,filename="texout"):
+    """
+    function to export a .tex  file given a notebookNode object as input
+    :param nb_node: notebookNode object
+    :param filename: str, the name of the output .tex file. Don't need .tex extension
+    :return: nothing returned, but function will output a new .pdf file
+    """
+    e = MyLatexExporter
+    body, resources = e.from_notebook_node(nb_node)
+    writer = FilesWriter()
+    writer.write(body, resources, notebook_name=filename)
+
 class MyLatexExporter(LatexExporter):
     def default_filters(self):
         yield from super().default_filters()
@@ -156,10 +168,10 @@ def main():
     pdf_filepath = os.path.join(os.pardir, 'pdf','pdfout')
     #nbnode_to_pdf(nbnode,pdf_filepath)
     #print(f"combined .pdf available in {pdf_filepath}.pdf")
-
+    #nbnode_to_tex(nbnode,pdf_filepath)
     # try with bookbook export function
     outfile_Path = Path(pdf_filepath)
-    export(nbnode,outfile_Path,pdf=True,template_file=None)
+    export(nbnode,outfile_Path,pdf=False,template_file=None)
 
 if __name__ == '__main__':
     main()

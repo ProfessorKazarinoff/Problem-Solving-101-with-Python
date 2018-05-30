@@ -1,0 +1,28 @@
+% Inherit from report
+((* extends 'report.tplx' *))
+
+
+((* block docclass *))
+\documentclass{book}
+\setcounter{chapter}{0}
+\usepackage{pmboxdraw}
+\usepackage{verbatim}
+\usepackage{listings}
+\newcommand{\passthrough}[1]{#1}
+((* endblock docclass *))
+
+((* block preamble *))
+((* endblock preamble *))
+
+((* block title *))
+\title{Problem Solving 101 with Python}
+\author{Peter D. Kazarinoff, PhD}
+\date{}
+((* endblock title *))
+
+((* block markdowncell scoped *))
+    ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
+((* endblock markdowncell *))
+
+% to get lstlisting use: ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
+% in letex doc need \usepackage{listings} \newcommand{\passthrough}[1]{#1}

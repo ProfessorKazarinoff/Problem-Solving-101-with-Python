@@ -77,6 +77,36 @@ def combine_notebooks(nb_path_lst):
             nb = nbformat.read(fh, as_version=4)
         combined_nb.cells.extend(nb.cells)
         if not combined_nb.metadata:
+
+def merge_notebooks(filenames):
+    """
+    function takes in a list of notebook file names and outputs a NotebookNode object
+    which is all the notebooks combined into one.
+    """
+    merged = None
+    for fname in filenames:
+        with io.open(fname, 'r', encoding='utf-8') as f:
+            nb = nbformat.read(f, as_version=4)
+        if merged is None:
+            merged = nb
+        else:
+            # TODO: add an optional marker between joined notebooks
+            # like an horizontal rule, for example, or some other arbitrary
+            # (user specified) markdown cell)
+            merged.cells.extend(nb.cells)
+    if not hasattr(merged.metadata, 'name'):
+        merged.metadata.name = ''
+    merged.metadata.
+name += "_merged"
+    #print(nbformat.writes(merged))
+    
+    return merged
+
+def write_ipynb_file(nb_node, filename):
+    e = nbconvert.NotebookExporter()
+    body, resources = e.from_notebook_node(nb_node)
+    wr
+
             combined_nb.metadata = nb.metadata.copy()
 
     return combined_nb

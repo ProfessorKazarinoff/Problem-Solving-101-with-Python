@@ -32,3 +32,24 @@ $ conda activate book
 ```text
 (book)$ mkdocs gh-deploy
 ```
+
+## To build a .pdf copy of the book
+
+### Output the .tex file and combined images dir and resources dir(embeded images like matplotlib plots)
+
+run the main script in nb2pdf.py
+
+### Build the .pdf using TexWorks
+
+Use the seperate TexWorks program to open the .tex file outputed by nb2pdf.py
+
+Use the XeLaTeX compiler to output a .pdf (XeLaTeX seems to output the TOC, but pdf LaTeX does not. May need more investigation)
+
+May need to run XeLaTeX twice in order to build the Table of contents
+
+Still have to manually exclude the Preface and Appendix from Chapter and Section numbering with
+
+```
+    \hypertarget{preface}{%
+\chapter*{Preface}\label{preface}}
+```

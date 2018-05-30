@@ -168,16 +168,26 @@ def copy_all_images_to_dir(notebook_dir_name='notebooks', images_dir='images'):
     if os.path.exists(images_dir):
         shutil.rmtree(images_dir)
 
+    # create a new empt /pdf/images dir
+    os.makedirs(os.path.join(os.pardir, 'pdf', 'images'))
+
     for dir in os.listdir(nb_dir):
         if REG_nb_dir.match(dir):
             if os.path.exists(os.path.join(nb_dir, dir, 'images')):
                 scr_dir = os.path.join(nb_dir, dir, 'images')
                 dst_dir = images_dir
                 for f in os.listdir(scr_dir):
-                    shutil.copy(os.path.join(scr_dir,f),dst_dir)
-                    print(f"copied {f} into {dst_dir}")
-            else:
-                print("no images folder in directory: {}".format(str(dir)))
+                    try:
+                        shutil.copy(os.path.join(scr_dir,f),os.path.join(os.pardir, 'pdf', 'images'))
+                    except IOError as e:
+                        print("Unable to copy file. %s" % e)
+                        exit(1)
+                    except:
+                        print("Unexpected error:", sys.exc_info())
+                        exit(1)
+
+            #else:
+                #print("no images folder in directory: {}".format(str(dir)))
 
 
 def main():
@@ -197,10 +207,14 @@ def main():
     #print(f"combined .pdf available in {pdf_filepath}.pdf")
     #nbnode_to_tex(nbnode,pdf_filepath)
     # try with bookbook export function
-    # consider copying over all images from notebooks/subdir/images to /pdf/images all images in one dir
+
+    #copying over all images from notebooks/subdir/images to /pdf/images all images in one dir
+    copy_all_images_to_dir()
+
     outfile_Path = Path(pdf_filepath)
     export(nbnode,outfile_Path,pdf=False,template_file=None)
-    copy_all_images_to_dir()
+
+
 
 if __name__ == '__main__':
     main()

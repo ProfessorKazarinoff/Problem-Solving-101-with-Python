@@ -170,6 +170,7 @@ def main():
     #print(f"combined .pdf available in {pdf_filepath}.pdf")
     #nbnode_to_tex(nbnode,pdf_filepath)
     # try with bookbook export function
+    # consider copying over all images from notebooks/subdir/images to /pdf/images all images in one dir
     outfile_Path = Path(pdf_filepath)
     export(nbnode,outfile_Path,pdf=False,template_file=None)
 

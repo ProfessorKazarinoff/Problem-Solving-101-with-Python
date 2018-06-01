@@ -33,6 +33,12 @@ $ conda activate book
 (book)$ mkdocs gh-deploy
 ```
 
+If ```gh-deploy``` throws an error about git histories not merging or matching
+
+```
+git push -f origin gh-pages
+```
+
 ## To build a .pdf copy of the book
 
 ### Output the .tex file and combined images dir and resources dir(embeded images like matplotlib plots)

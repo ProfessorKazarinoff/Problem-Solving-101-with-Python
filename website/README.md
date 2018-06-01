@@ -2,7 +2,7 @@
 
 The future website will be available at:
 
-[https://professorkazarinoff.github.io/PythonForUndergraduateEngineers/](https://professorkazarinoff.github.io/PythonForUndergraduateEngineers/)
+[https://professorkazarinoff.github.io/Problem-Solving-101-with-Python/](https://professorkazarinoff.github.io/Problem-Solving-101-with-Python/)
 
 To build for yourself:
 
@@ -19,8 +19,8 @@ $ git clone https://github.com/ProfessorKazarinoff/PythonForUndergraduateEnginee
 Move into the newly created **PythonForUndergraduateEngineers** directory and run the **fabric** script to convert the jupyter notebooks (.ipybn files) in the [notebooks directory](../notebooks) into markdown files (.md files) in the [website/docs](docs/) directory.
 
 ```
-$ cd python-for-undergraduate-engineers
-$ fab convertnotebooks
+$ cd Problem-Solving-101-with-Python
+$ cd website
 ```
 
 Move into the **website** directory and make any changes to the **mkdocs.yml** file. Run ```mkdocs build``` and ```mkdocs serve```. Point a web browser to [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
@@ -42,5 +42,12 @@ To deploy and host on github pages, edit the **mkdocs.yml** file to include your
 
 $ mkdocs gh-deploy
 ```
+
+If ```mkdocs gh-deply``` throws an error try:
+
+```
+$ git push -f origin gh-pages
+```
+
 
 

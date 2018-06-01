@@ -39,7 +39,14 @@
     \usepackage{adjustbox} % Used to constrain images to a maximum size
     \usepackage{xcolor} % Allow colors to be defined
     \usepackage{enumerate} % Needed for markdown enumerations to work
-    \usepackage[pass,paperwidth=8.0in,paperheight=10in]{geometry} % Used to adjust the document margins
+    \usepackage{geometry} % Used to adjust the document margins
+    \geometry{
+        verbose,
+        papersize={8in,10in},
+        tmargin=1in,
+        bmargin=0.75in,
+        lmargin=1.0in,
+        rmargin=1.0in}
     \usepackage{amsmath} % Equations
     \usepackage{amssymb} % Equations
     \usepackage{textcomp} % defines textquotesingle
@@ -72,7 +79,6 @@
 ((* endblock preamble *))
 
 ((* block margins *))
-    \geometry{verbose,tmargin=1in,bmargin=0.75in,lmargin=1in,rmargin=1in}
 ((* endblock margins *))
 
 ((* block title *))

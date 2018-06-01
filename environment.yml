@@ -4,7 +4,7 @@ channels:
   - defaults
 dependencies:
   - beautifulsoup4=4.6.0
-  - fastcache=1.0.2=py36hfa6e2cd_2
+  - fastcache=1.0.2
   - freetype=2.8=vc14h17c9bdf_0
   - icu=58.2=vc14hc45fdbb_0
   - jpeg=9b=vc14h4d7706e_1

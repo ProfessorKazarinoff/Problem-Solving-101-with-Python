@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "!! Under Construction !!\n\n\n\n\nProblem Solving 101 with Python\n\n\nIf you like this book, please consider purchasing a hard copy version when it becomes available on \namazon.com\n.\n\n\nOverview\n\n\n\n\nYou will find the book chapters on the left hand menu\n\n\nYou will find navigation within a section of a chapter (one webpage) on the righthand menu\n\n\nFull documentation on how to build this site locally are on github at github.com/professorkazarinoff/Problem-Solving-101-with-Python/website\n\n\n\n\nCopywrite\n\n\nCopyright \u00a9 2017 - 2018 Peter D. Kazarinoff",
+            "text": "!! Under Construction !!\n\n\n!! Not Production Ready !!\n\n\n\n\nProblem Solving 101 with Python\n\n\nIf you like this book, please consider purchasing a hard copy version when it becomes available on \namazon.com\n.\n\n\nOverview\n\n\n\n\nYou will find the book chapters on the left hand menu\n\n\nYou will find navigation within a section of a chapter (one webpage) on the right hand menu\n\n\nFull documentation on how to build this site locally are on github at \nhttps://github.com/professorkazarinoff/Problem-Solving-101-with-Python/website\n\n\n\n\nCopywrite\n\n\nCopyright \u00a9 2017 - 2018 Peter D. Kazarinoff",
             "title": "Home"
         },
         {
@@ -11,13 +11,18 @@
             "title": "!! Under Construction !!"
         },
         {
+            "location": "/#not-production-ready",
+            "text": "",
+            "title": "!! Not Production Ready !!"
+        },
+        {
             "location": "/#problem-solving-101-with-python",
             "text": "If you like this book, please consider purchasing a hard copy version when it becomes available on  amazon.com .",
             "title": "Problem Solving 101 with Python"
         },
         {
             "location": "/#overview",
-            "text": "You will find the book chapters on the left hand menu  You will find navigation within a section of a chapter (one webpage) on the righthand menu  Full documentation on how to build this site locally are on github at github.com/professorkazarinoff/Problem-Solving-101-with-Python/website",
+            "text": "You will find the book chapters on the left hand menu  You will find navigation within a section of a chapter (one webpage) on the right hand menu  Full documentation on how to build this site locally are on github at  https://github.com/professorkazarinoff/Problem-Solving-101-with-Python/website",
             "title": "Overview"
         },
         {

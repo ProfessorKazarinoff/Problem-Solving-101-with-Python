@@ -3,7 +3,7 @@ channels:
   - anaconda
   - defaults
 dependencies:
-  - beautifulsoup4=4.6.0=py36hd4cc5e8_1
+  - beautifulsoup4=4.6.0
   - fastcache=1.0.2=py36hfa6e2cd_2
   - freetype=2.8=vc14h17c9bdf_0
   - icu=58.2=vc14hc45fdbb_0

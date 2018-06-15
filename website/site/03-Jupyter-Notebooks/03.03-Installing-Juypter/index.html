@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.1">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.78aab2dc.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
       
@@ -309,7 +309,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../00-Preface/00.04-Formatting%20Conventions/" title="Formatting Conventions" class="md-nav__link">
+    <a href="../../00-Preface/00.04-Formatting Conventions/" title="Formatting Conventions" class="md-nav__link">
       Formatting Conventions
     </a>
   </li>
@@ -563,8 +563,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../03.01-What-is-a-Jupyter-Notebook/" title="What is a Jupyter Notebook" class="md-nav__link">
-      What is a Jupyter Notebook
+    <a href="../03.01-What-is-a-Jupyter-Notebook/" title="What is a Jupyter Notebook?" class="md-nav__link">
+      What is a Jupyter Notebook?
     </a>
   </li>
 
@@ -696,7 +696,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../03.08-Summary/" title="Summary" class="md-nav__link">
+    <a href="../03.08-Getting-Help-in-a-Jupyter-Notebook/" title="Getting Help in a Jupyter Notebook" class="md-nav__link">
+      Getting Help in a Jupyter Notebook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03.09-Summary/" title="Summary" class="md-nav__link">
       Summary
     </a>
   </li>
@@ -708,7 +720,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../03.09-Review-Questions/" title="Review Questions" class="md-nav__link">
+    <a href="../03.10-Review-Questions/" title="Review Questions" class="md-nav__link">
       Review Questions
     </a>
   </li>
@@ -888,7 +900,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.02-Installing%20Matplotlib/" title="Installing Matplotlib" class="md-nav__link">
+    <a href="../../05-Plotting-with-Matplotlib/06.02-Installing Matplotlib/" title="Installing Matplotlib" class="md-nav__link">
       Installing Matplotlib
     </a>
   </li>
@@ -900,8 +912,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.04-Line-Plots/" title="Line Plots" class="md-nav__link">
-      Line Plots
+    <a href="../../05-Plotting-with-Matplotlib/06.03-Line-Plots/" title="Customizing matplotlib plots" class="md-nav__link">
+      Customizing matplotlib plots
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../05-Plotting-with-Matplotlib/06.04-Saving-Plots/" title="Saving plots" class="md-nav__link">
+      Saving plots
     </a>
   </li>
 
@@ -924,20 +948,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.06-Bar-Charts-and-Pie-Charts/" title="Bar Plots" class="md-nav__link">
-      Bar Plots
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.07-Error-Bars/" title="Error Bars" class="md-nav__link">
-      Error Bars
+    <a href="../../05-Plotting-with-Matplotlib/06.06-Bar-Charts-and-Pie-Charts/" title="Pie Charts" class="md-nav__link">
+      Pie Charts
     </a>
   </li>
 
@@ -950,18 +962,6 @@
   <li class="md-nav__item">
     <a href="../../05-Plotting-with-Matplotlib/06.08-Histograms/" title="Histograms" class="md-nav__link">
       Histograms
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.09-Box-Plots-and-Violin-Plots/" title="Box Plots and Violin Plots" class="md-nav__link">
-      Box Plots and Violin Plots
     </a>
   </li>
 
@@ -1010,18 +1010,6 @@
   <li class="md-nav__item">
     <a href="../../05-Plotting-with-Matplotlib/06.13-Plot-Styles/" title="Plot Styles" class="md-nav__link">
       Plot Styles
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.16-3D-Surface-Plots/" title="3D Surface Plots" class="md-nav__link">
-      3D Surface Plots
     </a>
   </li>
 
@@ -1297,25 +1285,45 @@
                   <h1>Installing Juypter</h1>
                 
                 <h2 id="installing-juypter">Installing Juypter</h2>
-<p>To install <strong>Jupyter Notebooks</strong>, the simplest way is to use the <strong>Anaconda</strong> distribution of Python. Anaconda has <strong>Jupyter Notebooks</strong> pre-installed and no further steps are necessary.</p>
+<p>To install <strong>Jupyter Notebooks</strong>, the simplest way is to use the <strong>Anaconda</strong> distribution of Python. The <strong>Anaconda</strong> distribution of Python has <strong>Jupyter Notebooks</strong> pre-installed and no further steps are necessary.</p>
 <h3 id="installing-jupyter-on-windows">Installing Jupyter on Windows</h3>
-<p>To install jupyter on Windows, open the Anaconda prompt and type:</p>
-<pre><code>$ conda install jupyter
+<p>To install jupyter on Windows, open the <strong>Anaconda Prompt</strong> and type:</p>
+<pre><code>&gt; conda install jupyter
 </code></pre>
 
 <p>Type <code>y</code> for yes when prompted.</p>
+<p>Alternativly, open a <strong>command prompt</strong> and type:</p>
+<pre><code>&gt; pip install jupyter
+</code></pre>
+
 <h3 id="installing-jupyter-on-mac-osx">Installing Jupyter on Mac OSX</h3>
 <p>To install jupyter on Mac OSX, open the OSX terminal and type:</p>
 <pre><code>$ conda install jupyter
 </code></pre>
 
 <p>Type <code>y</code> for yes when prompted.</p>
+<p>If <strong>conda</strong> is not installed, the Anaconda Distribution of Python can be installed, which should install <strong>conda</strong> for use in the MacOS terminal.</p>
+<p>Alternativly Jupyter Notebooks can be installed on using the MacOS termal and typing:</p>
+<pre><code>$ pip install jupyter
+</code></pre>
+
+<p>or</p>
+<pre><code>$ pip3 install jupyter
+</code></pre>
+
+<p>Note there are problems using the system version of Python on MacOS. Packages may not install on the system version of Python. And packages which do install on the system version of Python may not run correctly. It is therefore recommended that MacOS users install the Anaconda distribution of Python or use <strong>homebrew</strong> to install a seperate non-system version of Python from the command line with:</p>
+<pre><code>$ brew install Python
+</code></pre>
+
 <h3 id="installing-jupyter-on-ubuntu-linux">Installing Jupyter on Ubuntu Linux</h3>
 <p>To install jupyter on Ubuntu Linux, open a terminal and type:</p>
 <pre><code>$ conda install jupyter
 </code></pre>
 
 <p>Type <code>y</code> for yes when prompted.</p>
+<p>Alternativly, one can use:</p>
+<pre><code>$ pip install jupyter
+</code></pre>
                 
                   
                 
@@ -1403,7 +1411,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.8eb9be28.js"></script>
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
       
       <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
       

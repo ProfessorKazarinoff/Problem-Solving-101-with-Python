@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.1">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.78aab2dc.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
       
@@ -309,7 +309,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../00-Preface/00.04-Formatting%20Conventions/" title="Formatting Conventions" class="md-nav__link">
+    <a href="../../00-Preface/00.04-Formatting Conventions/" title="Formatting Conventions" class="md-nav__link">
       Formatting Conventions
     </a>
   </li>
@@ -563,8 +563,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../03.01-What-is-a-Jupyter-Notebook/" title="What is a Jupyter Notebook" class="md-nav__link">
-      What is a Jupyter Notebook
+    <a href="../03.01-What-is-a-Jupyter-Notebook/" title="What is a Jupyter Notebook?" class="md-nav__link">
+      What is a Jupyter Notebook?
     </a>
   </li>
 
@@ -703,7 +703,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../03.08-Summary/" title="Summary" class="md-nav__link">
+    <a href="../03.08-Getting-Help-in-a-Jupyter-Notebook/" title="Getting Help in a Jupyter Notebook" class="md-nav__link">
+      Getting Help in a Jupyter Notebook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03.09-Summary/" title="Summary" class="md-nav__link">
       Summary
     </a>
   </li>
@@ -715,7 +727,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../03.09-Review-Questions/" title="Review Questions" class="md-nav__link">
+    <a href="../03.10-Review-Questions/" title="Review Questions" class="md-nav__link">
       Review Questions
     </a>
   </li>
@@ -895,7 +907,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.02-Installing%20Matplotlib/" title="Installing Matplotlib" class="md-nav__link">
+    <a href="../../05-Plotting-with-Matplotlib/06.02-Installing Matplotlib/" title="Installing Matplotlib" class="md-nav__link">
       Installing Matplotlib
     </a>
   </li>
@@ -907,8 +919,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.04-Line-Plots/" title="Line Plots" class="md-nav__link">
-      Line Plots
+    <a href="../../05-Plotting-with-Matplotlib/06.03-Line-Plots/" title="Customizing matplotlib plots" class="md-nav__link">
+      Customizing matplotlib plots
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../05-Plotting-with-Matplotlib/06.04-Saving-Plots/" title="Saving plots" class="md-nav__link">
+      Saving plots
     </a>
   </li>
 
@@ -931,20 +955,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.06-Bar-Charts-and-Pie-Charts/" title="Bar Plots" class="md-nav__link">
-      Bar Plots
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.07-Error-Bars/" title="Error Bars" class="md-nav__link">
-      Error Bars
+    <a href="../../05-Plotting-with-Matplotlib/06.06-Bar-Charts-and-Pie-Charts/" title="Pie Charts" class="md-nav__link">
+      Pie Charts
     </a>
   </li>
 
@@ -957,18 +969,6 @@
   <li class="md-nav__item">
     <a href="../../05-Plotting-with-Matplotlib/06.08-Histograms/" title="Histograms" class="md-nav__link">
       Histograms
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.09-Box-Plots-and-Violin-Plots/" title="Box Plots and Violin Plots" class="md-nav__link">
-      Box Plots and Violin Plots
     </a>
   </li>
 
@@ -1017,18 +1017,6 @@
   <li class="md-nav__item">
     <a href="../../05-Plotting-with-Matplotlib/06.13-Plot-Styles/" title="Plot Styles" class="md-nav__link">
       Plot Styles
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../05-Plotting-with-Matplotlib/06.16-3D-Surface-Plots/" title="3D Surface Plots" class="md-nav__link">
-      3D Surface Plots
     </a>
   </li>
 
@@ -1311,13 +1299,13 @@
                   <h1>Magic Cells</h1>
                 
                 <h2 id="magic-cells">Magic Cells</h2>
-<p>Jupyter notebook code cells can contain special commands which are note valid Python code, but will affect the behavior of the notebook</p>
+<p>Jupyter notebook code cells can contain special commands which are not valid Python code, but will affect the behavior of the notebook.</p>
 <h3 id="matplotlib-inline">%matplotlib inline</h3>
 <p>One of the most popular magic commands is:</p>
 <pre><code>%matplotlib inline
 </code></pre>
 
-<p>Using this command at the top of a jupyter notebook will produce matplotlib plots in cells of the notebook. Without <code>%matplotlib inline</code>, plots will jump out as external windows. A typical start to a jupyter notebook using <strong>matplotlib</strong> might start as:</p>
+<p>Using this command at the start of a jupyter notebook will produce matplotlib plots in cells of the notebook. Without <code>%matplotlib inline</code>, plots will jump out as external windows. A typical start to a jupyter notebook using <strong>matplotlib</strong> might start as:</p>
 <pre><code>import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -1325,10 +1313,10 @@ import matplotlib.pyplot as plt
 </code></pre>
 
 <h3 id="load">%load</h3>
-<p>The <code>%load</code> command will load a python module, webpage or file into an jupyter notebook
+<p>The <code>%load</code> command will load a python module, webpage or file into a jupyter notebook
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %load hello.py</span>
@@ -1338,24 +1326,6 @@ import matplotlib.pyplot as plt
 <p></div>
 </div>
 </div></p>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>This code was run from a seperate Python file
-Hellow from the file hello.py
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 
 <h3 id="run">%run</h3>
@@ -1371,19 +1341,54 @@ print('Hellow from the file hello.py')
 </code></pre>
 
 <p>Within our jupyter notebook, if we <code>%run</code> this file, we will get the output of or hello.py script in a jupyter notebook output cell.</p>
-<p>%run hello.py
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> hello.py
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This code was run from a seperate Python file
+Hello from the file hello.py
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">pwd</span>
-</pre></div></p>
-<p></div>
+</pre></div>
+
 </div>
-</div></p>
+</div>
+</div>
+
 <div class="output_wrapper">
 <div class="output">
+
 
 <div class="output_area">
 
@@ -1396,54 +1401,6 @@ print('Hellow from the file hello.py')
 <pre>&#39;C:\\Users\\peter.kazarinoff\\Documents\\book\\notebooks\\04-Jupyter-Notebooks&#39;</pre>
 </div>
 
-</div>
-
-</div>
-</div>
-
-<p></div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">ls</span>
-</pre></div></p>
-<p></div>
-</div>
-</div></p>
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre> Volume in drive C is Windows
- Volume Serial Number is A048-4C53
-
- Directory of C:\Users\peter.kazarinoff\Documents\book\notebooks\04-Jupyter-Notebooks
-
-04/19/2018  06:01 PM    &lt;DIR&gt;          .
-04/19/2018  06:01 PM    &lt;DIR&gt;          ..
-04/18/2018  12:24 PM    &lt;DIR&gt;          .ipynb_checkpoints
-04/18/2018  12:17 PM             1,164 04.00-Introduction.ipynb
-04/18/2018  12:21 PM             1,125 04.01-What-is-a-Jupyter-Notebook.ipynb
-04/18/2018  12:21 PM             1,477 04.02-Why-Jupyter-Notebooks.ipynb
-04/18/2018  12:26 PM             1,901 04.03-Installing-Juypter.ipynb
-04/18/2018  02:37 PM             2,029 04.04-Opening-a-Jupyter-Notebook.ipynb
-04/19/2018  07:23 AM             4,196 04.05-The-Jupyter-Notebook-Interface.ipynb
-04/19/2018  06:01 PM            11,102 04.07-Magic-Cells.ipynb
-04/18/2018  12:24 PM             1,325 04.08-Summary.ipynb
-04/03/2018  04:11 PM               970 04.09-Review-Questions.ipynb
-04/19/2018  05:53 PM                94 hello.py
-04/18/2018  02:36 PM    &lt;DIR&gt;          images
-              10 File(s)         25,383 bytes
-               4 Dir(s)  133,241,610,240 bytes free
-</pre>
-</div>
 </div>
 
 </div>
@@ -1551,13 +1508,13 @@ Automagic is ON, % prefix IS NOT needed for line magics.</pre>
           </a>
         
         
-          <a href="../03.08-Summary/" title="Summary" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../03.08-Getting-Help-in-a-Jupyter-Notebook/" title="Getting Help in a Jupyter Notebook" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Summary
+                Getting Help in a Jupyter Notebook
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1603,7 +1560,7 @@ Automagic is ON, % prefix IS NOT needed for line magics.</pre>
       
     </div>
     
-      <script src="../../assets/javascripts/application.8eb9be28.js"></script>
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
       
       <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
       

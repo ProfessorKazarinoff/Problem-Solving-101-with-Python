@@ -23,14 +23,15 @@ pages:
         - Summary: 02-Installing-Python/02.05-Summary.md
     - Chapter 3 Jupyter Notebooks:
         - Introduction: 03-Jupyter-Notebooks/03.00-Introduction.md
-        - What is a Jupyter Notebook: 03-Jupyter-Notebooks/03.01-What-is-a-Jupyter-Notebook.md
+        - What is a Jupyter Notebook?: 03-Jupyter-Notebooks/03.01-What-is-a-Jupyter-Notebook.md
         - Why Jupyter Notebooks?: 03-Jupyter-Notebooks/03.02-Why-Jupyter-Notebooks.md
         - Installing Juypter: 03-Jupyter-Notebooks/03.03-Installing-Juypter.md
         - Opening a Jupyter Notebook: 03-Jupyter-Notebooks/03.04-Opening-a-Jupyter-Notebook.md
         - The Jupyter Notebook Interface: 03-Jupyter-Notebooks/03.05-The-Jupyter-Notebook-Interface.md
         - Magic Cells: 03-Jupyter-Notebooks/03.07-Magic-Cells.md
-        - Summary: 03-Jupyter-Notebooks/03.08-Summary.md
-        - Review Questions: 03-Jupyter-Notebooks/03.09-Review-Questions.md
+        - Getting Help in a Jupyter Notebook: 03-Jupyter-Notebooks/03.08-Getting-Help-in-a-Jupyter-Notebook.md
+        - Summary: 03-Jupyter-Notebooks/03.09-Summary.md
+        - Review Questions: 03-Jupyter-Notebooks/03.10-Review-Questions.md
     - Chapter 4 The Python REPL:
         - Introduction: 04-The-Python-REPL/02.00-Introduction.md
         - Python as a fancy calculator: 04-The-Python-REPL/02.01-Python-as-a-fancy-calculator.md
@@ -44,17 +45,15 @@ pages:
         - Introduction: 05-Plotting-with-Matplotlib/06.00-Introduction.md
         - What is Matplotlib?: 05-Plotting-with-Matplotlib/06.01-What-is-Matplotlib.md
         - Installing Matplotlib: 05-Plotting-with-Matplotlib/06.02-Installing Matplotlib.md
-        - Line Plots: 05-Plotting-with-Matplotlib/06.04-Line-Plots.md
+        - Customizing matplotlib plots: 05-Plotting-with-Matplotlib/06.03-Line-Plots.md
+        - Saving plots: 05-Plotting-with-Matplotlib/06.04-Saving-Plots.md
         - Multi Line Plots: 05-Plotting-with-Matplotlib/06.05-Multi-Line-Plots.md
-        - Bar Plots: 05-Plotting-with-Matplotlib/06.06-Bar-Charts-and-Pie-Charts.md
-        - Error Bars: 05-Plotting-with-Matplotlib/06.07-Error-Bars.md
+        - Pie Charts: 05-Plotting-with-Matplotlib/06.06-Bar-Charts-and-Pie-Charts.md
         - Histograms: 05-Plotting-with-Matplotlib/06.08-Histograms.md
-        - Box Plots and Violin Plots: 05-Plotting-with-Matplotlib/06.09-Box-Plots-and-Violin-Plots.md
         - Scatter Plots: 05-Plotting-with-Matplotlib/06.10-Scatter-Plots.md
         - Plot annotations: 05-Plotting-with-Matplotlib/06.11-Plot-Annotations.md
         - Subplots: 05-Plotting-with-Matplotlib/06.12-Subplots.md
         - Plot Styles: 05-Plotting-with-Matplotlib/06.13-Plot-Styles.md
-        - 3D Surface Plots: 05-Plotting-with-Matplotlib/06.16-3D-Surface-Plots.md
         - Summary: 05-Plotting-with-Matplotlib/06.17-Summary.md
         - Review Questions: 05-Plotting-with-Matplotlib/06.18-Review-Questions.md
     - Chapter 6 User Input and Loops:

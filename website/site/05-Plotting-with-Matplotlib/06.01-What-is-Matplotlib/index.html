@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.1">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.78aab2dc.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
       
@@ -309,7 +309,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../00-Preface/00.04-Formatting%20Conventions/" title="Formatting Conventions" class="md-nav__link">
+    <a href="../../00-Preface/00.04-Formatting Conventions/" title="Formatting Conventions" class="md-nav__link">
       Formatting Conventions
     </a>
   </li>
@@ -561,8 +561,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../03-Jupyter-Notebooks/03.01-What-is-a-Jupyter-Notebook/" title="What is a Jupyter Notebook" class="md-nav__link">
-      What is a Jupyter Notebook
+    <a href="../../03-Jupyter-Notebooks/03.01-What-is-a-Jupyter-Notebook/" title="What is a Jupyter Notebook?" class="md-nav__link">
+      What is a Jupyter Notebook?
     </a>
   </li>
 
@@ -633,7 +633,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../03-Jupyter-Notebooks/03.08-Summary/" title="Summary" class="md-nav__link">
+    <a href="../../03-Jupyter-Notebooks/03.08-Getting-Help-in-a-Jupyter-Notebook/" title="Getting Help in a Jupyter Notebook" class="md-nav__link">
+      Getting Help in a Jupyter Notebook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../03-Jupyter-Notebooks/03.09-Summary/" title="Summary" class="md-nav__link">
       Summary
     </a>
   </li>
@@ -645,7 +657,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../03-Jupyter-Notebooks/03.09-Review-Questions/" title="Review Questions" class="md-nav__link">
+    <a href="../../03-Jupyter-Notebooks/03.10-Review-Questions/" title="Review Questions" class="md-nav__link">
       Review Questions
     </a>
   </li>
@@ -874,7 +886,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../06.02-Installing%20Matplotlib/" title="Installing Matplotlib" class="md-nav__link">
+    <a href="../06.02-Installing Matplotlib/" title="Installing Matplotlib" class="md-nav__link">
       Installing Matplotlib
     </a>
   </li>
@@ -886,8 +898,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../06.04-Line-Plots/" title="Line Plots" class="md-nav__link">
-      Line Plots
+    <a href="../06.03-Line-Plots/" title="Customizing matplotlib plots" class="md-nav__link">
+      Customizing matplotlib plots
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06.04-Saving-Plots/" title="Saving plots" class="md-nav__link">
+      Saving plots
     </a>
   </li>
 
@@ -910,20 +934,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../06.06-Bar-Charts-and-Pie-Charts/" title="Bar Plots" class="md-nav__link">
-      Bar Plots
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../06.07-Error-Bars/" title="Error Bars" class="md-nav__link">
-      Error Bars
+    <a href="../06.06-Bar-Charts-and-Pie-Charts/" title="Pie Charts" class="md-nav__link">
+      Pie Charts
     </a>
   </li>
 
@@ -936,18 +948,6 @@
   <li class="md-nav__item">
     <a href="../06.08-Histograms/" title="Histograms" class="md-nav__link">
       Histograms
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../06.09-Box-Plots-and-Violin-Plots/" title="Box Plots and Violin Plots" class="md-nav__link">
-      Box Plots and Violin Plots
     </a>
   </li>
 
@@ -996,18 +996,6 @@
   <li class="md-nav__item">
     <a href="../06.13-Plot-Styles/" title="Plot Styles" class="md-nav__link">
       Plot Styles
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../06.16-3D-Surface-Plots/" title="3D Surface Plots" class="md-nav__link">
-      3D Surface Plots
     </a>
   </li>
 
@@ -1269,9 +1257,10 @@
                   <h1>What is Matplotlib?</h1>
                 
                 <h2 id="what-is-matplotlib">What is Matplotlib?</h2>
+<p><img alt="3 matplotlib plots" src="../images/3_plots.png" /></p>
 <p>Matplotlib is a popular Python package used to plot data. Matplotlib started as a project in the early 2000's partly to to use Python to visualize the electonic signals in the brain of epilepsy patients. Matplotlib's creator, John D. Hunter was a neurobilogist. He was looking for way to replicate MATLAB's plotting capability with Python. In addition to starting matplotlib, Dr. Hunter was part of the founding group that created Numfocus. The Numfocus group oversees some major Python projects including matplotlib, numpy, pandas and jupyter.</p>
 <h3 id="why-use-matplotlib">Why use Matplotlib?</h3>
-<p>Matplotlib is useful for creating static 2D plot, the kind included in scientific publications and presentations. Almost any plot created in Micrsoft Excel can be created with matplotlib. </p>
+<p>Matplotlib is useful for creating static 2D plots, the kind of plots included in scientific publications and presentations. Almost any plot created in Micrsoft Excel can be created with matplotlib. Matplotlib can also be used to make 3D plots and animations.</p>
                 
                   
                 
@@ -1307,7 +1296,7 @@
           </a>
         
         
-          <a href="../06.02-Installing%20Matplotlib/" title="Installing Matplotlib" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../06.02-Installing Matplotlib/" title="Installing Matplotlib" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
@@ -1359,7 +1348,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.8eb9be28.js"></script>
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
       
       <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
       

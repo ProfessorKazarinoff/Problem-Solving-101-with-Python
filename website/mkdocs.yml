@@ -62,10 +62,10 @@ pages:
     - Chapter 2 Installing Python:
         - Introduction: 02-Installing-Python/02.00-Introduction.md
         - Installing Anaconda on Windows: 02-Installing-Python/02.02-Installing-Anaconda-on-Windows.md
-        - Installing Python from Python.org: 02-Installing-Python/02.02-Installing-Python.md
         - Installing Anaconda on MacOS: 02-Installing-Python/02.03-Installing-Anaconda-on-MacOS.md
         - Installing Anaconda on Linux: 02-Installing-Python/02.04-Installing-Anaconda-on-Linux.md
-        - Summary: 02-Installing-Python/02.05-Summary.md
+        - Installing Python from Python.org: 02-Installing-Python/02.05-Installing-Python.md
+        - Summary: 02-Installing-Python/02.06-Summary.md
     - Chapter 3 Jupyter Notebooks:
         - Introduction: 03-Jupyter-Notebooks/03.00-Introduction.md
         - What is a Jupyter Notebook?: 03-Jupyter-Notebooks/03.01-What-is-a-Jupyter-Notebook.md
@@ -103,7 +103,11 @@ pages:
         - Review Questions: 05-Plotting-with-Matplotlib/06.18-Review-Questions.md
     - Chapter 6 User Input and Loops:
         - Introduction: 06-User-Input-and-Loops/06.00-Introduction.md
-        - User Input: 06-User-Input-and-Loops/06.01-User-Input.md
+        - f-Strings: 06-User-Input-and-Loops/06.01-f-Strings.md
+        - User Input: 06-User-Input-and-Loops/06.02-User-Input.md
+        - For Loops: 06-User-Input-and-Loops/06.03-For-Loops.md
+        - While Loops: 06-User-Input-and-Loops/06.04-While-Loops.md
+        - If statements: 06-User-Input-and-Loops/06.05-If-Statements.md
     - Appendix:
         - Contents: 99-Appendix/99.00-Appendix.md
         - Reserved and Key Words in Python: 99-Appendix/99.01-Reserved-and-Key-Words-in-Python.md

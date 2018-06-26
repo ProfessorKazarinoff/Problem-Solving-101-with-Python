@@ -477,18 +477,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../02-Installing-Python/02.02-Installing-Python/" title="Installing Python from Python.org" class="md-nav__link">
-      Installing Python from Python.org
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../02-Installing-Python/02.03-Installing-Anaconda-on-MacOS/" title="Installing Anaconda on MacOS" class="md-nav__link">
       Installing Anaconda on MacOS
     </a>
@@ -513,7 +501,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../02-Installing-Python/02.05-Summary/" title="Summary" class="md-nav__link">
+    <a href="../../02-Installing-Python/02.05-Installing-Python/" title="Installing Python from Python.org" class="md-nav__link">
+      Installing Python from Python.org
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../02-Installing-Python/02.06-Summary/" title="Summary" class="md-nav__link">
       Summary
     </a>
   </li>
@@ -1121,8 +1121,56 @@
 
 
   <li class="md-nav__item">
-    <a href="../../06-User-Input-and-Loops/06.01-User-Input/" title="User Input" class="md-nav__link">
+    <a href="../../06-User-Input-and-Loops/06.01-f-Strings/" title="f-Strings" class="md-nav__link">
+      f-Strings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../06-User-Input-and-Loops/06.02-User-Input/" title="User Input" class="md-nav__link">
       User Input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../06-User-Input-and-Loops/06.03-For-Loops/" title="For Loops" class="md-nav__link">
+      For Loops
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../06-User-Input-and-Loops/06.04-While-Loops/" title="While Loops" class="md-nav__link">
+      While Loops
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../06-User-Input-and-Loops/06.05-If-Statements/" title="If statements" class="md-nav__link">
+      If statements
     </a>
   </li>
 
@@ -1367,11 +1415,11 @@
                   <h1>Customizing matplotlib plots</h1>
                 
                 <h2 id="line-plots">Line Plots</h2>
-<p>Line plots in matplotlib can be created using matplotlib's pyplot library. To create a plot with Python and matplotlib, first import matplotlib's pyplot library using the line</p>
+<p>Line plots in matplotlib can be created using matplotlib's pyplot library. To create a line plot with Python and matplotlib, first import matplotlib's pyplot library using the line:</p>
 <pre><code>import matplot.pyplot as plt
 </code></pre>
 
-<p>It is common practice to use the alias <code>plt</code> for the <code>matplotlib.pyplot</code> library. Defining <code>matplotlib.pyplot</code> as <code>plt</code> allows us to use <code>plt.&lt;function name&gt;</code> instead of <code>matplotlib.pyplot.&lt;function name&gt;</code> in the rest of our code. See the differences below:</p>
+<p>It is common practice to use the alias <code>plt</code> for the <code>matplotlib.pyplot</code> library. Defining <code>matplotlib.pyplot</code> as <code>plt</code> allows us to use the syntax <code>plt.&lt;function name&gt;</code> instead of <code>matplotlib.pyplot.&lt;function name&gt;</code> in the rest of our code. See the differences below:</p>
 <p>importing <code>matplotlib.pyplot</code> with no alias</p>
 <pre><code>import matplotlib.pyplot
 
@@ -1384,16 +1432,16 @@ matplotlib.pyplot.plot(x, y)
 plt.plot(x, y)
 </code></pre>
 
-<p>Using the alias <code>plt</code> simplifies the look of the code and cuts down on the amount of typing we have to do. You can use any alias you like such as <code>import matplotlib.pyplot as RainbowUnicorn</code>, but the <code>plt</code> alias is common convention.</p>
+<p>Using the alias <code>plt</code> simplifies the look of code and cuts down the number of keystrokes needed to write a Python script. Any alias can be used, such as <code>import matplotlib.pyplot as RainbowUnicorn</code>, but the <code>plt</code> alias is common convention.</p>
 <p>If building matplotlib plots in a jupyter notebook, include the line:</p>
 <pre><code>%matplotlib inline
 </code></pre>
 
-<p>below the import line. 
-First import matplotlib. If using a jupyter notebook include the line <code>%matplotlib inline</code>
+<p>below the import line. The <code>%matplotlib inline</code> line will output matplotlib plots directly in jupyter notebook output cells.
+To build the first line plot, first import matplotlib. If using a jupyter notebook include the line <code>%matplotlib inline</code>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1404,7 +1452,7 @@ First import matplotlib. If using a jupyter notebook include the line <code>%mat
 </div>
 </div></p>
 <p></div>
-Once we have imported matplotlib and instructed our jupyternotebook to display plots inline, we can create some data to plot. We will create this data as a Pyton <em>list</em>. A list is a built in data structure in Python that can store multiple values. Lists are defined in Python using square brackets <code>[ ]</code>. The elements of a list are seperated using commas <code>[item1, item2, item 3]</code>.</p>
+Once matplotlib is imported and plots are set to display in jupyter notebook output cells, data is needed to plot. We will create this data as a Pyton <em>list</em>. A list is a built in data structure in Python that can store multiple values. Lists are defined in Python using square brackets <code>[ ]</code>. The elements of a list are seperated using commas <code>[item1, item2, item 3]</code>.</p>
 <p>An example line of code to create a list of numbers in Python is:</p>
 <pre><code>a = [1, 3, 4, 8]
 </code></pre>

@@ -40,7 +40,7 @@
     
     
       
-        <title>User Input - Problem Solving 101 with Python</title>
+        <title>If statements - Problem Solving 101 with Python</title>
       
     
     
@@ -99,7 +99,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#user-input" tabindex="1" class="md-skip">
+      <a href="#if-statements" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -125,7 +125,7 @@
                 Problem Solving 101 with Python
               </span>
               <span class="md-header-nav__topic">
-                User Input
+                If statements
               </span>
             
           
@@ -477,18 +477,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../02-Installing-Python/02.02-Installing-Python/" title="Installing Python from Python.org" class="md-nav__link">
-      Installing Python from Python.org
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../02-Installing-Python/02.03-Installing-Anaconda-on-MacOS/" title="Installing Anaconda on MacOS" class="md-nav__link">
       Installing Anaconda on MacOS
     </a>
@@ -513,7 +501,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../02-Installing-Python/02.05-Summary/" title="Summary" class="md-nav__link">
+    <a href="../../02-Installing-Python/02.05-Installing-Python/" title="Installing Python from Python.org" class="md-nav__link">
+      Installing Python from Python.org
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../02-Installing-Python/02.06-Summary/" title="Summary" class="md-nav__link">
       Summary
     </a>
   </li>
@@ -1017,6 +1017,54 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../06.01-f-Strings/" title="f-Strings" class="md-nav__link">
+      f-Strings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06.02-User-Input/" title="User Input" class="md-nav__link">
+      User Input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06.03-For-Loops/" title="For Loops" class="md-nav__link">
+      For Loops
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06.04-While-Loops/" title="While Loops" class="md-nav__link">
+      While Loops
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -1026,11 +1074,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        User Input
+        If statements
       </label>
     
-    <a href="./" title="User Input" class="md-nav__link md-nav__link--active">
-      User Input
+    <a href="./" title="If statements" class="md-nav__link md-nav__link--active">
+      If statements
     </a>
     
       
@@ -1042,9 +1090,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#user-input" title="User Input" class="md-nav__link">
-    User Input
+  <a href="#if-statements" title="If statements" class="md-nav__link">
+    If statements
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#else" title="Else" class="md-nav__link">
+    Else
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elif" title="elif" class="md-nav__link">
+    elif
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1203,9 +1271,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#user-input" title="User Input" class="md-nav__link">
-    User Input
+  <a href="#if-statements" title="If statements" class="md-nav__link">
+    If statements
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#else" title="Else" class="md-nav__link">
+    Else
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elif" title="elif" class="md-nav__link">
+    elif
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1225,36 +1313,26 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ProfessorKazarinoff/Problem-Solving-101-with-Python/edit/master/docs/06-User-Input-and-Loops/06.01-User-Input.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ProfessorKazarinoff/Problem-Solving-101-with-Python/edit/master/docs/06-User-Input-and-Loops/06.05-If-Statements.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>User Input</h1>
+                  <h1>If statements</h1>
                 
-                <h2 id="user-input">User Input</h2>
-<p>Python can be used to as users for input and then calculate something with the resulting input. The input function is written below:</p>
-<pre><code>&lt;var&gt; = input('&lt;message&gt;')
+                <h2 id="if-statements">If statements</h2>
+<p>Another piece of programming logic is the <em>if</em> statement. An if statement is a selection structure that will run a section of code if a condition is <code>True</code> and ignore that section of code if the condition is <code>False</code>. In Python, if statements take the following form:</p>
+<pre><code>if &lt;true_condition&gt;:
+    &lt;code&gt;
 </code></pre>
 
-<p>Where <code>&lt;var&gt;</code> is the variable that stores the user's input and <message> is the message the user sees at the prompt. Let's ask a user for their age.
+<p>The <code>&lt;true_condition&gt;</code> is a statement that must evaluate as either <code>True</code> or <code>False</code>. If the condition is <code>True</code> the <code>&lt;code&gt;</code> indented below the if statement will run. If the condition is <code>False</code> the code indented below that if statement will be skipped. Note the colon <code>:</code> after the if statement and the indentation of the <code>&lt;code&gt;</code> block. An example of an if statement is below:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;how old are you?&#39;</span><span class="p">)</span>
-</pre></div></p>
-<p></div>
-</div>
-</div></p>
-<p></div>
-Now we can do something with the input. Let's print the user's age back to them. Note the <code>f' '</code> before the string. The <code>f</code> does not get printed. It indicates to Python that variables are going to be inserted in the string. A set of curley braces <code>{  }</code> need to surround the variable name.
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;how old are you?&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;you are </span><span class="si">{age}</span><span class="s1"> years old&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is less than 10&#39;</span><span class="p">)</span>
 </pre></div></p>
 <p></div>
 </div>
@@ -1268,7 +1346,7 @@ Now we can do something with the input. Let's print the user's age back to them.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>you are 10 years old
+<pre>a is less than 10
 </pre>
 </div>
 </div>
@@ -1277,16 +1355,40 @@ Now we can do something with the input. Let's print the user's age back to them.
 </div>
 
 <p></div>
-Let's do something more useful. How about we ask for the base and height of a triagble and print back the area of the triangle
+In the first line of code, the variable <code>a</code> was assigned the value <code>5</code>. The if statement in the second line of code included the Python keyword <code>if</code> and a condition that can be evaluated as <code>True</code> or <code>False</code>. The condition <code>a&lt;10</code> evaluates to <code>True</code> and therefore the line <code>print('a is less than 10')</code> is run. If we modify the code to assign <code>a=20</code>, then the <code>print()</code> line will not run.
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;base of triangle: &#39;</span><span class="p">)</span>
-<span class="n">h</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;height of triangle: &#39;</span><span class="p">)</span>
-<span class="n">A</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o"><em></span><span class="nb">float</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o"></em></span><span class="nb">float</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;The area of the triangle is: </span><span class="si">{A}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is less than 10&#39;</span><span class="p">)</span>
+</pre></div></p>
+<p></div>
+</div>
+</div></p>
+</div>
+
+<h3 id="else">Else</h3>
+<p>If statements can include <em>else</em> clauses. An <em>else</em> clause is a section of code that run if the if statement is <code>False</code>.  The general form is:</p>
+<pre><code>if &lt;true_condition&gt;:
+    &lt;code block 1&gt;
+else:
+    &lt;code block 2&gt;
+</code></pre>
+
+<p>The <code>else</code> key word needs to be on it's own line and be at the same indentation level as the <code>if</code> keyword that it corresponds to. <code>else</code> needs to be followed by a colon <code>:</code> and any code that is to run as part of the else statement must be indented the same amount. A sample if/else code section is below:
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is greater than 10&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is less than 10&#39;</span><span class="p">)</span>
 </pre></div></p>
 <p></div>
 </div>
@@ -1300,7 +1402,121 @@ Let's do something more useful. How about we ask for the base and height of a tr
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The area of the triangle is: 15.0
+<pre>a is less than 10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+<p></div>
+Since <code>a=5</code> assigns a value to <code>a</code> that is less than 10, the code under the <code>if</code> statement does not run. Therefore the code under the <code>else</code> statement does run and <code>a is less than 10</code> is printed. If the value of a is modified so that it is greater than 10, the code under the <code>if</code> statement will run, and the code under the <code>else</code> keyword will not.
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is greater than 10&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is less than 10&#39;</span><span class="p">)</span>
+</pre></div></p>
+<p></div>
+</div>
+</div></p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>a is greater than 10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<h3 id="elif">elif</h3>
+<p>The <em>else if</em> statement can be added to an if statement to run different sections of code depending on which one of many conditions are <code>True</code>. The basic syntax of an else if section of code is:</p>
+<pre><code>if &lt;true_condition&gt;:
+    &lt;code block 1&gt;
+elif &lt;true_condition&gt;:
+    &lt;code block 2&gt;
+else:
+    &lt;code block 3&gt;
+</code></pre>
+
+<p>The keyword <code>elif</code> must be followed by a logical statement that evaluates to <code>True</code> or <code>False</code> followed by a colon <code>:</code>. The <code>&lt;code block&gt;</code> will run if the else if condition is <code>True</code> and will be skipped if the else if condition is <code>False</code>. An example section of code if below:
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span>
+<span class="k">if</span> <span class="n">color</span> <span class="o">==</span> <span class="s1">&#39;red&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The color is red&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">color</span> <span class="o">==</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The color is green&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The color is not red or green&#39;</span><span class="p">)</span>
+</pre></div></p>
+<p></div>
+</div>
+</div></p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The color is green
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+<p></div>
+If we modify the code to assign the string <code>'orange'</code> to the variable <code>color</code>, the code under the <code>if</code> will not run and the code under the elif will not run either. Only the code under the <code>else</code> will be executed.
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;orange&#39;</span>
+<span class="k">if</span> <span class="n">color</span> <span class="o">==</span> <span class="s1">&#39;red&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The color is red&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">color</span> <span class="o">==</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The color is green&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The color is not red or green&#39;</span><span class="p">)</span>
+</pre></div></p>
+<p></div>
+</div>
+</div></p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The color is not red or green
 </pre>
 </div>
 </div>
@@ -1329,7 +1545,7 @@ Let's do something more useful. How about we ask for the base and height of a tr
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../06.00-Introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../06.04-While-Loops/" title="While Loops" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1338,7 +1554,7 @@ Let's do something more useful. How about we ask for the base and height of a tr
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Introduction
+                While Loops
               </span>
             </div>
           </a>

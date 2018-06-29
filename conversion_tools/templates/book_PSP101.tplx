@@ -15,6 +15,8 @@
 ((* block packages *))
     \usepackage[T1]{fontenc}
     % Nicer default font (+ math font) than Computer Modern for most use cases
+    \setlength{\parskip}{0.5em} %for a half space between paragraphs
+    \setlength{\parindent}{0em} %for no paragraph indent
     \usepackage{mathpazo}
 
     % Basic figure setup, for now with no caption control since it's done

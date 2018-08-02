@@ -1242,8 +1242,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.03-Virtual-Environments/" title="Virtual Environments" class="md-nav__link">
-      Virtual Environments
+    <a href="../../99-Appendix/99.03-Virtual-Environments/" title="Virtual environments with pip and virtualenv" class="md-nav__link">
+      Virtual environments with pip and virtualenv
     </a>
   </li>
 
@@ -1278,8 +1278,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.06-Python-for-Undergaduate-Engineers-Book-Construction/" title="Python for Undergraduate Engineers Book Construction" class="md-nav__link">
-      Python for Undergraduate Engineers Book Construction
+    <a href="../../99-Appendix/99.06-Problem-Solving-101-with-Python-Book-Construction/" title="Problem Solving 101 with Python Book Construction" class="md-nav__link">
+      Problem Solving 101 with Python Book Construction
     </a>
   </li>
 
@@ -1290,7 +1290,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.07-About-the-Author/" title="About the Author" class="md-nav__link">
+    <a href="../../99-Appendix/99.07-Math-and-Statistics-Module-Functions/" title="Math and Statistics Module Functions" class="md-nav__link">
+      Math and Statistics Module Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../99-Appendix/99.08-About-the-Author/" title="About the Author" class="md-nav__link">
       About the Author
     </a>
   </li>
@@ -1417,37 +1429,37 @@
                   <h1>Formatting Conventions</h1>
                 
                 <h2 id="formatting-conventions">Formatting Conventions</h2>
-<p>This book and supporting materials use the following convenstions:</p>
+<p>This book and supporting materials use the following formatting conventions:</p>
 <h3 id="web-address">Web Address</h3>
 <p>Web address will be shown as:</p>
-<p>https://github.com/professorkazarinoff/PythonForUndergraduateEngineers</p>
+<p><a href="https://github.com/ProfessorKazarinoff/Problem-Solving-101-with-Python">https://github.com/ProfessorKazarinoff/Problem-Solving-101-with-Python</a></p>
 <h3 id="import-terms-and-vocabulary">Import terms and vocabulary</h3>
-<p>Important terms and vocabulary is shown in <em>italic text</em></p>
+<p>Important terms and vocabulary are shown in <em>italic text</em></p>
 <p>There is a difference between <em>local variables</em> and <em>global variables</em> in Python code</p>
 <h3 id="file-names">File Names</h3>
-<p>File Names are  shown in <strong><em><em>bold and italic text</em></em></strong></p>
-<p>After completing the code, save the file as <strong><em><em>hello.py</em></em></strong> in the current directory.</p>
+<p>File Names are  shown in <strong><em>bold and italic text</em></strong></p>
+<p>After completing the code, save the file as <strong><em>hello.py</em></strong> in the current directory.</p>
 <h3 id="module-and-package-names">Module and Package Names</h3>
 <p>Module and Package names will be shown in <strong>bold text</strong></p>
-<p><strong>Numpy</strong> and <strong>matplotlib</strong> are two useful packages for engineers</p>
+<p><strong>Numpy</strong> and <strong>matplotlib</strong> are two useful Python packages for engineers</p>
 <h3 id="inline-code">Inline code</h3>
-<p>Inline code including variable names and extensions are shown in <code>monospace font</code></p>
-<p>To compare a variable use <code>var == 'string'</code> and make sure to include <code>==</code>, the doouble equals sign</p>
+<p>Inline code including variable names is shown in <code>monospace font</code></p>
+<p>To compare a variable use <code>var == 'string'</code> and make sure to include <code>==</code>, the double equals sign</p>
 <h3 id="seperate-code-blocks">Seperate code blocks</h3>
-<p>Separate code blocks will appear in their own boxes in `` monospaced font```</p>
+<p>Separate code blocks will appear in their own areas in <code>monospaced font</code></p>
 <pre><code>import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 </code></pre>
 
 <h3 id="terminal-and-anaconda-prompt-commands">Terminal and Anaconda Prompt Commands</h3>
-<p>Commands typed into the terminal or <strong>Anaconda Prompt</strong> will be in seperate boxes which contain <code>$</code> the dollar sign before each line. Note the <code>$</code> dollar sign should not be typed. It is included to indicate the terminal or Anaconda prompt, not a character for the user to enter</p>
-<pre><code>$ conda creat -n newenv pyton=3.6
+<p>Commands typed into the terminal or <strong>Anaconda Prompt</strong> will be in seperate boxes which contain <code>$</code> the dollar sign before each line. Note the <code>$</code> dollar sign should not be typed. It is included to indicate the terminal or Anaconda prompt, not a character for the user to enter.</p>
+<pre><code>$ conda creat -n newenv python=3.6
 $ conda activate newenv
 </code></pre>
 
 <h3 id="python-repl-commands">Python REPL Commands</h3>
-<p>Commands typed into the Python REPL, or Python Interperator will be in seperate code boxes which contain &gt;&gt;&gt; the triple arrow prompt. Note the &gt;&gt;&gt; triple arrow sign should not be typed. It is included to indicate the Python REPL prompt, not a character for the user to enter. The output from the Python REPL will be shown on a separate line below the command, without the &gt;&gt;&gt; prompt.</p>
+<p>Commands typed into the Python REPL, or Python Interpreter is shown in separate code boxes which contain <code>&gt;&gt;&gt;</code> the triple arrow prompt. Note the <code>&gt;&gt;&gt;</code> triple arrow sign should not be typed. The triple arrow prompt is included to indicate the Python REPL prompt, not a character for the user to enter. The output from the Python REPL will be shown on a separate line below the command, without the &gt;&gt;&gt; prompt.</p>
 <pre><code class="python">&gt;&gt;&gt; 2 + 2
 4
 &gt;&gt;&gt; print('Python for Undergraduate Engineers')
@@ -1455,10 +1467,10 @@ Python for Undergraduate Engineers
 </code></pre>
 
 <h3 id="jupyter-notebook-cells">Jupyter Notebook cells</h3>
-<p>Commands typed into <strong>Jupyter Notebook</strong> cells will apprear with an label <code>In [#]:</code> and <code>Out [#]:</code>. Output from a jupyter notebook cell will be shown after the input cell. You only need to run the code in the input cell. The output cell will be prodoced automatically when the you click the run button or type <code>[shift]+[Enter]</code>
+<p>Commands typed into <strong>Jupyter Notebook</strong> cells appear with a label <code>In [#]:</code> and <code>Out [#]:</code> in front of a separate code block. Output from a jupyter notebook cell will be shown after the input cell. When typing the code examples into a jupyter notebook, only copy the code in the input cells. The output cells will be produced automatically when the run button is clicked or the user types <code>[shift]+[Enter]</code>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="mi">2</span>

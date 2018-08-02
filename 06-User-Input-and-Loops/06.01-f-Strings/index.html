@@ -1173,8 +1173,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.03-Virtual-Environments/" title="Virtual Environments" class="md-nav__link">
-      Virtual Environments
+    <a href="../../99-Appendix/99.03-Virtual-Environments/" title="Virtual environments with pip and virtualenv" class="md-nav__link">
+      Virtual environments with pip and virtualenv
     </a>
   </li>
 
@@ -1209,8 +1209,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.06-Python-for-Undergaduate-Engineers-Book-Construction/" title="Python for Undergraduate Engineers Book Construction" class="md-nav__link">
-      Python for Undergraduate Engineers Book Construction
+    <a href="../../99-Appendix/99.06-Problem-Solving-101-with-Python-Book-Construction/" title="Problem Solving 101 with Python Book Construction" class="md-nav__link">
+      Problem Solving 101 with Python Book Construction
     </a>
   </li>
 
@@ -1221,7 +1221,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.07-About-the-Author/" title="About the Author" class="md-nav__link">
+    <a href="../../99-Appendix/99.07-Math-and-Statistics-Module-Functions/" title="Math and Statistics Module Functions" class="md-nav__link">
+      Math and Statistics Module Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../99-Appendix/99.08-About-the-Author/" title="About the Author" class="md-nav__link">
       About the Author
     </a>
   </li>
@@ -1279,7 +1291,7 @@
                   <h1>f-Strings</h1>
                 
                 <h2 id="f-strings">f-Strings</h2>
-<p>Python can print data back to a user in a number of ways. One of these ways is using <em>f-strings</em>.  An f-string is a string pre-pended with an <code>f</code> that can include variables in curley braces.
+<p>Python can print data back to a user in a number of ways. One of these ways is using <em>f-strings</em>.  An f-string is a string pre-pended with an <code>f</code> that can include variables enclosed in curly braces <code>{ }</code>.
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
@@ -1310,7 +1322,7 @@
 </div>
 
 <p></div>
-There are a number of things going on in the short example above. First a variable, called <code>a</code> is assigned the value <code>5</code>. Next a new variable <code>f_string</code> is assigned the value <code>f'the number is {a}'</code>. This is an f-string. Notice how the letter <code>f</code> comes before the quotation mark to denote the string. Inside the f-string there is a variable in curely braces <code>{a}</code>. Using curley braces in an f-string inserts the value of a pre-defined variable into the string. Since <code>a</code> was assigned a value of <code>5</code>, when <code>f'the number is {a}'</code> is printed, the output seen is <code>the number is 5</code>. Note how <code>{a}</code> was replaced with <code>5</code>.
+There are a number of things going on in the short example above. First a variable, called <code>a</code> is assigned the value <code>5</code>. Next a new variable <code>f_string</code> is assigned the value <code>f'the number is {a}'</code>. This is an f-string. Notice how the letter <code>f</code> comes before the quotation mark to denote the string. Inside the f-string there is a variable enclosed in curly braces <code>{a}</code>. Using curly braces in an f-string inserts the value of a pre-defined variable into the string. Since <code>a</code> was assigned a value of <code>5</code>, when <code>f'the number is {a}'</code> is printed, the output seen is <code>the number is 5</code>. Note how <code>{a}</code> was replaced with <code>5</code>.
 We can compare the difference between a regular string and an f-string by printing out two different statements:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1343,7 +1355,68 @@ The regular string says a is equal to {a}
 </div>
 
 <p></div>
-Note how the first line printed shows <code>a is equal to 5</code> and the second line shows <code>a is equal to {a}</code>. The first print line was an f-string, so the value of <code>a</code>, which is <code>5</code> was shown. The second print line was a regular string, so the value of <code>a</code> is not inserted, and instead we see <code>{a}</code>.</p>
+Note how the first line printed shows <code>a is equal to 5</code> and the second line shows <code>a is equal to {a}</code>. The first print line contained an f-string, so the value of <code>a</code>, which is <code>5</code> was shown. The second print line contained a regular string, so the value of <code>a</code> is not inserted, and instead we see <code>{a}</code>.
+Multiple variables can be inserted into an f-string simultaneously. These variables can be assigned integers, floats, or strings. All of these variable types will print out when an f-string is used.
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">6.02</span>
+<span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;show me&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;An integer is </span><span class="si">{a}</span><span class="s1">, a float is </span><span class="si">{b}</span><span class="s1">, and a string is </span><span class="si">{c}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div></p>
+<p></div>
+</div>
+</div></p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>An integer is 5, a float is 6.02, and a string is show me
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+<p></div>
+Expressions like <code>2+2</code> can also be put inside of f-strings. When the f-string prints, the expression will be evaluated (you will see <code>4</code> instead of <code>2 + 2</code>). Functions can also be called on the inside of f-strings. The function output will be shown when the f-string is printed.
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;An addition problem {2 + 2}, and what type is lowest of [1,2,3]? Its {min([1,2,3])}&#39;</span><span class="p">)</span>
+</pre></div></p>
+<p></div>
+</div>
+</div></p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>An addition problem 4, and what type is lowest of [1,2,3]? Its 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
                 
                   
                 

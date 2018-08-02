@@ -1247,8 +1247,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.03-Virtual-Environments/" title="Virtual Environments" class="md-nav__link">
-      Virtual Environments
+    <a href="../../99-Appendix/99.03-Virtual-Environments/" title="Virtual environments with pip and virtualenv" class="md-nav__link">
+      Virtual environments with pip and virtualenv
     </a>
   </li>
 
@@ -1283,8 +1283,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.06-Python-for-Undergaduate-Engineers-Book-Construction/" title="Python for Undergraduate Engineers Book Construction" class="md-nav__link">
-      Python for Undergraduate Engineers Book Construction
+    <a href="../../99-Appendix/99.06-Problem-Solving-101-with-Python-Book-Construction/" title="Problem Solving 101 with Python Book Construction" class="md-nav__link">
+      Problem Solving 101 with Python Book Construction
     </a>
   </li>
 
@@ -1295,7 +1295,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.07-About-the-Author/" title="About the Author" class="md-nav__link">
+    <a href="../../99-Appendix/99.07-Math-and-Statistics-Module-Functions/" title="Math and Statistics Module Functions" class="md-nav__link">
+      Math and Statistics Module Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../99-Appendix/99.08-About-the-Author/" title="About the Author" class="md-nav__link">
       About the Author
     </a>
   </li>
@@ -1429,25 +1441,85 @@
                 <h2 id="why-python">Why Python?</h2>
 <p>You might be wondering "Why should I learn Python?" There are other programming languages in the engineering world such as MATLAB, LabView, C++ and Java. What makes Python useful for problem solving?</p>
 <h3 id="python-is-a-powerful-programming-language">Python is a powerful programming language</h3>
-<p>Python defines the types of objects you build into your code. Unlike some other languages such as C, you do not need to declare the object type. The object type is also mutable, you can change the type of object easily and on the fly. There is a wide array of object types built into Python. Objects can change in size. Python objects can also contain mixed data types. Strings and floating point numbers can be part of the same list.</p>
-<p>Python has an extensive standard library. A huge number of object types, functions and methods are available for use without importing any external modules. These include math functions, list methods, calls to a computers system. There is a lot that can be done with the standard library. The first couple chapters of this book will just use the standard library. It can do a lot.</p>
-<p>Python has over 100,000 external packages available for download and use. They are easy to install off of the python package index, commonly called PyPI ("pie pee eye"). There is a python package for just about everything. There are packages which can help you: interact with the web, make complex computations, do unit conversions, plot data, work with .csv, .xls, and .pdf files, manipulate images and video, read data from sensors and test equipment, train machine learning algorithms, design web apps, work with GIS data, work with astronautical data, and many more added every day. In this book we will use some of the more useful Python packages for engineers such as numpy, matplotlib, pandas, and scipy.</p>
+<p>Python has an extensive standard library. A huge number of object types, functions and methods are available for use without importing any external modules or packages. These include math functions, list methods, and calls to a computer's system. There is a lot that can be done with the Python Standard Library. The first couple chapters of this book will just use the Python Standard Library. It can do a lot.</p>
+<p>Python defines the types of objects you build into your code. Unlike some other languages such as C, you do not need to declare the object type. The object type is also mutable, you can change the type of object easily and on the fly. There is a wide array of object types built into Python. Objects can change in size. Python objects can also contain mixed data types. For example, strings and floating point numbers can be items in the same list.</p>
+<p>Python has over 100,000 external packages available for download and use. They are easy to install off of the Python Package Index, commonly called PyPI ("pie pee eye"). There is a Python package for just about everything. There are packages which can help you: interact with the web, make complex computations, do unit conversions, plot data, work with .csv, .xls, and .pdf files, manipulate images and video, read data from sensors and test equipment, train machine learning algorithms, design web apps, work with GIS data, work with astronautical data, and many more added every day. In this book we will use some of the more useful Python packages for problem solving such as <strong>numpy</strong> and <strong>matplotlib</strong>.</p>
 <h3 id="python-is-easy-to-learn-and-use">Python is easy to learn and use</h3>
-<p>Engineers solve the world's problems in teams. One way Python helps solve these problems faster than other programming languages is that it is easy to learn and use. Python programs tends to be shorter and quicker to write than a program that does a similar function in other languages. In the rapid design, prototype, test, iterate cycle programming solutions can be spun up quickly. Python is also an easy language for fellow engineers on your team to learn. It is also quite human readable. While programmers can become preoccupied with a programs run time, it is development time that takes the longest.</p>
+<p>Engineers solve the world's problems in teams. One way Python helps solve these problems faster than other programming languages is that it is easy to learn and use. A Python program tends to be shorter and quicker to write than a program that does a similar function written in other computer programming language. In the rapid design, prototype, test, iterate cycle programming solutions made with Python can be spun up quickly. Python is also an easy language for fellow engineers on your team to learn. It is also quite human readable. While programmers can become preoccupied with a program's running speed, it is program development time that takes the longest.</p>
 <h4 id="python-is-transportable">Python is transportable</h4>
-<p>Python can be installed and run on each of the three major operating systems: Windows, Mac and Linux. On Mac and Linux Python comes installed out of the box. Just open up a terminal in on a Mac OSX or Linux machine and type \texttt{python}. That's it, you are now using Python. On Windows I recommend downloading and using the Ananaconda distribution. The Anaconda distrobution is free and can be installed on all three major operating systems. The same programming environment can be replecated accross the three different opperating systems.</p>
+<p>Python can be installed and run on each of the three major operating systems: Windows, MacOS and Linux. On MacOS and Linux, Python comes installed out of the box. Just open up a terminal in on a MacOS or Linux machine and type:</p>
+<pre><code>$ python
+</code></pre>
+
+<p>That's it, you are now using Python. On Windows, I recommend downloading and using the Ananaconda distribution of Python. The Anaconda distribution is free and can be installed on all three major operating systems. The same programming environment can be replicated across the three different operating systems.</p>
 <h4 id="python-is-free">Python is free</h4>
-<p>MATLAB and LabView cost students to use and cost companies and colleges even more. Python is free to download and use. It is also open source and free to modify, contribute to, and propose improvements. All of the packages available for download on the Python Package Index, PyPI (pronouced pie-pee-eye) are free to download and install. Many more packages, scripts and utilities can be found in open source repos on github and bitbucket. </p>
+<p>MATLAB and LabView cost students to use and cost companies and colleges even more. Python is free to download and use. It is also open source and users are free to modify, contribute, and propose improvements to Python. All of the packages available for download on the Python Package Index, PyPI (pronouced pie-pee-eye) are free to download and install. Many more packages, scripts and utilities can be found in open source repositories on github, gitlab and bitbucket. </p>
 <h4 id="python-is-growing">Python is growing</h4>
 <p>Python is growing in popularity. Python is particularly growing in the data sciences and in use with GIS systems, physical modeling, machine learning and computer vision. These are growing team problem solving areas for engineers.  </p>
 <h3 id="python-has-extensive-standard-library-of-modules-and-a-vast-array-of-external-modules">Python has extensive standard library of modules and a vast array of external modules</h3>
 <h4 id="pythons-standard-library">Pythons Standard Library</h4>
-<p>Standard Library Modules include:</p>
-<p>math, statistics, os, urllib, table for what they are used for. More can be found on Read-the-docs</p>
+<p>Python Standard Library Modules include:</p>
+<p>math, statistics, os, urllib, table for what they are used for. </p>
+<table>
+<thead>
+<tr>
+<th>Python Standard Library Module</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>math</code></td>
+<td>math functions</td>
+</tr>
+<tr>
+<td><code>statistics</code></td>
+<td>statistics functions</td>
+</tr>
+<tr>
+<td><code>os</code></td>
+<td>operating system functions</td>
+</tr>
+<tr>
+<td><code>urllib</code></td>
+<td>web URL's and web access</td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td>file path objects and functions</td>
+</tr>
+</tbody>
+</table>
+<p>More Standard Library modules can be found on the <a href="https://python.readthedocs.io/en/latest/library/index.html">Python Read-the-docs</a></p>
 <h4 id="external-modules-available-on-pypi">External Modules available on PyPI</h4>
-<p>There are over 100,000 external modules available for Python on PyPI. Ones useful for engineers include</p>
-<p>numpy, pandas, matplotlib, jupyter table for what they are used for</p>
-<p>installing Python modules can be done on the command line or at the Anaconda Prompt using;</p>
+<p>There are over 100,000 external modules available for Python on <a href="https://pypi.org/">PyPI.org</a>. External modules useful for engineers include: <strong>numpy</strong>, <strong>pandas</strong>, <strong>matplotlib</strong>, and <strong>jupyter</strong></p>
+<table>
+<thead>
+<tr>
+<th>External Module</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>numpy</code></td>
+<td>n-dimensional arrays</td>
+</tr>
+<tr>
+<td><code>pandas</code></td>
+<td>tabular functions</td>
+</tr>
+<tr>
+<td><code>matplotlib</code></td>
+<td>plots and charts</td>
+</tr>
+<tr>
+<td><code>jupyter</code></td>
+<td>interactive notebooks</td>
+</tr>
+</tbody>
+</table>
+<p>Installing external Python modules can be done on the command line or at the Anaconda Prompt using:</p>
 <pre><code class="text">$ pip install &lt;module_name&gt;
 </code></pre>
 

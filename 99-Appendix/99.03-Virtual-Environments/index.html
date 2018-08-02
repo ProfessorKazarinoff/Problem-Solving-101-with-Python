@@ -40,7 +40,7 @@
     
     
       
-        <title>Virtual Environments - Problem Solving 101 with Python</title>
+        <title>Virtual environments with pip and virtualenv - Problem Solving 101 with Python</title>
       
     
     
@@ -125,7 +125,7 @@
                 Problem Solving 101 with Python
               </span>
               <span class="md-header-nav__topic">
-                Virtual Environments
+                Virtual environments with pip and virtualenv
               </span>
             
           
@@ -1146,11 +1146,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Virtual Environments
+        Virtual environments with pip and virtualenv
       </label>
     
-    <a href="./" title="Virtual Environments" class="md-nav__link md-nav__link--active">
-      Virtual Environments
+    <a href="./" title="Virtual environments with pip and virtualenv" class="md-nav__link md-nav__link--active">
+      Virtual environments with pip and virtualenv
     </a>
     
       
@@ -1164,6 +1164,41 @@
         <li class="md-nav__item">
   <a href="#virtual-environments" title="Virtual Environments" class="md-nav__link">
     Virtual Environments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-virtual-environments" title="Benefits of Virtual Environments" class="md-nav__link">
+    Benefits of Virtual Environments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-current-python-interpreter" title="Get the current Python interpreter" class="md-nav__link">
+    Get the current Python interpreter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-a-list-of-installed-packages" title="Get a list of installed packages" class="md-nav__link">
+    Get a list of installed packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-environments-with-conda" title="Virtual environments with conda" class="md-nav__link">
+    Virtual environments with conda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-environments-with-pip-and-virtualenv" title="Virtual environments with pip and virtualenv" class="md-nav__link">
+    Virtual environments with pip and virtualenv
   </a>
   
 </li>
@@ -1209,8 +1244,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../99.06-Python-for-Undergaduate-Engineers-Book-Construction/" title="Python for Undergraduate Engineers Book Construction" class="md-nav__link">
-      Python for Undergraduate Engineers Book Construction
+    <a href="../99.06-Problem-Solving-101-with-Python-Book-Construction/" title="Problem Solving 101 with Python Book Construction" class="md-nav__link">
+      Problem Solving 101 with Python Book Construction
     </a>
   </li>
 
@@ -1221,7 +1256,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../99.07-About-the-Author/" title="About the Author" class="md-nav__link">
+    <a href="../99.07-Math-and-Statistics-Module-Functions/" title="Math and Statistics Module Functions" class="md-nav__link">
+      Math and Statistics Module Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../99.08-About-the-Author/" title="About the Author" class="md-nav__link">
       About the Author
     </a>
   </li>
@@ -1257,6 +1304,41 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#benefits-of-virtual-environments" title="Benefits of Virtual Environments" class="md-nav__link">
+    Benefits of Virtual Environments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-the-current-python-interpreter" title="Get the current Python interpreter" class="md-nav__link">
+    Get the current Python interpreter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-a-list-of-installed-packages" title="Get a list of installed packages" class="md-nav__link">
+    Get a list of installed packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-environments-with-conda" title="Virtual environments with conda" class="md-nav__link">
+    Virtual environments with conda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-environments-with-pip-and-virtualenv" title="Virtual environments with pip and virtualenv" class="md-nav__link">
+    Virtual environments with pip and virtualenv
+  </a>
+  
+</li>
+      
       
       
       
@@ -1276,10 +1358,357 @@
                   <a href="https://github.com/ProfessorKazarinoff/Problem-Solving-101-with-Python/edit/master/docs/99-Appendix/99.03-Virtual-Environments.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Virtual Environments</h1>
+                  <h1>Virtual environments with pip and virtualenv</h1>
                 
                 <h2 id="virtual-environments">Virtual Environments</h2>
-<p>Using <strong>virtual environments</strong> is a good standard of practice in Python</p>
+<p>Using <strong>virtual environments</strong> is good standard practice when using Python. A virtual environment is a standalone Python interpreter and isolated installed packages unique to that environment. </p>
+<h2 id="benefits-of-virtual-environments">Benefits of Virtual Environments</h2>
+<p>Virtual environments keep the Python version and stand-alone package versions all in the same place. If two different projects use two different versions of Python or use two different versions of an installed 3rd-party package, virtual environments can seperate these two installations seperate. </p>
+<h2 id="get-the-current-python-interpreter">Get the current Python interpreter</h2>
+<p>The file path to the current running Python interpreter can be accessed using the <strong>sys</strong> module. <code>sys.prefix</code> will output the system path for the running Python interpreter
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">prefix</span>
+</pre></div></p>
+<p></div>
+</div>
+</div></p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;/home/tribilium/anaconda3/envs/book&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<h2 id="get-a-list-of-installed-packages">Get a list of installed packages</h2>
+<p>A list of installed packages in the current environment can be accessed using the <strong>site</strong> module. <code>site.getsitepackages()</code> will return the file path where the site-packages are stored. The code below will list all of the installed packages using the <strong>os</strong> module and <code>os.listdir()</code> to list the contents of the directory where all the site-packages are stored.
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">site</span>
+<span class="n">site</span><span class="o">.</span><span class="n">getsitepackages</span><span class="p">()</span>
+<span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">site</span><span class="o">.</span><span class="n">getsitepackages</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div></p>
+<p></div>
+</div>
+</div></p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;jinja2&#39;,
+ &#39;asn1crypto&#39;,
+ &#39;ipython_genutils-0.2.0-py3.6.egg-info&#39;,
+ &#39;alabaster&#39;,
+ &#39;requests&#39;,
+ &#39;Pygments-2.2.0-py3.6.egg-info&#39;,
+ &#39;urllib3&#39;,
+ &#39;pandas-0.22.0-py3.6.egg-info&#39;,
+ &#39;jupyterlab_launcher-0.10.5-py3.6.egg-info&#39;,
+ &#39;widgetsnbextension&#39;,
+ &#39;notebook-5.4.1-py3.6.egg-info&#39;,
+ &#39;pyzmq-17.0.0-py3.6.egg-info&#39;,
+ &#39;mistune.py&#39;,
+ &#39;pyOpenSSL-17.5.0-py3.6.egg-info&#39;,
+ &#39;mkl_fft&#39;,
+ &#39;OpenSSL&#39;,
+ &#39;pexpect-4.4.0-py3.6.egg-info&#39;,
+ &#39;mkl_random&#39;,
+ &#39;jupyter_client-5.2.3-py3.6.egg-info&#39;,
+ &#39;qtconsole-4.3.1-py3.6.egg-info&#39;,
+ &#39;mistune-0.8.3-py3.6.egg-info&#39;,
+ &#39;jupyterlab-0.31.12-py3.6.egg-info&#39;,
+ &#39;snowballstemmer-1.2.1-py3.6.egg-info&#39;,
+ &#39;pandas&#39;,
+ &#39;fastcache&#39;,
+ &#39;sphinxcontrib&#39;,
+ &#39;parso-0.1.1-py3.6.egg-info&#39;,
+ &#39;certifi-2018.01.18-py3.6.egg-info&#39;,
+ &#39;sympy&#39;,
+ &#39;tornado-4.5.3.dist-info&#39;,
+ &#39;sphinxcontrib_websupport-1.0.1-py3.6-nspkg.pth&#39;,
+ &#39;_cffi_backend.cpython-36m-x86_64-linux-gnu.so&#39;,
+ &#39;setuptools&#39;,
+ &#39;prompt_toolkit-1.0.15-py3.6.egg-info&#39;,
+ &#39;sip.pyi&#39;,
+ &#39;traitlets&#39;,
+ &#39;PySocks-1.6.8-py3.6.egg-info&#39;,
+ &#39;snowballstemmer&#39;,
+ &#39;dateutil&#39;,
+ &#39;kiwisolver.cpython-36m-x86_64-linux-gnu.so&#39;,
+ &#39;typing-3.6.4-py3.6.egg-info&#39;,
+ &#39;nbformat&#39;,
+ &#39;bleach&#39;,
+ &#39;sipconfig.py&#39;,
+ &#39;__pycache__&#39;,
+ &#39;urllib3-1.22-py3.6.egg-info&#39;,
+ &#39;material&#39;,
+ &#39;babel&#39;,
+ &#39;PyYAML-3.12-py3.6.egg-info&#39;,
+ &#39;parso&#39;,
+ &#39;mkl_fft-1.0.0-py3.6.egg-info&#39;,
+ &#39;pkg_resources&#39;,
+ &#39;jupyter_console&#39;,
+ &#39;wcwidth-0.1.7-py3.6.egg-info&#39;,
+ &#39;cffi-1.11.5-py3.6.egg-info&#39;,
+ &#39;ipython_genutils&#39;,
+ &#39;html5lib-1.0.1-py3.6.egg-info&#39;,
+ &#39;sockshandler.py&#39;,
+ &#39;packaging&#39;,
+ &#39;livereload&#39;,
+ &#39;pymdownx&#39;,
+ &#39;PyQt5&#39;,
+ &#39;fastcache-1.0.2-py3.6.egg-info&#39;,
+ &#39;Babel-2.5.3-py3.6.egg-info&#39;,
+ &#39;imagesize-1.0.0-py3.6.egg-info&#39;,
+ &#39;simplegeneric-0.8.1-py3.6.egg-info&#39;,
+ &#39;IPython&#39;,
+ &#39;easy_install.py&#39;,
+ &#39;docutils-0.14-py3.6.egg-info&#39;,
+ &#39;jedi&#39;,
+ &#39;ipywidgets&#39;,
+ &#39;nbformat-4.4.0-py3.6.egg-info&#39;,
+ &#39;mkl_random-1.0.1-py3.6.egg-info&#39;,
+ &#39;traitlets-4.3.2-py3.6.egg-info&#39;,
+ &#39;jsonschema-2.6.0-py3.6.egg-info&#39;,
+ &#39;pygments&#39;,
+ &#39;jupyter.py&#39;,
+ &#39;mpmath&#39;,
+ &#39;typing.py&#39;,
+ &#39;chardet&#39;,
+ &#39;ipywidgets-7.2.0-py3.6.egg-info&#39;,
+ &#39;widgetsnbextension-3.2.0-py3.6.egg-info&#39;,
+ &#39;ipython-6.3.0-py3.6.egg-info&#39;,
+ &#39;testpath-0.3.1-py3.6.egg-info&#39;,
+ &#39;pip-9.0.3-py3.6.egg-info&#39;,
+ &#39;cycler.py&#39;,
+ &#39;kiwisolver-1.0.1-py3.6.egg-info&#39;,
+ &#39;mkdocs&#39;,
+ &#39;markupsafe&#39;,
+ &#39;pyparsing.py&#39;,
+ &#39;docutils&#39;,
+ &#39;imagesize.py&#39;,
+ &#39;pycparser-2.18-py3.6.egg-info&#39;,
+ &#39;pickleshare-0.7.4-py3.6.egg-info&#39;,
+ &#39;ptyprocess&#39;,
+ &#39;socks.py&#39;,
+ &#39;pycparser&#39;,
+ &#39;ipykernel-4.8.2-py3.6.egg-info&#39;,
+ &#39;alabaster-0.7.10-py3.6.egg-info&#39;,
+ &#39;numpydoc&#39;,
+ &#39;tornado&#39;,
+ &#39;webencodings-0.5.1-py3.6.egg-info&#39;,
+ &#39;Send2Trash-1.5.0-py3.6.egg-info&#39;,
+ &#39;matplotlib-2.2.2-py3.6-nspkg.pth&#39;,
+ &#39;mkdocs_material-2.7.2.dist-info&#39;,
+ &#39;Jinja2-2.10-py3.6.egg-info&#39;,
+ &#39;six.py&#39;,
+ &#39;wcwidth&#39;,
+ &#39;decorator.py&#39;,
+ &#39;webencodings&#39;,
+ &#39;backcall-0.1.0-py3.6.egg-info&#39;,
+ &#39;send2trash&#39;,
+ &#39;entrypoints.py&#39;,
+ &#39;python_dateutil-2.7.2-py3.6.egg-info&#39;,
+ &#39;asn1crypto-0.24.0-py3.6.egg-info&#39;,
+ &#39;requests-2.18.4-py3.6.egg-info&#39;,
+ &#39;backcall&#39;,
+ &#39;jupyter_client&#39;,
+ &#39;test&#39;,
+ &#39;mkdocs-0.17.3.dist-info&#39;,
+ &#39;pandocfilters.py&#39;,
+ &#39;click&#39;,
+ &#39;numpydoc-0.8.0-py3.6.egg-info&#39;,
+ &#39;pickleshare.py&#39;,
+ &#39;testpath&#39;,
+ &#39;bleach-2.1.3-py3.6.egg-info&#39;,
+ &#39;terminado&#39;,
+ &#39;sympy-1.1.1-py3.6.egg-info&#39;,
+ &#39;pip&#39;,
+ &#39;src&#39;,
+ &#39;pandocfilters-1.4.2-py3.6.egg-info&#39;,
+ &#39;terminado-0.8.1-py3.6.egg-info&#39;,
+ &#39;jupyter_console-5.2.0-py3.6.egg-info&#39;,
+ &#39;MarkupSafe-1.0-py3.6.egg-info&#39;,
+ &#39;Sphinx-1.7.2-py3.6.egg-info&#39;,
+ &#39;numpy-1.14.2-py3.6.egg-info&#39;,
+ &#39;sphinxcontrib_websupport-1.0.1-py3.6.egg-info&#39;,
+ &#39;jupyter_core&#39;,
+ &#39;nbconvert&#39;,
+ &#39;entrypoints-0.2.3-py3.6.egg-info&#39;,
+ &#39;yaml&#39;,
+ &#39;gmpy2.cpython-36m-x86_64-linux-gnu.so&#39;,
+ &#39;jedi-0.11.1-py3.6.egg-info&#39;,
+ &#39;qtconsole&#39;,
+ &#39;decorator-4.2.1-py3.6.egg-info&#39;,
+ &#39;sip.so&#39;,
+ &#39;jupyterlab&#39;,
+ &#39;mpmath-1.0.0-py3.6.egg-info&#39;,
+ &#39;zmq&#39;,
+ &#39;cycler-0.10.0-py3.6.egg-info&#39;,
+ &#39;prompt_toolkit&#39;,
+ &#39;idna-2.6-py3.6.egg-info&#39;,
+ &#39;pyparsing-2.2.0-py3.6.egg-info&#39;,
+ &#39;certifi&#39;,
+ &#39;jsonschema&#39;,
+ &#39;matplotlib-2.2.2-py3.6.egg-info&#39;,
+ &#39;mpl_toolkits&#39;,
+ &#39;cryptography&#39;,
+ &#39;jupyter-1.0.0-py3.6.egg-info&#39;,
+ &#39;pytz&#39;,
+ &#39;sipdistutils.py&#39;,
+ &#39;pymdown_extensions-4.9.2.dist-info&#39;,
+ &#39;six-1.11.0-py3.6.egg-info&#39;,
+ &#39;ptyprocess-0.5.2-py3.6.egg-info&#39;,
+ &#39;numpy&#39;,
+ &#39;_yaml.cpython-36m-x86_64-linux-gnu.so&#39;,
+ &#39;README.txt&#39;,
+ &#39;html5lib&#39;,
+ &#39;markdown&#39;,
+ &#39;pytz-2018.3-py3.6.egg-info&#39;,
+ &#39;ipykernel&#39;,
+ &#39;idna&#39;,
+ &#39;nbconvert-5.3.1-py3.6.egg-info&#39;,
+ &#39;ipykernel_launcher.py&#39;,
+ &#39;sphinx&#39;,
+ &#39;gmpy2-2.0.8-py3.6.egg-info&#39;,
+ &#39;notebook&#39;,
+ &#39;cryptography-2.2.1-py3.6.egg-info&#39;,
+ &#39;simplegeneric.py&#39;,
+ &#39;livereload-2.5.1-py3.6.egg-info&#39;,
+ &#39;setuptools-39.0.1-py3.6.egg-info&#39;,
+ &#39;Markdown-2.6.11.dist-info&#39;,
+ &#39;jupyter_core-4.4.0-py3.6.egg-info&#39;,
+ &#39;pylab.py&#39;,
+ &#39;jupyterlab_launcher&#39;,
+ &#39;cffi&#39;,
+ &#39;packaging-17.1-py3.6.egg-info&#39;,
+ &#39;click-6.7-py3.6.egg-info&#39;,
+ &#39;wheel-0.31.0-py3.6.egg-info&#39;,
+ &#39;chardet-3.0.4-py3.6.egg-info&#39;,
+ &#39;pexpect&#39;,
+ &#39;wheel&#39;,
+ &#39;matplotlib&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<h2 id="virtual-environments-with-conda">Virtual environments with conda</h2>
+<p>The <strong>Anaconda Prompt</strong> is useful for installing third party packages and creating virtual environments. To create the new virtual environment, issue the following command at the <strong>Anaconda Prompt</strong>:</p>
+<pre><code class="text">&gt; conda create --name &lt;env_name&gt; python=3.6
+</code></pre>
+
+<p>The <code>conda create</code> command builds the new virtual environment. The <code>--name &lt;env_name&gt;</code> flag gives our new virtual environment the name <code>&lt;env_name&gt;</code>. Replace <code>&lt;env_name&gt;</code> with the name of the new virtual envirnment. Including <code>python=3.6</code> ensures that the virtual environment has an up to date version of Python. </p>
+<p>After issuing the command, the output will be something like:</p>
+<pre><code class="text">The following NEW packages will be INSTALLED:
+
+    certifi:        2016.2.28-py36_0
+    pip:            9.0.1-py36_1
+    python:         3.6.2-0
+    setuptools:     36.4.0-py36_0
+    vs2015_runtime: 14.0.25420-0
+    wheel:          0.29.0-py36_0
+    wincertstore:   0.2-py36_0
+
+Proceed ([y]/n)? y
+</code></pre>
+
+<p>Type <code>y</code> to confirm and create the new virtual environment. To use the new virtual environment, it needs to be  <em>activate</em>. A virtual envirnoment is activated by typing the command below. Note that <code>&lt;env_name&gt;</code> needs to be replaced by the name of the virtual environment.</p>
+<pre><code class="text">&gt;  conda activate &lt;env_name&gt;
+</code></pre>
+
+<p>You know you are in your virtual environment <code>&lt;env_name&gt;</code> when <code>(&lt;env_name&gt;)</code> is in parenthesis at the start of the prompt:</p>
+<pre><code class="text">&gt; (webscrape)
+</code></pre>
+
+<p>To deactivate an active environment, use:</p>
+<pre><code class="text">&gt; conda deactivate
+</code></pre>
+
+<p>If you see the <code>(&lt;env_name&gt;)</code> in parenthesis before the command prompt, that means the new virtual environment is set up and active. A list of your virtual environments can be accessed using the command <code>conda info --envs</code> or <code>conda env list</code>.</p>
+<pre><code class="text">&gt; conda info --envs
+
+# conda environments:
+#
+matplotlib               /home/tribilium/anaconda3/envs/matplotlib
+webscrape              * /home/tribilium/anaconda3/envs/pelican
+base                     /home/tribilium/anaconda3
+</code></pre>
+
+<p>Notice the <code>*</code> asterisk on the line with <code>webscrape</code>. The virtual environment with the <code>*</code> is currently active. </p>
+<p>To exit the virtual environment, use the command <code>conda deactivate</code>. If <code>conda env list</code> is run again, there will  not be an asterisk <code>*</code> in front of <code>webscrape</code>. That's because <code>webscrape</code> is not the active virtual environment.</p>
+<pre><code class="text">&gt; conda env list
+
+# conda environments:
+#
+matplotlib               /home/tribilium/anaconda3/envs/matplotlib
+webscrape                /home/tribilium/anaconda3/envs/pelican
+base                  *  /home/tribilium/anaconda3
+</code></pre>
+
+<h2 id="virtual-environments-with-pip-and-virtualenv">Virtual environments with pip and virtualenv</h2>
+<p>Virtual environments can also be created with <strong>pip</strong>, and a 3rd-party python environment manager <strong>virtualenv</strong>. <strong>virtualenv</strong> is a Python package used to create and manage virtual environments. To use <strong>virtualenv</strong>, first make sure it is installed using <strong>pip</strong> at the commandline.</p>
+<pre><code class="text">$ pip install virtualenv
+</code></pre>
+
+<p>Once installed, <strong>virtualenv</strong> will create a new virtual environment with the command below. Note <code>&lt;env_name&gt;</code> needs to be replaced by the name of the new virtual environment.</p>
+<pre><code class="text">$ virtualenv &lt;env_name&gt;
+</code></pre>
+
+<p>To activate the virtual environment use the command:</p>
+<pre><code class="text">$ source bin/activate
+</code></pre>
+
+<p>Once active, the virtual environment name will be shown in parenthesis <code>()</code> before the command prompt</p>
+<pre><code class="text">(&lt;env_name&gt;)$
+</code></pre>
+
+<p>The location of the Python interpreter being used by the currenly active virtual environment can be found with:</p>
+<pre><code class="text">(&lt;env_name&gt;)$ which python
+/Users/peter/&lt;env_name&gt;/bin/python
+</code></pre>
+
+<p>To exit the virtual environment use the command <code>deactivate</code>:</p>
+<pre><code class="text">(&lt;env_name&gt;)$ deactivate
+</code></pre>
+
+<p>When the virtual environment is no longer active, there will be no environment name before the command prompt. A check for the current Python interpreter will return a different path than before when the virtual environment was active</p>
+<pre><code class="text">$ which python
+/usr/bin/python
+</code></pre>
                 
                   
                 

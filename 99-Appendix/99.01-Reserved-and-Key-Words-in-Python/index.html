@@ -1152,27 +1152,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#control-flow-key-words" title="Control Flow Key Words" class="md-nav__link">
-    Control Flow Key Words
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#definition-key-words" title="Definition Key Words" class="md-nav__link">
-    Definition Key Words
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#module-key-words" title="Module Key Words" class="md-nav__link">
-    Module Key Words
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1207,8 +1186,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../99.03-Virtual-Environments/" title="Virtual Environments" class="md-nav__link">
-      Virtual Environments
+    <a href="../99.03-Virtual-Environments/" title="Virtual environments with pip and virtualenv" class="md-nav__link">
+      Virtual environments with pip and virtualenv
     </a>
   </li>
 
@@ -1243,8 +1222,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../99.06-Python-for-Undergaduate-Engineers-Book-Construction/" title="Python for Undergraduate Engineers Book Construction" class="md-nav__link">
-      Python for Undergraduate Engineers Book Construction
+    <a href="../99.06-Problem-Solving-101-with-Python-Book-Construction/" title="Problem Solving 101 with Python Book Construction" class="md-nav__link">
+      Problem Solving 101 with Python Book Construction
     </a>
   </li>
 
@@ -1255,7 +1234,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../99.07-About-the-Author/" title="About the Author" class="md-nav__link">
+    <a href="../99.07-Math-and-Statistics-Module-Functions/" title="Math and Statistics Module Functions" class="md-nav__link">
+      Math and Statistics Module Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../99.08-About-the-Author/" title="About the Author" class="md-nav__link">
       About the Author
     </a>
   </li>
@@ -1299,27 +1290,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#control-flow-key-words" title="Control Flow Key Words" class="md-nav__link">
-    Control Flow Key Words
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#definition-key-words" title="Definition Key Words" class="md-nav__link">
-    Definition Key Words
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#module-key-words" title="Module Key Words" class="md-nav__link">
-    Module Key Words
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1347,14 +1317,14 @@
                   <h1>Reserved and Key Words in Python</h1>
                 
                 <h2 id="reserved-and-key-words-in-python">Reserved and Key Words in Python</h2>
-<p>The following are reserved and key words in Python. These words should not be used as the names for user-defined functions, classes, methods or modules. The key words can be accessed with the following code:
+<p>The following are reserved and keywords in Python. These keywords should not be used as the names for user-defined functions, classes, methods or modules. The keywords can be accessed with the following code:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keyword</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are </span><span class="si">{}</span><span class="s1"> key words&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;There are {len(keyword.kwlist)} key words:&#39;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">keywrd</span> <span class="ow">in</span> <span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">keywrd</span><span class="p">)</span>
 </pre></div></p>
@@ -1370,7 +1340,7 @@
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>There are 33 key words
+<pre>There are 33 key words:
 False
 None
 True
@@ -1414,43 +1384,122 @@ yield
 </div>
 
 <h3 id="logical-key-words">Logical Key Words</h3>
-<p>True</p>
-<p>False</p>
-<p>not</p>
-<p>and</p>
-<p>or</p>
-<p>is</p>
-<p>None</p>
-<p>in</p>
-<h3 id="control-flow-key-words">Control Flow Key Words</h3>
-<p>if</p>
-<p>else</p>
-<p>elif</p>
-<p>for</p>
-<p>while</p>
-<p>break</p>
-<p>continue</p>
-<p>pass</p>
-<p>try</p>
-<p>except</p>
-<p>finally</p>
-<p>raise</p>
-<p>return</p>
-<p>yield</p>
-<h3 id="definition-key-words">Definition Key Words</h3>
-<p>def</p>
-<p>global</p>
-<p>nonlocal</p>
-<p>class</p>
-<p>lambda</p>
-<p>with</p>
-<p>assert</p>
-<p>del</p>
-<h3 id="module-key-words">Module Key Words</h3>
-<p>import</p>
-<p>from</p>
-<p>as</p>
-<p>with</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>True</code></td>
+<td><code>False</code></td>
+<td><code>not</code></td>
+</tr>
+<tr>
+<td><code>and</code></td>
+<td><code>or</code></td>
+<td><code>is</code></td>
+</tr>
+<tr>
+<td><code>None</code></td>
+<td><code>in</code></td>
+<td></td>
+</tr>
+<tr>
+<td>### Control Flow Key Words</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td><code>if</code></td>
+<td><code>else</code></td>
+<td><code>elif</code></td>
+</tr>
+<tr>
+<td><code>for</code></td>
+<td><code>while</code></td>
+<td><code>break</code></td>
+</tr>
+<tr>
+<td><code>continue</code></td>
+<td><code>pass</code></td>
+<td><code>try</code></td>
+</tr>
+<tr>
+<td><code>except</code></td>
+<td><code>finally</code></td>
+<td><code>raise</code></td>
+</tr>
+<tr>
+<td><code>return</code></td>
+<td><code>yield</code></td>
+<td></td>
+</tr>
+<tr>
+<td>### Definition Key Words</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td><code>def</code></td>
+<td><code>nonlocal</code></td>
+<td><code>class</code></td>
+</tr>
+<tr>
+<td><code>lambda</code></td>
+<td><code>with</code></td>
+<td><code>assert</code></td>
+</tr>
+<tr>
+<td><code>del</code></td>
+<td><code>global</code></td>
+<td></td>
+</tr>
+<tr>
+<td>### Module Key Words</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td><code>import</code></td>
+<td><code>from</code></td>
+<td><code>as</code></td>
+</tr>
+</tbody>
+</table>
                 
                   
                 

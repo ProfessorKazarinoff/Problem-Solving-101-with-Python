@@ -1139,8 +1139,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../99.03-Virtual-Environments/" title="Virtual Environments" class="md-nav__link">
-      Virtual Environments
+    <a href="../99.03-Virtual-Environments/" title="Virtual environments with pip and virtualenv" class="md-nav__link">
+      Virtual environments with pip and virtualenv
     </a>
   </li>
 
@@ -1190,6 +1190,33 @@
     Git and github.com
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-githubcom-account" title="Create a github.com account" class="md-nav__link">
+    Create a github.com account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-remote-repo-on-githubcom" title="Create a remote repo on github.com" class="md-nav__link">
+    Create a remote repo on github.com
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-a-project-directory-and-link-it-to-github" title="Make a project directory and link it to github" class="md-nav__link">
+    Make a project directory and link it to github
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -1209,8 +1236,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../99.06-Python-for-Undergaduate-Engineers-Book-Construction/" title="Python for Undergraduate Engineers Book Construction" class="md-nav__link">
-      Python for Undergraduate Engineers Book Construction
+    <a href="../99.06-Problem-Solving-101-with-Python-Book-Construction/" title="Problem Solving 101 with Python Book Construction" class="md-nav__link">
+      Problem Solving 101 with Python Book Construction
     </a>
   </li>
 
@@ -1221,7 +1248,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../99.07-About-the-Author/" title="About the Author" class="md-nav__link">
+    <a href="../99.07-Math-and-Statistics-Module-Functions/" title="Math and Statistics Module Functions" class="md-nav__link">
+      Math and Statistics Module Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../99.08-About-the-Author/" title="About the Author" class="md-nav__link">
       About the Author
     </a>
   </li>
@@ -1255,6 +1294,33 @@
     Git and github.com
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-githubcom-account" title="Create a github.com account" class="md-nav__link">
+    Create a github.com account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-remote-repo-on-githubcom" title="Create a remote repo on github.com" class="md-nav__link">
+    Create a remote repo on github.com
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-a-project-directory-and-link-it-to-github" title="Make a project directory and link it to github" class="md-nav__link">
+    Make a project directory and link it to github
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -1282,12 +1348,12 @@
 <p><strong>Git</strong> is a common version control tool used by computer program developers to save code and work on code as a team. <strong>Git</strong> is a program run from the command line or <strong>Anaconda Prompt</strong>.
 <strong>github.com</strong> is a website and service used by open source projects to share code and allow other users to make changes to exhisting code.
 Both <strong>git</strong> and <strong>github.com</strong> are useful of engineers working in teams.
-To use git and github the understanding of a few terms is import:</p>
+To use git and github it is helpful to understanding a few key terms:</p>
 <ul>
-<li><strong>git</strong> - a command line program used to track file changes and colaborate on code with others</li>
+<li><strong>git</strong> - a command line program used to track file changes and colaborate building code with others</li>
 <li><strong>repo</strong> - short name for "repository". A repo is a directory that contains files and other subfolders with files</li>
 <li><strong>local repo</strong> -  a directory that contains files and subfolders on your computer that git knows about</li>
-<li><strong>remote repo</strong> - a set of files and subfolders stored in the cloud that git knows about
+<li><strong>remote repo</strong> - a set of files and subfolders stored in the cloud, often on github.com, that git knows about
 The useful git commands are summarized below:</li>
 </ul>
 <table>
@@ -1328,6 +1394,58 @@ The useful git commands are summarized below:</li>
 </tr>
 </tbody>
 </table>
+<p>To use github.com and git to mange a project, there are three basic steps:</p>
+<ol>
+<li>create an account on github.com</li>
+<li>create a remote repo on github.com</li>
+<li>create a project directory and link to the remote repo. Sych the local repo with the remote rep.</li>
+</ol>
+<h3 id="create-a-githubcom-account">Create a github.com account</h3>
+<p>To sign up for a github.com account go here:</p>
+<p><a href="https://github.com/join">https://github.com/join</a></p>
+<p>The account activation screen looks something like:</p>
+<p><img alt="Github.com Join" src="../images/join_github.png" /></p>
+<h3 id="create-a-remote-repo-on-githubcom">Create a remote repo on github.com</h3>
+<p>Once the github.com account is set up, log in and create a new repository. Use the + button on the upper right-hand menu:</p>
+<p><img alt="new github repo" src="../images/new_github_repo.png" /></p>
+<p>I named the new repository: <strong>staticsite</strong> and included both a <strong>README.md</strong> and a <strong>GNU General Public License v3.0</strong>. It is also a good idea to add a <code>.gitignore</code> file. This file lists the folders and files that will be ignored by git. </p>
+<p><img alt="new github repo details" src="../images/create_a_new_repo_details.png" /></p>
+<h3 id="make-a-project-directory-and-link-it-to-github">Make a project directory and link it to github</h3>
+<p>Once the github repo (short for repository, basically a folder with files on github.com) is set up, the last step to complete the development environment is to link the remote repo on github to the local version of the site on the local computer. </p>
+<p>The local version is in a folder call <code>staticsite</code> in the <code>Documents</code> folder. The <code>staticsite</code> folder will contain all the files used to build the site and the output files created by Pelican that <em>are</em> the site.</p>
+<pre><code class="text">$ cd ~
+$ cd Documents
+$ mkdir staticsite
+$ cd staticsite
+</code></pre>
+
+<p>We can set up git to keep the contents of the local staticsite folder in sync with the contents of the staticsite repo on github.com. The command <code>git init</code> will initiate or create the local repository. The command <code>git remote add origin</code> followed by the url of our github repo links local folder to the remote repo on github. Note the web address ends in <code>.git</code>. If you are following along and want to build your own static site, make sure to change <code>username</code> to your github username and <code>reponame</code> to your github repo name.</p>
+<pre><code class="text">$ git init
+$ git remote add origin https://github.com/username/reponame.git
+</code></pre>
+
+<p>Now for the git magic. On github.com we have a README.md file and a licence. But the local staticsite folder on the computer is empty. So the two folders aren't in sync. To make the contents of each folder identical, we <strong><em>pull</em></strong> the files from github onto the local computer. A <strong><em>pull</em></strong> "pulls" or gets the files from github and copies them to the local staticsite folder.</p>
+<pre><code>(staticsite)$ git pull origin master
+</code></pre>
+
+<p>If you look in the local staticsite folder you should now see the following two files:</p>
+<pre><code>staticsite
+├── .gitignore
+├── LICENSE
+├── README.md
+</code></pre>
+
+<p>Now each time the project is worked on, navigate to the <strong>staticsite</strong> folder on the local computer. Before any editing, key in the command:</p>
+<pre><code>$ git pull origin master
+</code></pre>
+
+<p>After the <em>pull</em>, the staticsite folder is up-to-date with the newest version of all the files on github. Then go about editing files, adding files, deleting files, etc. After the edits, the last thing to do before shutting down the computer for the day is add all the changes to git with <code>git add .</code> (note there is a space between the <code>add</code> and the period <code>.</code>). Then commit those changes locally with the line <code>git commit -m "commit message"</code> (note there are double quotes <code>"commit message"</code> used around the commit message), and finally push the changes up to github.com with <code>git push origin master</code>. Now the version of the site up on github.com is the same as the version of the project on the local machine.</p>
+<pre><code>git add .
+git commit -m &quot;commit message&quot;
+git push origin master
+</code></pre>
+
+<p>This ensures the local computer and the github.com repo contain the same version of the project.</p>
                 
                   
                 
@@ -1363,13 +1481,13 @@ The useful git commands are summarized below:</li>
           </a>
         
         
-          <a href="../99.06-Python-for-Undergaduate-Engineers-Book-Construction/" title="Python for Undergraduate Engineers Book Construction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../99.06-Problem-Solving-101-with-Python-Book-Construction/" title="Problem Solving 101 with Python Book Construction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Python for Undergraduate Engineers Book Construction
+                Problem Solving 101 with Python Book Construction
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

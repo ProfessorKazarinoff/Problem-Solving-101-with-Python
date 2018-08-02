@@ -680,8 +680,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-help-function" title="using help() function" class="md-nav__link">
-    using help() function
+  <a href="#using-the-help-function" title="using the help() function" class="md-nav__link">
+    using the help() function
   </a>
   
 </li>
@@ -1214,8 +1214,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.03-Virtual-Environments/" title="Virtual Environments" class="md-nav__link">
-      Virtual Environments
+    <a href="../../99-Appendix/99.03-Virtual-Environments/" title="Virtual environments with pip and virtualenv" class="md-nav__link">
+      Virtual environments with pip and virtualenv
     </a>
   </li>
 
@@ -1250,8 +1250,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.06-Python-for-Undergaduate-Engineers-Book-Construction/" title="Python for Undergraduate Engineers Book Construction" class="md-nav__link">
-      Python for Undergraduate Engineers Book Construction
+    <a href="../../99-Appendix/99.06-Problem-Solving-101-with-Python-Book-Construction/" title="Problem Solving 101 with Python Book Construction" class="md-nav__link">
+      Problem Solving 101 with Python Book Construction
     </a>
   </li>
 
@@ -1262,7 +1262,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../99-Appendix/99.07-About-the-Author/" title="About the Author" class="md-nav__link">
+    <a href="../../99-Appendix/99.07-Math-and-Statistics-Module-Functions/" title="Math and Statistics Module Functions" class="md-nav__link">
+      Math and Statistics Module Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../99-Appendix/99.08-About-the-Author/" title="About the Author" class="md-nav__link">
       About the Author
     </a>
   </li>
@@ -1314,8 +1326,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-help-function" title="using help() function" class="md-nav__link">
-    using help() function
+  <a href="#using-the-help-function" title="using the help() function" class="md-nav__link">
+    using the help() function
   </a>
   
 </li>
@@ -1363,7 +1375,7 @@
                 <h2 id="getting-help-in-a-jupyter-notebook">Getting Help in a Jupyter Notebook</h2>
 <p>There are a couple different ways to get help when using a jupyter notebook</p>
 <h3 id="using-dir">Using <code>dir</code></h3>
-<p>you can use <code>dir()</code> and pass a function, method, variable or object and see what some possible options are. For example if we define <code>a = [1,2,3]</code> we can see what methods and attributes are available on <code>a</code>. There are a lot. 
+<p>you can use <code>dir()</code> and pass in a function, method, variable or object and see what some possible options are. For example if we define <code>a = [1,2,3]</code> we can see what methods and attributes are available on <code>a</code>. There are a lot. 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
@@ -1452,11 +1464,11 @@
 </div>
 
 <h3 id="using-tab">using . [Tab]</h3>
-<p>After typing the name of a varibale, object or fucntion follwoing the <code>.</code> character, hit the tab key. This will bring up a list of available options. You can scroll through the list or type a letter to filter the list to certain starting letters. Use [Enter] to select the option you want.</p>
+<p>After typing the name of a varibale, object or function following the <code>.</code> character, hit the tab key. This will bring up a list of available options. You can scroll through the list or type a letter to filter the list to certain starting letters. Use [Enter] to select the option you want.</p>
 <p>Tab completion can also be used during module importing, to see which functions and classes are avaiable in a given module 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="o">&lt;</span><span class="n">tab</span><span class="o">&gt;</span>
@@ -1474,10 +1486,10 @@
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-22-82915b9510c5&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
-<span class="ansi-yellow-intense-fg ansi-bold">    from math import &lt;tab&gt;</span>
-<span class="ansi-white-intense-fg ansi-bold">                     ^</span>
-<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-2-e95cb2cf08b3&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
+<span class="ansi-red-fg">    from math import &lt;tab&gt;</span>
+                     ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
 </pre>
 </div>
 </div>
@@ -1487,7 +1499,7 @@
 
 </div>
 
-<h3 id="using-help-function">using <code>help()</code> function</h3>
+<h3 id="using-the-help-function">using the <code>help()</code> function</h3>
 <p>after importing a module, you can use the help() function to see documentation about the command if it is available:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1529,7 +1541,7 @@ sin(...)
 <p>After importing a module, you can view help on it by typing the module name followed by a question mark <code>?</code>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span>
@@ -1542,7 +1554,7 @@ statistics.mean<span class="o">?</span>
 You can view the source code where a particular function lives using a double question mark <code>??</code>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>max<span class="o">??</span>
@@ -1555,7 +1567,7 @@ You can view the source code where a particular function lives using a double qu
 <h3 id="help-online">Help online</h3>
 <p>help is also avaiable online at on the Jupyter Notebook docs:</p>
 <p>http://jupyter.readthedocs.io/en/latest/</p>
-<p>And can always be accessed by typing something into google. The site stack overflow is devoted to programming questions and answers.</p>
+<p>You can always try to find help by typing something into Google. The site Stack Overflow is devoted to programming questions and answers.</p>
                 
                   
                 

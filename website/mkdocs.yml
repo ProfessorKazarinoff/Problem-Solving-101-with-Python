@@ -61,6 +61,7 @@ pages:
         - Review Questions: 01-What-is-Python/01.06-Review-Questions.md
     - Chapter 2 Installing Python:
         - Introduction: 02-Installing-Python/02.00-Introduction.md
+        - Why Python?: 02-Installing-Python/02.01-Why-Python.md
         - Installing Anaconda on Windows: 02-Installing-Python/02.02-Installing-Anaconda-on-Windows.md
         - Installing Anaconda on MacOS: 02-Installing-Python/02.03-Installing-Anaconda-on-MacOS.md
         - Installing Anaconda on Linux: 02-Installing-Python/02.04-Installing-Anaconda-on-Linux.md

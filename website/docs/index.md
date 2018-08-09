@@ -17,9 +17,9 @@ This book is a reference for problem solvers and introductory engineering studen
 
  * Read the book here in web format
 
- * Run the code examples by downloading the notebooks in the [Problem-Solving-101-with-Python Github repo](https://github.com/ProfessorKazarinoff/Problem-Solving-101-with-Python/tree/master/notebooks)
+ * Run the code examples locally by downloading the notebooks in the [Problem-Solving-101-with-Python Github repo](https://github.com/ProfessorKazarinoff/Problem-Solving-101-with-Python/tree/master/notebooks)
  
- * 
+ * Run the code examples interactivly at Binder.org [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ProfessorKazarinoff/Problem-Solving-101-with-Python/master?filepath=%2Fnotebooks)
 
 ## Copywrite
 

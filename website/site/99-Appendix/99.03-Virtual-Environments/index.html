@@ -1244,8 +1244,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../99.05-Git-and-github/" title="Git and github.com" class="md-nav__link">
-      Git and github.com
+    <a href="../99.05-Git-and-GitHub/" title="Git and GitHub" class="md-nav__link">
+      Git and GitHub
     </a>
   </li>
 
@@ -1375,7 +1375,8 @@
                 <h2 id="virtual-environments">Virtual Environments</h2>
 <p>Using <strong>virtual environments</strong> is good standard practice when using Python. A virtual environment is a standalone Python interpreter and isolated installed packages unique to that environment. </p>
 <h2 id="benefits-of-virtual-environments">Benefits of Virtual Environments</h2>
-<p>Virtual environments keep the Python version and stand-alone package versions all in the same place. If two different projects use two different versions of Python or use two different versions of an installed 3rd-party package, virtual environments can seperate these two installations seperate. </p>
+<p>Virtual environments keep the Python version and stand-alone package versions all in the same place. If two different projects use two different versions of Python or use two different versions of an installed 3rd-party package, virtual environments separates these two installations separate. </p>
+<p>The Python version and installed packages in a virtual environment can be shared with others in the form of a <strong><em>requirements.txt</em></strong> or <strong><em>environment.yml</em></strong> file. These files can be shared to produce the same environment on another machine or so the same environment can be reproduced by another programmer.</p>
 <h2 id="get-the-current-python-interpreter">Get the current Python interpreter</h2>
 <p>The file path to the current running Python interpreter can be accessed using the <strong>sys</strong> module. <code>sys.prefix</code> will output the system path for the running Python interpreter
 <div class="cell border-box-sizing code_cell rendered">
@@ -1414,12 +1415,12 @@
 <p>A list of installed packages in the current environment can be accessed using the <strong>site</strong> module. <code>site.getsitepackages()</code> will return the file path where the site-packages are stored. The code below will list all of the installed packages using the <strong>os</strong> module and <code>os.listdir()</code> to list the contents of the directory where all the site-packages are stored.
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">site</span>
-<span class="n">site</span><span class="o">.</span><span class="n">getsitepackages</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">site</span><span class="o">.</span><span class="n">getsitepackages</span><span class="p">())</span>
 <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">site</span><span class="o">.</span><span class="n">getsitepackages</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div></p>
 <p></div>
@@ -1430,205 +1431,95 @@
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[15]:</div>
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;C:\\Users\\Peter\\Anaconda3\\envs\\book&#39;, &#39;C:\\Users\\Peter\\Anaconda3\\envs\\book\\lib\\site-packages&#39;]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;jinja2&#39;,
- &#39;asn1crypto&#39;,
- &#39;ipython_genutils-0.2.0-py3.6.egg-info&#39;,
- &#39;alabaster&#39;,
- &#39;requests&#39;,
- &#39;Pygments-2.2.0-py3.6.egg-info&#39;,
- &#39;urllib3&#39;,
- &#39;pandas-0.22.0-py3.6.egg-info&#39;,
- &#39;jupyterlab_launcher-0.10.5-py3.6.egg-info&#39;,
- &#39;widgetsnbextension&#39;,
- &#39;notebook-5.4.1-py3.6.egg-info&#39;,
- &#39;pyzmq-17.0.0-py3.6.egg-info&#39;,
- &#39;mistune.py&#39;,
- &#39;pyOpenSSL-17.5.0-py3.6.egg-info&#39;,
- &#39;mkl_fft&#39;,
- &#39;OpenSSL&#39;,
- &#39;pexpect-4.4.0-py3.6.egg-info&#39;,
- &#39;mkl_random&#39;,
- &#39;jupyter_client-5.2.3-py3.6.egg-info&#39;,
- &#39;qtconsole-4.3.1-py3.6.egg-info&#39;,
- &#39;mistune-0.8.3-py3.6.egg-info&#39;,
- &#39;jupyterlab-0.31.12-py3.6.egg-info&#39;,
- &#39;snowballstemmer-1.2.1-py3.6.egg-info&#39;,
- &#39;pandas&#39;,
- &#39;fastcache&#39;,
- &#39;sphinxcontrib&#39;,
- &#39;parso-0.1.1-py3.6.egg-info&#39;,
- &#39;certifi-2018.01.18-py3.6.egg-info&#39;,
- &#39;sympy&#39;,
- &#39;tornado-4.5.3.dist-info&#39;,
- &#39;sphinxcontrib_websupport-1.0.1-py3.6-nspkg.pth&#39;,
- &#39;_cffi_backend.cpython-36m-x86_64-linux-gnu.so&#39;,
- &#39;setuptools&#39;,
- &#39;prompt_toolkit-1.0.15-py3.6.egg-info&#39;,
- &#39;sip.pyi&#39;,
- &#39;traitlets&#39;,
- &#39;PySocks-1.6.8-py3.6.egg-info&#39;,
- &#39;snowballstemmer&#39;,
- &#39;dateutil&#39;,
- &#39;kiwisolver.cpython-36m-x86_64-linux-gnu.so&#39;,
- &#39;typing-3.6.4-py3.6.egg-info&#39;,
- &#39;nbformat&#39;,
- &#39;bleach&#39;,
- &#39;sipconfig.py&#39;,
- &#39;__pycache__&#39;,
- &#39;urllib3-1.22-py3.6.egg-info&#39;,
- &#39;material&#39;,
- &#39;babel&#39;,
- &#39;PyYAML-3.12-py3.6.egg-info&#39;,
- &#39;parso&#39;,
- &#39;mkl_fft-1.0.0-py3.6.egg-info&#39;,
- &#39;pkg_resources&#39;,
- &#39;jupyter_console&#39;,
- &#39;wcwidth-0.1.7-py3.6.egg-info&#39;,
- &#39;cffi-1.11.5-py3.6.egg-info&#39;,
- &#39;ipython_genutils&#39;,
- &#39;html5lib-1.0.1-py3.6.egg-info&#39;,
- &#39;sockshandler.py&#39;,
- &#39;packaging&#39;,
- &#39;livereload&#39;,
- &#39;pymdownx&#39;,
- &#39;PyQt5&#39;,
- &#39;fastcache-1.0.2-py3.6.egg-info&#39;,
- &#39;Babel-2.5.3-py3.6.egg-info&#39;,
- &#39;imagesize-1.0.0-py3.6.egg-info&#39;,
- &#39;simplegeneric-0.8.1-py3.6.egg-info&#39;,
- &#39;IPython&#39;,
- &#39;easy_install.py&#39;,
- &#39;docutils-0.14-py3.6.egg-info&#39;,
- &#39;jedi&#39;,
- &#39;ipywidgets&#39;,
- &#39;nbformat-4.4.0-py3.6.egg-info&#39;,
- &#39;mkl_random-1.0.1-py3.6.egg-info&#39;,
- &#39;traitlets-4.3.2-py3.6.egg-info&#39;,
- &#39;jsonschema-2.6.0-py3.6.egg-info&#39;,
- &#39;pygments&#39;,
- &#39;jupyter.py&#39;,
- &#39;mpmath&#39;,
- &#39;typing.py&#39;,
- &#39;chardet&#39;,
- &#39;ipywidgets-7.2.0-py3.6.egg-info&#39;,
- &#39;widgetsnbextension-3.2.0-py3.6.egg-info&#39;,
- &#39;ipython-6.3.0-py3.6.egg-info&#39;,
- &#39;testpath-0.3.1-py3.6.egg-info&#39;,
- &#39;pip-9.0.3-py3.6.egg-info&#39;,
- &#39;cycler.py&#39;,
- &#39;kiwisolver-1.0.1-py3.6.egg-info&#39;,
- &#39;mkdocs&#39;,
- &#39;markupsafe&#39;,
- &#39;pyparsing.py&#39;,
- &#39;docutils&#39;,
- &#39;imagesize.py&#39;,
- &#39;pycparser-2.18-py3.6.egg-info&#39;,
- &#39;pickleshare-0.7.4-py3.6.egg-info&#39;,
- &#39;ptyprocess&#39;,
- &#39;socks.py&#39;,
- &#39;pycparser&#39;,
- &#39;ipykernel-4.8.2-py3.6.egg-info&#39;,
- &#39;alabaster-0.7.10-py3.6.egg-info&#39;,
- &#39;numpydoc&#39;,
- &#39;tornado&#39;,
- &#39;webencodings-0.5.1-py3.6.egg-info&#39;,
- &#39;Send2Trash-1.5.0-py3.6.egg-info&#39;,
- &#39;matplotlib-2.2.2-py3.6-nspkg.pth&#39;,
- &#39;mkdocs_material-2.7.2.dist-info&#39;,
- &#39;Jinja2-2.10-py3.6.egg-info&#39;,
- &#39;six.py&#39;,
- &#39;wcwidth&#39;,
- &#39;decorator.py&#39;,
- &#39;webencodings&#39;,
- &#39;backcall-0.1.0-py3.6.egg-info&#39;,
- &#39;send2trash&#39;,
- &#39;entrypoints.py&#39;,
- &#39;python_dateutil-2.7.2-py3.6.egg-info&#39;,
- &#39;asn1crypto-0.24.0-py3.6.egg-info&#39;,
- &#39;requests-2.18.4-py3.6.egg-info&#39;,
- &#39;backcall&#39;,
- &#39;jupyter_client&#39;,
- &#39;test&#39;,
- &#39;mkdocs-0.17.3.dist-info&#39;,
- &#39;pandocfilters.py&#39;,
- &#39;click&#39;,
- &#39;numpydoc-0.8.0-py3.6.egg-info&#39;,
- &#39;pickleshare.py&#39;,
- &#39;testpath&#39;,
- &#39;bleach-2.1.3-py3.6.egg-info&#39;,
- &#39;terminado&#39;,
- &#39;sympy-1.1.1-py3.6.egg-info&#39;,
- &#39;pip&#39;,
- &#39;src&#39;,
- &#39;pandocfilters-1.4.2-py3.6.egg-info&#39;,
- &#39;terminado-0.8.1-py3.6.egg-info&#39;,
- &#39;jupyter_console-5.2.0-py3.6.egg-info&#39;,
- &#39;MarkupSafe-1.0-py3.6.egg-info&#39;,
- &#39;Sphinx-1.7.2-py3.6.egg-info&#39;,
- &#39;numpy-1.14.2-py3.6.egg-info&#39;,
- &#39;sphinxcontrib_websupport-1.0.1-py3.6.egg-info&#39;,
- &#39;jupyter_core&#39;,
- &#39;nbconvert&#39;,
- &#39;entrypoints-0.2.3-py3.6.egg-info&#39;,
- &#39;yaml&#39;,
- &#39;gmpy2.cpython-36m-x86_64-linux-gnu.so&#39;,
- &#39;jedi-0.11.1-py3.6.egg-info&#39;,
- &#39;qtconsole&#39;,
- &#39;decorator-4.2.1-py3.6.egg-info&#39;,
- &#39;sip.so&#39;,
- &#39;jupyterlab&#39;,
- &#39;mpmath-1.0.0-py3.6.egg-info&#39;,
- &#39;zmq&#39;,
- &#39;cycler-0.10.0-py3.6.egg-info&#39;,
- &#39;prompt_toolkit&#39;,
- &#39;idna-2.6-py3.6.egg-info&#39;,
- &#39;pyparsing-2.2.0-py3.6.egg-info&#39;,
- &#39;certifi&#39;,
- &#39;jsonschema&#39;,
- &#39;matplotlib-2.2.2-py3.6.egg-info&#39;,
- &#39;mpl_toolkits&#39;,
- &#39;cryptography&#39;,
- &#39;jupyter-1.0.0-py3.6.egg-info&#39;,
- &#39;pytz&#39;,
- &#39;sipdistutils.py&#39;,
- &#39;pymdown_extensions-4.9.2.dist-info&#39;,
- &#39;six-1.11.0-py3.6.egg-info&#39;,
- &#39;ptyprocess-0.5.2-py3.6.egg-info&#39;,
- &#39;numpy&#39;,
- &#39;_yaml.cpython-36m-x86_64-linux-gnu.so&#39;,
- &#39;README.txt&#39;,
- &#39;html5lib&#39;,
- &#39;markdown&#39;,
- &#39;pytz-2018.3-py3.6.egg-info&#39;,
- &#39;ipykernel&#39;,
- &#39;idna&#39;,
- &#39;nbconvert-5.3.1-py3.6.egg-info&#39;,
- &#39;ipykernel_launcher.py&#39;,
- &#39;sphinx&#39;,
- &#39;gmpy2-2.0.8-py3.6.egg-info&#39;,
- &#39;notebook&#39;,
- &#39;cryptography-2.2.1-py3.6.egg-info&#39;,
- &#39;simplegeneric.py&#39;,
- &#39;livereload-2.5.1-py3.6.egg-info&#39;,
- &#39;setuptools-39.0.1-py3.6.egg-info&#39;,
- &#39;Markdown-2.6.11.dist-info&#39;,
- &#39;jupyter_core-4.4.0-py3.6.egg-info&#39;,
- &#39;pylab.py&#39;,
- &#39;jupyterlab_launcher&#39;,
- &#39;cffi&#39;,
- &#39;packaging-17.1-py3.6.egg-info&#39;,
- &#39;click-6.7-py3.6.egg-info&#39;,
- &#39;wheel-0.31.0-py3.6.egg-info&#39;,
- &#39;chardet-3.0.4-py3.6.egg-info&#39;,
- &#39;pexpect&#39;,
- &#39;wheel&#39;,
- &#39;matplotlib&#39;]</pre>
+<pre>[&#39;.nonadmin&#39;,
+ &#39;api-ms-win-core-console-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-datetime-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-debug-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-errorhandling-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-file-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-file-l1-2-0.dll&#39;,
+ &#39;api-ms-win-core-file-l2-1-0.dll&#39;,
+ &#39;api-ms-win-core-handle-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-heap-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-interlocked-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-libraryloader-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-localization-l1-2-0.dll&#39;,
+ &#39;api-ms-win-core-memory-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-namedpipe-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-processenvironment-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-processthreads-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-processthreads-l1-1-1.dll&#39;,
+ &#39;api-ms-win-core-profile-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-rtlsupport-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-string-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-synch-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-synch-l1-2-0.dll&#39;,
+ &#39;api-ms-win-core-sysinfo-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-timezone-l1-1-0.dll&#39;,
+ &#39;api-ms-win-core-util-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-conio-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-convert-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-environment-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-filesystem-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-heap-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-locale-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-math-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-multibyte-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-private-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-process-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-runtime-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-stdio-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-string-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-time-l1-1-0.dll&#39;,
+ &#39;api-ms-win-crt-utility-l1-1-0.dll&#39;,
+ &#39;concrt140.dll&#39;,
+ &#39;conda-meta&#39;,
+ &#39;DLLs&#39;,
+ &#39;etc&#39;,
+ &#39;include&#39;,
+ &#39;Lib&#39;,
+ &#39;Library&#39;,
+ &#39;libs&#39;,
+ &#39;LICENSE_PYTHON.txt&#39;,
+ &#39;Menu&#39;,
+ &#39;msvcp140.dll&#39;,
+ &#39;msvcp140_1.dll&#39;,
+ &#39;msvcp140_2.dll&#39;,
+ &#39;openssl.exe&#39;,
+ &#39;python.exe&#39;,
+ &#39;python.pdb&#39;,
+ &#39;python3.dll&#39;,
+ &#39;python36.dll&#39;,
+ &#39;python36.pdb&#39;,
+ &#39;pythonw.exe&#39;,
+ &#39;pythonw.pdb&#39;,
+ &#39;qt.conf&#39;,
+ &#39;Scripts&#39;,
+ &#39;share&#39;,
+ &#39;sip&#39;,
+ &#39;tcl&#39;,
+ &#39;Tools&#39;,
+ &#39;ucrtbase.dll&#39;,
+ &#39;vccorlib140.dll&#39;,
+ &#39;vcomp140.dll&#39;,
+ &#39;vcruntime140.dll&#39;]</pre>
 </div>
 
 </div>
@@ -1643,7 +1534,7 @@
 <pre><code class="text">&gt; conda create --name &lt;env_name&gt; python=3.6
 </code></pre>
 
-<p>The <code>conda create</code> command builds the new virtual environment. The <code>--name &lt;env_name&gt;</code> flag gives our new virtual environment the name <code>&lt;env_name&gt;</code>. Replace <code>&lt;env_name&gt;</code> with the name of the new virtual envirnment. Including <code>python=3.6</code> ensures that the virtual environment has an up to date version of Python. </p>
+<p>The <code>conda create</code> command builds the new virtual environment. The <code>--name &lt;env_name&gt;</code> flag gives the new virtual environment the name <code>&lt;env_name&gt;</code>. Replace <code>&lt;env_name&gt;</code> with the name of the new virtual environment. Including <code>python=3.6</code> ensures the virtual environment has an up to date version of Python. </p>
 <p>After issuing the command, the output will be something like:</p>
 <pre><code class="text">The following NEW packages will be INSTALLED:
 
@@ -1658,25 +1549,25 @@
 Proceed ([y]/n)? y
 </code></pre>
 
-<p>Type <code>y</code> to confirm and create the new virtual environment. To use the new virtual environment, it needs to be  <em>activate</em>. A virtual envirnoment is activated by typing the command below. Note that <code>&lt;env_name&gt;</code> needs to be replaced by the name of the virtual environment.</p>
+<p>Type <code>y</code> to confirm and create the new virtual environment. To use the new virtual environment, it needs to be  <em>activated</em>. A virtual environment is activated by typing the command below. Note that <code>&lt;env_name&gt;</code> needs to be replaced by the name of the virtual environment.</p>
 <pre><code class="text">&gt;  conda activate &lt;env_name&gt;
 </code></pre>
 
-<p>You know you are in your virtual environment <code>&lt;env_name&gt;</code> when <code>(&lt;env_name&gt;)</code> is in parenthesis at the start of the prompt:</p>
+<p>You know you are in your virtual environment <code>&lt;env_name&gt;</code> when <code>(&lt;env_name&gt;)</code> is in parenthesis at the start of the <strong>Anaconda Prompt</strong>:</p>
 <pre><code class="text">&gt; (webscrape)
 </code></pre>
 
-<p>To deactivate an active environment, use:</p>
+<p>To deactivate an active environment, type:</p>
 <pre><code class="text">&gt; conda deactivate
 </code></pre>
 
-<p>If you see the <code>(&lt;env_name&gt;)</code> in parenthesis before the command prompt, that means the new virtual environment is set up and active. A list of your virtual environments can be accessed using the command <code>conda info --envs</code> or <code>conda env list</code>.</p>
+<p>If you see the <code>(&lt;env_name&gt;)</code> in parenthesis before the command prompt, that means the new virtual environment is set up and active. A list of your virtual environments installed on your machine can be accessed using the <code>conda info --envs</code> or <code>conda env list</code> commands.</p>
 <pre><code class="text">&gt; conda info --envs
 
 # conda environments:
 #
 matplotlib               /home/tribilium/anaconda3/envs/matplotlib
-webscrape              * /home/tribilium/anaconda3/envs/pelican
+webscrape              * /home/tribilium/anaconda3/envs/webscrape
 base                     /home/tribilium/anaconda3
 </code></pre>
 
@@ -1687,7 +1578,7 @@ base                     /home/tribilium/anaconda3
 # conda environments:
 #
 matplotlib               /home/tribilium/anaconda3/envs/matplotlib
-webscrape                /home/tribilium/anaconda3/envs/pelican
+webscrape                /home/tribilium/anaconda3/envs/webscrape
 base                  *  /home/tribilium/anaconda3
 </code></pre>
 

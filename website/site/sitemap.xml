@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,31 +13,31 @@
         
     <url>
      <loc>/00-Preface/00.00-Motivation/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/00-Preface/00.02-Acknowledgements/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/00-Preface/00.03-Supporting-Materials/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/00-Preface/00.04-Formatting Conventions/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/00-Preface/00.05-Errata/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -47,37 +47,37 @@
         
     <url>
      <loc>/01-What-is-Python/01.00-Introduction/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/01-What-is-Python/01.01-What-is-Python/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/01-What-is-Python/01.02-Why-Python/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/01-What-is-Python/01.03-What-is-Anaconda/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/01-What-is-Python/01.05-Summary/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/01-What-is-Python/01.06-Review-Questions/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -87,43 +87,43 @@
         
     <url>
      <loc>/02-Installing-Python/02.00-Introduction/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/02-Installing-Python/02.01-Why-Python/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/02-Installing-Python/02.02-Installing-Anaconda-on-Windows/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/02-Installing-Python/02.03-Installing-Anaconda-on-MacOS/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/02-Installing-Python/02.04-Installing-Anaconda-on-Linux/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/02-Installing-Python/02.05-Installing-Python/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/02-Installing-Python/02.06-Summary/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -133,61 +133,61 @@
         
     <url>
      <loc>/03-Jupyter-Notebooks/03.00-Introduction/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/03-Jupyter-Notebooks/03.01-What-is-a-Jupyter-Notebook/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/03-Jupyter-Notebooks/03.02-Why-Jupyter-Notebooks/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/03-Jupyter-Notebooks/03.03-Installing-Juypter/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/03-Jupyter-Notebooks/03.04-Opening-a-Jupyter-Notebook/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/03-Jupyter-Notebooks/03.05-The-Jupyter-Notebook-Interface/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/03-Jupyter-Notebooks/03.07-Magic-Cells/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/03-Jupyter-Notebooks/03.08-Getting-Help-in-a-Jupyter-Notebook/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/03-Jupyter-Notebooks/03.09-Summary/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/03-Jupyter-Notebooks/03.10-Review-Questions/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -197,49 +197,49 @@
         
     <url>
      <loc>/04-The-Python-REPL/02.00-Introduction/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/04-The-Python-REPL/02.01-Python-as-a-fancy-calculator/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/04-The-Python-REPL/02.02-Variables/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/04-The-Python-REPL/02.03-Boolean-Arithemtic/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/04-The-Python-REPL/02.04-String-Opperations/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/04-The-Python-REPL/02.05-Print-and-Input-Statements/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/04-The-Python-REPL/02.06-Summary/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/04-The-Python-REPL/02.07-Review-Questions/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -249,85 +249,85 @@
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.00-Introduction/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.01-What-is-Matplotlib/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.02-Installing Matplotlib/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.03-Line-Plots/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.04-Saving-Plots/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.05-Multi-Line-Plots/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.06-Bar-Charts-and-Pie-Charts/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.08-Histograms/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.10-Scatter-Plots/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.11-Plot-Annotations/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.12-Subplots/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.13-Plot-Styles/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.17-Summary/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/05-Plotting-with-Matplotlib/06.18-Review-Questions/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -337,37 +337,37 @@
         
     <url>
      <loc>/06-User-Input-and-Loops/06.00-Introduction/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/06-User-Input-and-Loops/06.01-f-Strings/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/06-User-Input-and-Loops/06.02-User-Input/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/06-User-Input-and-Loops/06.03-For-Loops/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/06-User-Input-and-Loops/06.04-While-Loops/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/06-User-Input-and-Loops/06.05-If-Statements/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -377,55 +377,55 @@
         
     <url>
      <loc>/99-Appendix/99.00-Appendix/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/99-Appendix/99.01-Reserved-and-Key-Words-in-Python/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/99-Appendix/99.02-ASCII-Character-Codes/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/99-Appendix/99.03-Virtual-Environments/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/99-Appendix/99.04-Numpy-Math-Functions/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/99-Appendix/99.05-Git-and-github/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <loc>/99-Appendix/99.05-Git-and-GitHub/</loc>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/99-Appendix/99.06-Problem-Solving-101-with-Python-Book-Construction/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/99-Appendix/99.07-Math-and-Statistics-Module-Functions/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/99-Appendix/99.08-About-the-Author/</loc>
-     <lastmod>2018-08-07</lastmod>
+     <lastmod>2018-08-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

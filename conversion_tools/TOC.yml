@@ -70,7 +70,7 @@ pages:
         - ASCII Character Codes: 99-Appendix/99.02-ASCII-Character-Codes.md
         - Virtual environments with pip and virtualenv: 99-Appendix/99.03-Virtual-Environments.md
         - Numpy Math Functions: 99-Appendix/99.04-Numpy-Math-Functions.md
-        - Git and github.com: 99-Appendix/99.05-Git-and-github.md
+        - Git and GitHub: 99-Appendix/99.05-Git-and-GitHub.md
         - Problem Solving 101 with Python Book Construction: 99-Appendix/99.06-Problem-Solving-101-with-Python-Book-Construction.md
         - Math and Statistics Module Functions: 99-Appendix/99.07-Math-and-Statistics-Module-Functions.md
         - About the Author: 99-Appendix/99.08-About-the-Author.md

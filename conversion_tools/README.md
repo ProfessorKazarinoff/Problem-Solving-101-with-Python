@@ -47,7 +47,7 @@ run the main script in nb2pdf.py
 
 ### Build the .pdf using TexWorks
 
-Use the seperate TexWorks program to open the .tex file outputed by nb2pdf.py
+Use the separate TexWorks program to open the .tex file outputed by nb2pdf.py
 
 Use the XeLaTeX compiler to output a .pdf (XeLaTeX seems to output the TOC, but pdf LaTeX does not. May need more investigation)
 

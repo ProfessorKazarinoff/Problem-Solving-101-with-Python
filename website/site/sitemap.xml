@@ -226,7 +226,7 @@
     </url>
         
     <url>
-     <loc>/04-The-Python-REPL/02.05-Print-and-Input-Statements/</loc>
+     <loc>/04-The-Python-REPL/02.05-Print-Statements/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -248,85 +248,73 @@
     
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.00-Introduction/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.00-Introduction/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.01-What-is-Matplotlib/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.01-What-is-Matplotlib/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.02-Installing Matplotlib/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.02-Installing Matplotlib/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.03-Line-Plots/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.03-Line-Plots/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.04-Saving-Plots/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.04-Saving-Plots/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.05-Multi-Line-Plots/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.05-Multi-Line-Plots/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.06-Bar-Charts-and-Pie-Charts/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.06-Bar-Charts/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.08-Histograms/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.07-Pie-Charts/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.10-Scatter-Plots/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.08-Histograms/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.11-Plot-Annotations/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.10-Scatter-Plots/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.12-Subplots/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.11-Summary/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/05-Plotting-with-Matplotlib/06.13-Plot-Styles/</loc>
-     <lastmod>2018-10-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/05-Plotting-with-Matplotlib/06.17-Summary/</loc>
-     <lastmod>2018-10-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/05-Plotting-with-Matplotlib/06.18-Review-Questions/</loc>
+     <loc>/05-Plotting-with-Matplotlib/05.12-Review-Questions/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -371,6 +359,18 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>/06-User-Input-and-Loops/06.06-Summary/</loc>
+     <lastmod>2018-10-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/06-User-Input-and-Loops/06.07-Review-Questions/</loc>
+     <lastmod>2018-10-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
@@ -388,13 +388,13 @@
     </url>
         
     <url>
-     <loc>/99-Appendix/99.02-ASCII-Character-Codes/</loc>
+     <loc>/99-Appendix/99.02-Built-in-Functions/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/99-Appendix/99.03-Virtual-Environments/</loc>
+     <loc>/99-Appendix/99.03-Math-and-Statistics-Module-Functions/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -406,19 +406,19 @@
     </url>
         
     <url>
-     <loc>/99-Appendix/99.05-Git-and-GitHub/</loc>
+     <loc>/99-Appendix/99.05-ASCII-Character-Codes/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/99-Appendix/99.06-Problem-Solving-101-with-Python-Book-Construction/</loc>
+     <loc>/99-Appendix/99.06-Virtual-Environments/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/99-Appendix/99.07-Math-and-Statistics-Module-Functions/</loc>
+     <loc>/99-Appendix/99.07-Problem-Solving-101-with-Python-Book-Construction/</loc>
      <lastmod>2018-10-04</lastmod>
      <changefreq>daily</changefreq>
     </url>

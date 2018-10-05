@@ -39,24 +39,22 @@ pages:
         - Variables and Data Types: 04-The-Python-REPL/02.02-Variables.md
         - Boolean Arithemtic: 04-The-Python-REPL/02.03-Boolean-Arithemtic.md
         - String Opperations: 04-The-Python-REPL/02.04-String-Opperations.md
-        - Print and Input Statements: 04-The-Python-REPL/02.05-Print-and-Input-Statements.md
+        - Print Statements: 04-The-Python-REPL/02.05-Print-Statements.md
         - Summary: 04-The-Python-REPL/02.06-Summary.md
         - Review Questions: 04-The-Python-REPL/02.07-Review-Questions.md
     - Chapter 5 Plotting with Matplotlib:
-        - Introduction: 05-Plotting-with-Matplotlib/06.00-Introduction.md
-        - What is Matplotlib?: 05-Plotting-with-Matplotlib/06.01-What-is-Matplotlib.md
-        - Installing Matplotlib: 05-Plotting-with-Matplotlib/06.02-Installing Matplotlib.md
-        - Customizing matplotlib plots: 05-Plotting-with-Matplotlib/06.03-Line-Plots.md
-        - Saving plots: 05-Plotting-with-Matplotlib/06.04-Saving-Plots.md
-        - Multi Line Plots: 05-Plotting-with-Matplotlib/06.05-Multi-Line-Plots.md
-        - Pie Charts: 05-Plotting-with-Matplotlib/06.06-Bar-Charts-and-Pie-Charts.md
-        - Histograms: 05-Plotting-with-Matplotlib/06.08-Histograms.md
-        - Scatter Plots: 05-Plotting-with-Matplotlib/06.10-Scatter-Plots.md
-        - Plot annotations: 05-Plotting-with-Matplotlib/06.11-Plot-Annotations.md
-        - Subplots: 05-Plotting-with-Matplotlib/06.12-Subplots.md
-        - Plot Styles: 05-Plotting-with-Matplotlib/06.13-Plot-Styles.md
-        - Summary: 05-Plotting-with-Matplotlib/06.17-Summary.md
-        - Review Questions: 05-Plotting-with-Matplotlib/06.18-Review-Questions.md
+        - Introduction: 05-Plotting-with-Matplotlib/05.00-Introduction.md
+        - What is Matplotlib?: 05-Plotting-with-Matplotlib/05.01-What-is-Matplotlib.md
+        - Installing Matplotlib: 05-Plotting-with-Matplotlib/05.02-Installing Matplotlib.md
+        - Customizing matplotlib plots: 05-Plotting-with-Matplotlib/05.03-Line-Plots.md
+        - Saving plots: 05-Plotting-with-Matplotlib/05.04-Saving-Plots.md
+        - Multi Line Plots: 05-Plotting-with-Matplotlib/05.05-Multi-Line-Plots.md
+        - Bar Plots: 05-Plotting-with-Matplotlib/05.06-Bar-Charts.md
+        - Pie Charts: 05-Plotting-with-Matplotlib/05.07-Pie-Charts.md
+        - Histograms: 05-Plotting-with-Matplotlib/05.08-Histograms.md
+        - Scatter Plots: 05-Plotting-with-Matplotlib/05.10-Scatter-Plots.md
+        - Summary: 05-Plotting-with-Matplotlib/05.11-Summary.md
+        - Review Questions: 05-Plotting-with-Matplotlib/05.12-Review-Questions.md
     - Chapter 6 User Input and Loops:
         - Introduction: 06-User-Input-and-Loops/06.00-Introduction.md
         - f-Strings: 06-User-Input-and-Loops/06.01-f-Strings.md
@@ -64,13 +62,15 @@ pages:
         - For Loops: 06-User-Input-and-Loops/06.03-For-Loops.md
         - While Loops: 06-User-Input-and-Loops/06.04-While-Loops.md
         - If statements: 06-User-Input-and-Loops/06.05-If-Statements.md
+        - Summary: 06-User-Input-and-Loops/06.06-Summary.md
+        - Review Questions: 06-User-Input-and-Loops/06.07-Review-Questions.md
     - Appendix:
         - Contents: 99-Appendix/99.00-Appendix.md
         - Reserved and Key Words in Python: 99-Appendix/99.01-Reserved-and-Key-Words-in-Python.md
-        - ASCII Character Codes: 99-Appendix/99.02-ASCII-Character-Codes.md
-        - Virtual environments with pip and virtualenv: 99-Appendix/99.03-Virtual-Environments.md
+        - Python Built-in Functions: 99-Appendix/99.02-Built-in-Functions.md
+        - Math and Statistics Module Functions: 99-Appendix/99.03-Math-and-Statistics-Module-Functions.md
         - Numpy Math Functions: 99-Appendix/99.04-Numpy-Math-Functions.md
-        - Git and GitHub: 99-Appendix/99.05-Git-and-GitHub.md
-        - Problem Solving 101 with Python Book Construction: 99-Appendix/99.06-Problem-Solving-101-with-Python-Book-Construction.md
-        - Math and Statistics Module Functions: 99-Appendix/99.07-Math-and-Statistics-Module-Functions.md
+        - ASCII Character Codes: 99-Appendix/99.05-ASCII-Character-Codes.md
+        - Virtual environments with pip and virtualenv: 99-Appendix/99.06-Virtual-Environments.md
+        - Problem Solving 101 with Python Book Construction: 99-Appendix/99.07-Problem-Solving-101-with-Python-Book-Construction.md
         - About the Author: 99-Appendix/99.08-About-the-Author.md

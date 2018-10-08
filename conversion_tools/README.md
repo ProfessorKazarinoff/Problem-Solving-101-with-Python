@@ -2,6 +2,14 @@
 
 ## To build website:
 
+In one step, run the main script in nb2mkdocs.py
+
+```
+$ conda activate book
+(book)$ cd conversion_tools
+(book)$ python nb2mkdocs.py
+```
+
 ### Convert notebooks to html that mkdocs can read
 
 run main script in nb2html.py
@@ -36,22 +44,28 @@ $ conda activate book
 If ```gh-deploy``` throws an error about git histories not merging or matching
 
 ```
-git push -f origin gh-pages
+(book)$ git push -f origin gh-pages
 ```
 
 ## To build a .pdf copy of the book
 
-### Output the .tex file and combined images dir and resources dir(embeded images like matplotlib plots)
+### Output the .tex file and combined images dir and resources dir (embedded images like matplotlib plots)
 
-run the main script in nb2pdf.py
+run the main script in nb2tex.py
 
-### Build the .pdf using TexWorks
+```
+$ cd conversion_tools
+$ conda activate book
+(book)$  python nb2tex.py
+```
 
-Use the separate TexWorks program to open the .tex file outputed by nb2pdf.py
+### Build the .pdf using TeXworks
+
+Use the separate TeXworks program to open the .tex file outputted by nb2tex.py
 
 Use the XeLaTeX compiler to output a .pdf (XeLaTeX seems to output the TOC, but pdf LaTeX does not. May need more investigation)
 
-May need to run XeLaTeX twice in order to build the Table of contents
+May need to run XeLaTeX twice in order to build the Table of Contents
 
 Still have to manually exclude the Preface and Appendix from Chapter and Section numbering with
 

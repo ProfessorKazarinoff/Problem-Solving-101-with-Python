@@ -79,14 +79,14 @@ pages:
         - Summary: 03-Jupyter-Notebooks/03.09-Summary.md
         - Review Questions: 03-Jupyter-Notebooks/03.10-Review-Questions.md
     - Chapter 4 The Python REPL:
-        - Introduction: 04-The-Python-REPL/02.00-Introduction.md
-        - Python as a fancy calculator: 04-The-Python-REPL/02.01-Python-as-a-fancy-calculator.md
-        - Variables and Data Types: 04-The-Python-REPL/02.02-Variables.md
-        - Boolean Arithemtic: 04-The-Python-REPL/02.03-Boolean-Arithemtic.md
-        - String Opperations: 04-The-Python-REPL/02.04-String-Opperations.md
-        - Print Statements: 04-The-Python-REPL/02.05-Print-Statements.md
-        - Summary: 04-The-Python-REPL/02.06-Summary.md
-        - Review Questions: 04-The-Python-REPL/02.07-Review-Questions.md
+        - Introduction: 04-The-Python-REPL/04.00-Introduction.md
+        - Python as a fancy calculator: 04-The-Python-REPL/04.01-Python-as-a-fancy-calculator.md
+        - Variables and Data Types: 04-The-Python-REPL/04.02-Variables.md
+        - Boolean Arithemtic: 04-The-Python-REPL/04.03-Boolean-Arithemtic.md
+        - String Operations: 04-The-Python-REPL/04.04-String-Operations.md
+        - Print Statements: 04-The-Python-REPL/04.05-Print-Statements.md
+        - Summary: 04-The-Python-REPL/04.06-Summary.md
+        - Review Questions: 04-The-Python-REPL/04.07-Review-Questions.md
     - Chapter 5 Plotting with Matplotlib:
         - Introduction: 05-Plotting-with-Matplotlib/05.00-Introduction.md
         - What is Matplotlib?: 05-Plotting-with-Matplotlib/05.01-What-is-Matplotlib.md

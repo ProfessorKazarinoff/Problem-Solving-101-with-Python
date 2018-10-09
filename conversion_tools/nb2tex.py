@@ -100,7 +100,7 @@ def nbnode_to_ipynb(nb_node, filename="notebookout"):
     function to export a .ipynb file given a notebookNode object as input
     :param nb_node: notebookNode object
     :param filename: str, the name of the output .ipynb file. Don't need extension
-    :return: nothing returned, but fuction will output a new .ipynb file
+    :return: nothing returned, but function will output a new .ipynb file
     """
     e = nbconvert.NotebookExporter()
     body, resources = e.from_notebook_node(nb_node)

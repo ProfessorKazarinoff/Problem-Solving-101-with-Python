@@ -8,7 +8,8 @@
 \usepackage{pmboxdraw}
 \usepackage{verbatim}
 \usepackage{listings}
-\lstset{basicstyle=\ttfamily}
+\lstset{basicstyle=\ttfamily,
+        xleftmargin=4ex}    %indent lstlisting code blocks by 4 'x' width spaces
 \newcommand{\passthrough}[1]{#1}
 ((* endblock docclass *))
 

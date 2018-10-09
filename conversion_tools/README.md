@@ -2,29 +2,13 @@
 
 ## To build website:
 
-In one step, run the main script in nb2mkdocs.py
+Run the main script in nb2mkdocs.py
 
 ```
 $ conda activate book
 (book)$ cd conversion_tools
 (book)$ python nb2mkdocs.py
 ```
-
-### Convert notebooks to html that mkdocs can read
-
-run main script in nb2html.py
-
-### Copy over all of the images from the notebooks/subdir to website/subdir
-
-run main script in copy_images_dir.py
-
-### Build the TOC yaml that goes at the end of the mkdocs config file
-
-run main script in yaml_TOC.py
-
-### Combine the TOC.yml file created above with the mkdocs_config file
-
-run the main script in make_mkdocs_yaml.py
 
 ### build and serve mkdocs site
 
@@ -63,9 +47,9 @@ $ conda activate book
 
 Use the separate TeXworks program to open the .tex file outputted by nb2tex.py
 
-Use the XeLaTeX compiler to output a .pdf (XeLaTeX seems to output the TOC, but pdf LaTeX does not. May need more investigation)
+Use the XeLaTeX compiler to output a .pdf (XeLaTeX seems to output the TOC, but pdf LaTeX does not. May need more investigation).
 
-May need to run XeLaTeX twice in order to build the Table of Contents
+May need to run XeLaTeX twice in order to build the Table of Contents.
 
 Still have to manually exclude the Preface and Appendix from Chapter and Section numbering with
 

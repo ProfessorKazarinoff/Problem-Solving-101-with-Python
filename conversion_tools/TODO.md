@@ -2,7 +2,11 @@
 
 ## pdf copy:
 
-remove ASCII character code section of appendix
+- [ ] add conversion step that runs each notebook before combining it into the BIG notebook
 
-rewrite the appendix section on virtual environments more in line with bookn
+- [ ] grammar check loops chapter
+
+- [x] remove ASCII character code section of appendix
+
+- [x] rewrite the appendix section on virtual environments more in line with bookn
 

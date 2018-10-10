@@ -12,11 +12,10 @@ Install **mkdocs**, **mkdcos-material** theme, **jupyter**, **fabric** and clone
 $ pip install mkdocs
 $ pip install mkdocs-material
 $ pip install jupyter
-$ pip install fabric
-$ git clone https://github.com/ProfessorKazarinoff/PythonForUndergraduateEngineers.git
+$ git clone https://github.com/ProfessorKazarinoff/Problem-Solving-101-with-Python.git
 ```
 
-Move into the newly created **PythonForUndergraduateEngineers** directory and run the **fabric** script to convert the jupyter notebooks (.ipybn files) in the [notebooks directory](../notebooks) into markdown files (.md files) in the [website/docs](docs/) directory.
+Move into the newly created **Problem-Solving-101-with-Python** directory and run the main script in **_nb2mkdocs.py_** to convert the Jupyter notebooks (.ipybn files) in the [notebooks directory](../notebooks) into markdown files (.md files) in the [website/docs](docs/) directory.
 
 ```
 $ cd Problem-Solving-101-with-Python

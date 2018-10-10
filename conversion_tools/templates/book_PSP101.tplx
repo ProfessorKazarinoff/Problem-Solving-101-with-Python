@@ -97,6 +97,24 @@
 %  }
 %}
 
+%an environment for long listings of function names
+\newenvironment{function_listing}
+    {
+    \begin{multicols}{3}
+    \ttfamily
+    }
+    {
+    \par
+    \end{multicols}
+    }
+
+% in cell metadata
+%{
+%  "latex": {
+%    "environment": "function_listing"
+%  }
+%}
+
 % to put a \new page before the cell in question. Add the json below to the cell metadata.
 
 % in cell metadata
@@ -142,6 +160,11 @@
         \begin{key_terms}
         ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
         \end{key_terms}
+
+        ((* elif 'function_listing' in cell['metadata'].get('latex', {}).get('environment', []) *))
+        \begin{function_listing}
+        ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
+        \end{function_listing}
 
     ((* elif 'newpage' in cell['metadata'].get('latex', {}).get('before_cell', []) *))
         \newpage

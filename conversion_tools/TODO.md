@@ -1,7 +1,5 @@
 # TODO.md
 
-## pdf copy:
-
 - [ ] add conversion step that runs each notebook before combining it into the BIG notebook
 
 - [ ] remove What is Python description at the start of the installation chapter

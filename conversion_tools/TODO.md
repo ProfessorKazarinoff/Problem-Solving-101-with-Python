@@ -1,8 +1,12 @@
 # TODO.md
 
+- [ ] Remove some of the pictures from the installation chapter
+
+- [ ] add Acknowledgements section to appendix
+
 - [ ] add conversion step that runs each notebook before combining it into the BIG notebook
 
-- [ ] remove What is Python description at the start of the installation chapter
+- [x] remove What is Python description at the start of the installation chapter
 
 - [ ] grammar check loops chapter
 

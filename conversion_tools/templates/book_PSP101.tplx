@@ -175,7 +175,6 @@
         \newpage
 
 
-
     ((* else *))
         ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
     ((* endif *))

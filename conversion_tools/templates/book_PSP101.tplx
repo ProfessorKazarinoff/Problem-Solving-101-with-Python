@@ -7,9 +7,11 @@
 \setcounter{chapter}{-1}
 \usepackage{pmboxdraw}
 \usepackage{verbatim}
+\usepackage[breakable]{tcolorbox}
 \usepackage{listings}
 \lstset{basicstyle=\ttfamily,
-        xleftmargin=4ex}    %indent lstlisting code blocks by 4 'x' width spaces
+        xleftmargin=4ex,
+        showstringspaces=false}    %indent lstlisting code blocks by 4 'x' width spaces
 \newcommand{\passthrough}[1]{#1}
 ((* endblock docclass *))
 
@@ -115,6 +117,25 @@
 %  }
 %}
 
+\newtcolorbox[auto counter,number within=chapter]{pabox}[2][]{%
+colback=red!5!white,colframe=red!75!black,fonttitle=\bfseries,
+title=Worked Example ~\thetcbcounter}
+
+\newenvironment{worked_example}
+	{
+		\begin{pabox}
+	}
+	{
+		\end{pabox}
+	}
+
+% in cell metadata
+%{
+%  "latex": {
+%    "environment": "worked_example"
+%  }
+%}
+
 % to put a \new page before the cell in question. Add the json below to the cell metadata.
 
 % in cell metadata
@@ -165,6 +186,11 @@
         \begin{function_listing}
         ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
         \end{function_listing}
+
+        ((* elif 'worked_example' in cell['metadata'].get('latex', {}).get('environment', []) *))
+        \begin{worked_example}
+        ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
+        \end{worked_example}
 
     ((* elif 'newpage' in cell['metadata'].get('latex', {}).get('before_cell', []) *))
         \newpage

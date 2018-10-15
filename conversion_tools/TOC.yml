@@ -16,12 +16,11 @@ pages:
         - Review Questions: 01-What-is-Python/01.06-Review-Questions.md
     - Chapter 2 Installing Python:
         - Introduction: 02-Installing-Python/02.00-Introduction.md
-        - Why Python?: 02-Installing-Python/02.01-Why-Python.md
-        - Installing Anaconda on Windows: 02-Installing-Python/02.02-Installing-Anaconda-on-Windows.md
-        - Installing Anaconda on MacOS: 02-Installing-Python/02.03-Installing-Anaconda-on-MacOS.md
-        - Installing Anaconda on Linux: 02-Installing-Python/02.04-Installing-Anaconda-on-Linux.md
-        - Installing Python from Python.org: 02-Installing-Python/02.05-Installing-Python.md
-        - Summary: 02-Installing-Python/02.06-Summary.md
+        - Installing Anaconda on Windows: 02-Installing-Python/02.01-Installing-Anaconda-on-Windows.md
+        - Installing Anaconda on MacOS: 02-Installing-Python/02.02-Installing-Anaconda-on-MacOS.md
+        - Installing Anaconda on Linux: 02-Installing-Python/02.03-Installing-Anaconda-on-Linux.md
+        - Installing Python from Python.org: 02-Installing-Python/02.04-Installing-Python.md
+        - Summary: 02-Installing-Python/02.05-Summary.md
     - Chapter 3 Jupyter Notebooks:
         - Introduction: 03-Jupyter-Notebooks/03.00-Introduction.md
         - What is a Jupyter Notebook?: 03-Jupyter-Notebooks/03.01-What-is-a-Jupyter-Notebook.md
@@ -36,12 +35,13 @@ pages:
     - Chapter 4 The Python REPL:
         - Introduction: 04-The-Python-REPL/04.00-Introduction.md
         - Python as a fancy calculator: 04-The-Python-REPL/04.01-Python-as-a-fancy-calculator.md
-        - Variables and Data Types: 04-The-Python-REPL/04.02-Variables.md
-        - Boolean Arithemtic: 04-The-Python-REPL/04.03-Boolean-Arithemtic.md
-        - String Operations: 04-The-Python-REPL/04.04-String-Operations.md
+        - Variables: 04-The-Python-REPL/04.02-Variables.md
+        - Data Types: 04-The-Python-REPL/04.03-Data-Types.md
+        - Boolean Arithmetic: 04-The-Python-REPL/04.04-Boolean-Arithemtic.md
         - Print Statements: 04-The-Python-REPL/04.05-Print-Statements.md
-        - Summary: 04-The-Python-REPL/04.06-Summary.md
-        - Review Questions: 04-The-Python-REPL/04.07-Review-Questions.md
+        - String Operations: 04-The-Python-REPL/04.06-String-Operations.md
+        - Summary: 04-The-Python-REPL/04.07-Summary.md
+        - Review Questions: 04-The-Python-REPL/04.08-Review-Questions.md
     - Chapter 5 Plotting with Matplotlib:
         - Introduction: 05-Plotting-with-Matplotlib/05.00-Introduction.md
         - What is Matplotlib?: 05-Plotting-with-Matplotlib/05.01-What-is-Matplotlib.md
@@ -49,7 +49,7 @@ pages:
         - Customizing matplotlib plots: 05-Plotting-with-Matplotlib/05.03-Line-Plots.md
         - Saving plots: 05-Plotting-with-Matplotlib/05.04-Saving-Plots.md
         - Multi Line Plots: 05-Plotting-with-Matplotlib/05.05-Multi-Line-Plots.md
-        - Bar Plots: 05-Plotting-with-Matplotlib/05.06-Bar-Charts.md
+        - Bar Charts: 05-Plotting-with-Matplotlib/05.06-Bar-Charts.md
         - Pie Charts: 05-Plotting-with-Matplotlib/05.07-Pie-Charts.md
         - Histograms: 05-Plotting-with-Matplotlib/05.08-Histograms.md
         - Scatter Plots: 05-Plotting-with-Matplotlib/05.10-Scatter-Plots.md
@@ -70,7 +70,7 @@ pages:
         - Python Built-in Functions: 99-Appendix/99.02-Built-in-Functions.md
         - Math and Statistics Module Functions: 99-Appendix/99.03-Math-and-Statistics-Module-Functions.md
         - Numpy Math Functions: 99-Appendix/99.04-Numpy-Math-Functions.md
-        - ASCII Character Codes: 99-Appendix/99.05-ASCII-Character-Codes.md
-        - Virtual environments with pip and virtualenv: 99-Appendix/99.06-Virtual-Environments.md
+        - Virtual Environments: 99-Appendix/99.06-Virtual-Environments.md
         - Problem Solving 101 with Python Book Construction: 99-Appendix/99.07-Problem-Solving-101-with-Python-Book-Construction.md
-        - About the Author: 99-Appendix/99.08-About-the-Author.md
+        - Contributions: 99-Appendix/99.08-Contributions.md
+        - About the Author: 99-Appendix/99.09-About-the-Author.md

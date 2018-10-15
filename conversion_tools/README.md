@@ -51,9 +51,27 @@ Use the XeLaTeX compiler to output a .pdf (XeLaTeX seems to output the TOC, but 
 
 May need to run XeLaTeX twice in order to build the Table of Contents.
 
-Still have to manually exclude the Preface and Appendix from Chapter and Section numbering with
+Still have to manually exclude the Preface and Appendix from Chapter and Section numbering(but keep the Preface and Appendix in the TOC) with
+
+To take out the Chapter 0 Preface label but keep the Preface in the TOC modify:
 
 ```
-    \hypertarget{preface}{%
+\hypertarget{preface}{%
 \chapter*{Preface}\label{preface}}
+\addcontentsline{toc}{chapter}{Preface}
 ```
+
+Set chapter counter to start at zero, so that Preface is unlabeled chapter 0 and What is Python is labeled Chapter 1.
+
+```
+\setcounter{chapter}{0}
+```
+
+Set section numbers within the Preface and the appendix to no be shown, but to still show up in the TOC
+
+```
+        \hypertarget{motivation}{%
+\section*{Motivation}\label{motivation}}
+\addcontentsline{toc}{section}{Motivation}
+```
+

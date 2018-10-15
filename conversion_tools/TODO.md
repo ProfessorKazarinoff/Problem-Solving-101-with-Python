@@ -1,8 +1,12 @@
 # TODO.md
 
+- [ ] Take out empty cells when exporting to .html
+
+- [ ] Take out empty cells when exporting to .tex
+
 - [ ] Remove some of the pictures from the installation chapter
 
-- [ ] add Acknowledgements section to appendix
+- [x] add Acknowledgements section to appendix
 
 - [ ] add conversion step that runs each notebook before combining it into the BIG notebook
 

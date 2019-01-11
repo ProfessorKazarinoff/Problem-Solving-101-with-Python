@@ -3,17 +3,17 @@ pages:
     - Home: index.md
     - Preface:
         - Motivation: 00-Preface/00.00-Motivation.md
-        - Acknowledgements: 00-Preface/00.02-Acknowledgements.md
-        - Supporting Materials: 00-Preface/00.03-Supporting-Materials.md
-        - Formatting Conventions: 00-Preface/00.04-Formatting Conventions.md
-        - Errata: 00-Preface/00.05-Errata.md
+        - Acknowledgements: 00-Preface/00.01-Acknowledgements.md
+        - Supporting Materials: 00-Preface/00.02-Supporting-Materials.md
+        - Formatting Conventions: 00-Preface/00.03-Formatting Conventions.md
+        - Errata: 00-Preface/00.04-Errata.md
     - Chapter 1 What is Python?:
         - Introduction: 01-What-is-Python/01.00-Introduction.md
         - What is Python?: 01-What-is-Python/01.01-What-is-Python.md
         - Why Python?: 01-What-is-Python/01.02-Why-Python.md
         - What is Anaconda?: 01-What-is-Python/01.03-What-is-Anaconda.md
-        - Summary: 01-What-is-Python/01.05-Summary.md
-        - Review Questions: 01-What-is-Python/01.06-Review-Questions.md
+        - Summary: 01-What-is-Python/01.04-Summary.md
+        - Review Questions: 01-What-is-Python/01.05-Review-Questions.md
     - Chapter 2 Installing Python:
         - Introduction: 02-Installing-Python/02.00-Introduction.md
         - Installing Anaconda on Windows: 02-Installing-Python/02.01-Installing-Anaconda-on-Windows.md
@@ -28,10 +28,10 @@ pages:
         - Installing Juypter: 03-Jupyter-Notebooks/03.03-Installing-Juypter.md
         - Opening a Jupyter Notebook: 03-Jupyter-Notebooks/03.04-Opening-a-Jupyter-Notebook.md
         - The Jupyter Notebook Interface: 03-Jupyter-Notebooks/03.05-The-Jupyter-Notebook-Interface.md
-        - Magic Cells: 03-Jupyter-Notebooks/03.07-Magic-Cells.md
-        - Getting Help in a Jupyter Notebook: 03-Jupyter-Notebooks/03.08-Getting-Help-in-a-Jupyter-Notebook.md
-        - Summary: 03-Jupyter-Notebooks/03.09-Summary.md
-        - Review Questions: 03-Jupyter-Notebooks/03.10-Review-Questions.md
+        - Magic Cells: 03-Jupyter-Notebooks/03.06-Magic-Cells.md
+        - Getting Help in a Jupyter Notebook: 03-Jupyter-Notebooks/03.07-Getting-Help-in-a-Jupyter-Notebook.md
+        - Summary: 03-Jupyter-Notebooks/03.08-Summary.md
+        - Review Questions: 03-Jupyter-Notebooks/03.09-Review-Questions.md
     - Chapter 4 The Python REPL:
         - Introduction: 04-The-Python-REPL/04.00-Introduction.md
         - Python as a fancy calculator: 04-The-Python-REPL/04.01-Python-as-a-fancy-calculator.md
@@ -52,9 +52,9 @@ pages:
         - Bar Charts: 05-Plotting-with-Matplotlib/05.06-Bar-Charts.md
         - Pie Charts: 05-Plotting-with-Matplotlib/05.07-Pie-Charts.md
         - Histograms: 05-Plotting-with-Matplotlib/05.08-Histograms.md
-        - Scatter Plots: 05-Plotting-with-Matplotlib/05.10-Scatter-Plots.md
-        - Summary: 05-Plotting-with-Matplotlib/05.11-Summary.md
-        - Review Questions: 05-Plotting-with-Matplotlib/05.12-Review-Questions.md
+        - Scatter Plots: 05-Plotting-with-Matplotlib/05.09-Scatter-Plots.md
+        - Summary: 05-Plotting-with-Matplotlib/05.10-Summary.md
+        - Review Questions: 05-Plotting-with-Matplotlib/05.11-Review-Questions.md
     - Chapter 6 User Input and Loops:
         - Introduction: 06-User-Input-and-Loops/06.00-Introduction.md
         - f-Strings: 06-User-Input-and-Loops/06.01-f-Strings.md
@@ -69,8 +69,9 @@ pages:
         - Reserved and Key Words in Python: 99-Appendix/99.01-Reserved-and-Key-Words-in-Python.md
         - Python Built-in Functions: 99-Appendix/99.02-Built-in-Functions.md
         - Math and Statistics Module Functions: 99-Appendix/99.03-Math-and-Statistics-Module-Functions.md
-        - Numpy Math Functions: 99-Appendix/99.04-Numpy-Math-Functions.md
-        - Virtual Environments: 99-Appendix/99.06-Virtual-Environments.md
+        - NumPy Math Functions: 99-Appendix/99.04-Numpy-Math-Functions.md
+        - Virtual Environments: 99-Appendix/99.05-Virtual-Environments.md
+        - Problem Solving 101 with Python Book Construction: 99-Appendix/99.06-Problem-Solving-101-with-Python-Book-Construction.md
         - Problem Solving 101 with Python Book Construction: 99-Appendix/99.07-Problem-Solving-101-with-Python-Book-Construction.md
         - Contributions: 99-Appendix/99.08-Contributions.md
         - About the Author: 99-Appendix/99.09-About-the-Author.md

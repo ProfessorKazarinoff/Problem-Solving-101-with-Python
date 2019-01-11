@@ -166,8 +166,17 @@ title=Worked Example ~\thetcbcounter}
 ((* block title *))
 \title{Problem Solving 101 with Python}
 \author{Peter D. Kazarinoff, PhD}
-\date{}
+\date{3.7 Edition}
 ((* endblock title *))
+
+
+%  after the make title add in the copywrite page
+%    \maketitle
+%    
+%    \input{copywrite_page.tex}
+%    \newpage
+%    
+%    \tableofcontents
 
 ((* block markdowncell scoped *))
 

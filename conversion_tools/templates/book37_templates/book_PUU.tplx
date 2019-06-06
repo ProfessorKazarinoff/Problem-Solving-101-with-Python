@@ -1,25 +1,33 @@
 % Inherit from report
 ((* extends 'report.tplx' *))
 
-
 ((* block docclass *))
 \documentclass{book}
-\setcounter{chapter}{-1}
+\setcounter{chapter}{0}
 \usepackage{pmboxdraw}
 \usepackage{verbatim}
-\usepackage[breakable]{tcolorbox}
 \usepackage{listings}
-\lstset{basicstyle=\ttfamily,
-        xleftmargin=4ex,
-        showstringspaces=false}    %indent lstlisting code blocks by 4 'x' width spaces
+
+
+\lstset{
+language={}, 
+basicstyle=\ttfamily,
+xleftmargin=4ex,
+stringstyle=\color{cm-string},
+commentstyle=\color{cm-comment},
+keywordstyle=\color{cm-keyword}\bfseries,
+%keywordstyle = {[3]\color{cm-operator}},
+%morekeywords = [3]{>>>,+,-,/,*,**,%},
+showstringspaces=false,
+}
 \newcommand{\passthrough}[1]{#1}
 ((* endblock docclass *))
 
 ((* block packages *))
     \usepackage[T1]{fontenc}
     % Nicer default font (+ math font) than Computer Modern for most use cases
-    \setlength{\parskip}{0.5em} %for a half space between paragraphs
-    \setlength{\parindent}{0em} %for no paragraph indent
+    \setlength{\parskip}{0.5em} %for a space between paragraphs that is not a full space
+    \setlength{\parindent}{0em} %for no indentation between paragraphs
     \usepackage{mathpazo}
 
     % Basic figure setup, for now with no caption control since it's done
@@ -38,12 +46,30 @@
     % Ensure that by default, figures have no caption (until we provide a
     % proper Figure object with a Caption API and a way to capture that
     % in the conversion process - todo).
-    \usepackage{caption}
+    
+        \usepackage{caption}
     \DeclareCaptionLabelFormat{nolabel}{}
-    \captionsetup{labelformat=nolabel}
+    %\captionsetup{labelformat=nolabel}
+    % Adds label ``Figure 1.13 The Anaconda Prompt'' in front of each figure caption
+ \captionsetup[figure]{labelfont={bf},name={Figure},labelsep=period}
 
     \usepackage{adjustbox} % Used to constrain images to a maximum size
     \usepackage{xcolor} % Allow colors to be defined
+
+%custom colors
+\definecolor{stringred}{RGB}{186,33,33}
+\definecolor{commentteal}{RGB}{64,128,128}
+\definecolor{darkgreen}{RGB}{0,128,0}
+\definecolor{cm-keyword}{HTML}{008000}  %jupyter notebook keyword color
+\definecolor{cm-builtin}{HTML}{008000}  %jupyter notebook built-in function color
+\definecolor{cm-number}{HTML}{008800}   %jupyter notebook number color
+\definecolor{cm-string}{HTML}{BA2121}   %jupyter notebook string color
+\definecolor{cm-operator}{HTML}{AA22FF} %jupyter notebook operator color
+\definecolor{cm-comment}{HTML}{408080}  %jupyter notebook comment color
+
+
+
+
     \usepackage{enumerate} % Needed for markdown enumerations to work
     \usepackage{geometry} % Used to adjust the document margins
     \geometry{
@@ -80,11 +106,9 @@
     \setcounter{secnumdepth}{1} %only chapter and sections are numbered, subsections and subsubsections are not numbered
     \setcounter{tocdepth}{1}    %only chapter and sections in TOC, subsections and subsubsections are not in TOC
     \usepackage{multicol} % need multicols for end of chapter key terms and end of chapter questions
-    %\newenvironment{problems}{\begin{multicols}{2}}{\end{multicols}} %an environment for the review question sections, where two columns are shown instead of one column everywhere else. Depends on the logic looking for latex environment problems in notebook cell metadata.
 
-   %turned the multicols off because tables would not print in 2 column mode
-   
-   \newenvironment{problems}{}{}
+    \newenvironment{problems}{}{}  %keep regular one column formatting in problems environment. Long table would not output in two col mode
+%    \newenvironment{problems}{\begin{multicols}{2}}{\end{multicols}} %an environment for the review question sections, where two columns are shown instead of one column everywhere else. Depends on the logic looking for latex environment problems in notebook cell metadata.
 
 % in cell metadata
 %{
@@ -100,44 +124,6 @@
 %{
 %  "latex": {
 %    "environment": "key_terms"
-%  }
-%}
-
-%an environment for long listings of function names
-\newenvironment{function_listing}
-    {
-    \begin{multicols}{3}
-    \ttfamily
-    }
-    {
-    \par
-    \end{multicols}
-    }
-
-% in cell metadata
-%{
-%  "latex": {
-%    "environment": "function_listing"
-%  }
-%}
-
-%%%% Red box with pink interior and rounded corners to surround worked examples %%%
-\newtcolorbox[auto counter,number within=chapter]{pabox}[2][]{%
-colback=red!5!white,colframe=red!75!black,fonttitle=\bfseries,
-title=Worked Example ~\thetcbcounter}
-
-\newenvironment{worked_example}
-	{
-		\begin{pabox}
-	}
-	{
-		\end{pabox}
-	}
-
-% in cell metadata
-%{
-%  "latex": {
-%    "environment": "worked_example"
 %  }
 %}
 
@@ -159,7 +145,6 @@ title=Worked Example ~\thetcbcounter}
 %  }
 %}
 
-
     ((* endblock packages *))
 
 ((* block preamble *))
@@ -169,11 +154,9 @@ title=Worked Example ~\thetcbcounter}
 ((* endblock margins *))
 
 ((* block title *))
-\title{Problem Solving 101 with Python}
+\title{Problem Solving with Python}
 \author{Peter D. Kazarinoff, PhD}
 \date{3.7 Edition}
-((* endblock title *))
-
 
 %  after the make title add in the copywrite page
 %    \maketitle
@@ -182,9 +165,9 @@ title=Worked Example ~\thetcbcounter}
 %    \newpage
 %    
 %    \tableofcontents
+((* endblock title *))
 
 ((* block markdowncell scoped *))
-
 
     ((* if 'problems' in cell['metadata'].get('latex', {}).get('environment', []) *))
         \begin{problems}
@@ -196,16 +179,6 @@ title=Worked Example ~\thetcbcounter}
         ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
         \end{key_terms}
 
-        ((* elif 'function_listing' in cell['metadata'].get('latex', {}).get('environment', []) *))
-        \begin{function_listing}
-        ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
-        \end{function_listing}
-
-        ((* elif 'worked_example' in cell['metadata'].get('latex', {}).get('environment', []) *))
-        \begin{worked_example}
-        ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
-        \end{worked_example}
-
     ((* elif 'newpage' in cell['metadata'].get('latex', {}).get('before_cell', []) *))
         \newpage
         ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
@@ -213,6 +186,7 @@ title=Worked Example ~\thetcbcounter}
     ((* elif 'newpage' in cell['metadata'].get('latex', {}).get('after_cell', []) *))
         ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
         \newpage
+
 
 
     ((* else *))
@@ -223,4 +197,4 @@ title=Worked Example ~\thetcbcounter}
 ((* endblock markdowncell *))
 
 % to get lstlisting use: ((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--top-level-division=chapter", "--listings"]) )))
-% in letex doc need \usepackage{listings} \newcommand{\passthrough}[1]{#1}
+% in LaTeX doc need \usepackage{listings} \newcommand{\passthrough}[1]{#1}

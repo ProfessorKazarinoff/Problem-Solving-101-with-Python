@@ -171,3 +171,16 @@ fabric.properties
 pdf/
 .pdf
 *.pdf
+
+# out dir output of book
+out/
+
+
+# any LaTeX compiler generated files
+.aux
+.log
+.out
+.pdf
+.synctex.gz
+.gz
+.toc

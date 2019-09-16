@@ -62,7 +62,10 @@
         \newpage
         \input{dedication_page.tex}
         \newpage
+        {
+        \hypersetup{linkcolor=black}    % set TOC color black
         \tableofcontents
+        }
     ((* endblock maketitle *))
     ((* block abstract *))((* endblock abstract *))
 ((* endblock predoc *))

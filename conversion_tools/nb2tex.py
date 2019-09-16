@@ -29,9 +29,10 @@ from nbformat.v4 import new_notebook, new_markdown_cell
 from nbconvert import LatexExporter, NotebookExporter, HTMLExporter, PDFExporter
 from nbconvert.writers import FilesWriter
 from nbconvert.utils.pandoc import pandoc
-
+from nbconvert.preprocessors import RegexRemovePreprocessor
 from nb_list_tools import iter_notebook_paths
 from filter_links import convert_links
+import tex_modify_contents
 
 log = logging.getLogger(__name__)
 
@@ -170,6 +171,9 @@ def export(combined_nb: NotebookNode, output_file: Path, pdf=False, template_fil
     exporter = MyLatexPDFExporter() if pdf else MyLatexExporter()
     if template_file is not None:
         exporter.template_file = str(template_file)
+    mypreprocessor = RegexRemovePreprocessor() # Create an instance of the RegexRemovePreprocessor
+    mypreprocessor.patterns = ['\s*\Z']        # supply a re pattern (in a list) to the preprocessor's .patterns attribute 
+    exporter.register_preprocessor(mypreprocessor, enabled=True) # apply the preprocessor to the exporter
     writer = FilesWriter(build_directory=str(output_file.parent))
     output, resources = exporter.from_notebook_node(combined_nb, resources)
     writer.write(output, resources, notebook_name=output_file.stem)
@@ -229,7 +233,7 @@ def main():
     # export notebooknode to .ipynb file
     # nbnode_to_ipynb(nbnode,'combined')
     # export notebooknode to .pdf
-    pdf_filepath = os.path.join(os.pardir, "pdf", "pdfout3")
+    pdf_filepath = os.path.join(os.pardir, "pdf", "out")
     # nbnode_to_pdf(nbnode,pdf_filepath)
     # print(f"combined .pdf available in {pdf_filepath}.pdf")
     # nbnode_to_tex(nbnode,pdf_filepath)
@@ -239,6 +243,10 @@ def main():
         os.path.join(os.pardir, "conversion_tools", "templates", "book_PSP101.tplx")
     )  # more template changes needed, but it is a start
     export(nbnode, outfile_Path, pdf=False, template_file=template_file_Path)
+	
+	# do the TOC conversions, this still needs work as the pdf links don't seem to work right
+    tex_modify_contents.main()
+	
     # Now compile with seperate LaTeX editor. TexWorks Program with XeLaTex Compiler seems to work
 
 

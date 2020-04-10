@@ -37,9 +37,9 @@ If ```gh-deploy``` throws an error about git histories not merging or matching
 
 run the main script in nb2tex.py
 
-```
+```text
 $ cd conversion_tools
-$ conda activate book
+$ conda activate book101
 (book)$  python nb2tex.py
 ```
 

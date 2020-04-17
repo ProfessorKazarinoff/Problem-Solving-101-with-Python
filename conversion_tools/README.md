@@ -6,29 +6,29 @@ Run the main script in nb2mkdocs.py
 
 ```
 $ conda activate book
-(book)$ cd conversion_tools
-(book)$ python nb2mkdocs.py
+(book101)$ cd conversion_tools
+(book101)$ python nb2mkdocs.py
 ```
 
 ### build and serve mkdocs site
 
 ```text
 $ conda activate book
-(book)$ cd website
-(book)$ mkdocs build
-(book)$ mkdocs serve
+(book101)$ cd website
+(book101)$ mkdocs build
+(book101)$ mkdocs serve
 ```
 
 ### post the website
 
 ```text
-(book)$ mkdocs gh-deploy
+(book101)$ mkdocs gh-deploy
 ```
 
 If ```gh-deploy``` throws an error about git histories not merging or matching
 
 ```
-(book)$ git push -f origin gh-pages
+(book101)$ git push -f origin gh-pages
 ```
 
 ## To build a .pdf copy of the book
@@ -40,7 +40,7 @@ run the main script in nb2tex.py
 ```text
 $ cd conversion_tools
 $ conda activate book101
-(book)$  python nb2tex.py
+(book101)$  python nb2tex.py
 ```
 
 ### Build the .pdf using TeXworks
@@ -55,7 +55,7 @@ Still have to manually exclude the Preface and Appendix from Chapter and Section
 
 To take out the Chapter 0 Preface label but keep the Preface in the TOC modify:
 
-```
+```text
 \hypertarget{preface}{%
 \chapter*{Preface}\label{preface}}
 \addcontentsline{toc}{chapter}{Preface}
@@ -63,15 +63,14 @@ To take out the Chapter 0 Preface label but keep the Preface in the TOC modify:
 
 Set chapter counter to start at zero, so that Preface is unlabeled chapter 0 and What is Python is labeled Chapter 1.
 
-```
+```text
 \setcounter{chapter}{0}
 ```
 
 Set section numbers within the Preface and the appendix to no be shown, but to still show up in the TOC
 
-```
+```text
         \hypertarget{motivation}{%
 \section*{Motivation}\label{motivation}}
 \addcontentsline{toc}{section}{Motivation}
 ```
-

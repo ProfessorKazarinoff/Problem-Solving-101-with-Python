@@ -27,16 +27,14 @@ os.pardir
 # In[90]:
 
 
-os.listdir(os.path.join(os.pardir, 'notebooks'))
+os.listdir(os.path.join(os.pardir, "notebooks"))
 
 # In[91]:
 
 
-notebookdir = os.path.join(os.pardir, 'notebooks')
+notebookdir = os.path.join(os.pardir, "notebooks")
 
 # In[92]:
-
-
 
 
 # In[93]:
@@ -55,14 +53,21 @@ filenameslst
 # In[95]:
 
 
-notebook_file_names = [x for x in filenameslst if
-                       x.endswith('.ipynb') and not x.startswith('TOC') and not x.endswith('-checkpoint.ipynb')]
+notebook_file_names = [
+    x
+    for x in filenameslst
+    if x.endswith(".ipynb")
+    and not x.startswith("TOC")
+    and not x.endswith("-checkpoint.ipynb")
+]
 notebook_file_names
 
 # In[96]:
 
 
-notebook_file_names_no_numbers = [''.join([i for i in s if not i.isdigit()]) for s in notebook_file_names]
+notebook_file_names_no_numbers = [
+    "".join([i for i in s if not i.isdigit()]) for s in notebook_file_names
+]
 
 # In[97]:
 
@@ -72,19 +77,23 @@ notebook_file_names_no_numbers
 # In[98]:
 
 
-notebook_file_names_no_numbers_no_ext = [s.replace('.ipynb', '') for s in notebook_file_names_no_numbers]
+notebook_file_names_no_numbers_no_ext = [
+    s.replace(".ipynb", "") for s in notebook_file_names_no_numbers
+]
 
 # In[99]:
 
 
-notebook_file_names_no_numbers_no_ext_no_dot = [s.replace('.', '') for s in notebook_file_names_no_numbers_no_ext]
+notebook_file_names_no_numbers_no_ext_no_dot = [
+    s.replace(".", "") for s in notebook_file_names_no_numbers_no_ext
+]
 
 # In[100]:
 
 
 notebook_file_names_no_numbers_no_ext_no_dot_no_start_dash = []
 for s in notebook_file_names_no_numbers_no_ext_no_dot:
-    if s.startswith('-'):
+    if s.startswith("-"):
         s = s[1:]
     notebook_file_names_no_numbers_no_ext_no_dot_no_start_dash.append(s)
 
@@ -96,7 +105,10 @@ notebook_file_names_no_numbers_no_ext_no_dot_no_start_dash
 # In[102]:
 
 
-section_names = [s.replace('-', ' ') for s in notebook_file_names_no_numbers_no_ext_no_dot_no_start_dash]
+section_names = [
+    s.replace("-", " ")
+    for s in notebook_file_names_no_numbers_no_ext_no_dot_no_start_dash
+]
 
 # In[103]:
 

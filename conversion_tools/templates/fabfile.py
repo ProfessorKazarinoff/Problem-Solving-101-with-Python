@@ -7,9 +7,9 @@ import socketserver
 
 
 def publishsite():
-    #local('pelican content -s publishconf.py')
-    #local('git add .')
-    #local('git commit -m "published changes"')
-    #local('git push origin master')
-    #local('ghp-import output')
-    local('git push -f origin gh-pages')
+    # local('pelican content -s publishconf.py')
+    # local('git add .')
+    # local('git commit -m "published changes"')
+    # local('git push origin master')
+    # local('ghp-import output')
+    local("git push -f origin gh-pages")

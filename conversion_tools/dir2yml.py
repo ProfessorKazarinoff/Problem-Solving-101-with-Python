@@ -24,6 +24,7 @@ def dir_to_dict(path):
 
         return directory
 
+
 if len(sys.argv) == 1:
     p = os.getcwd()
 elif len(sys.argv) == 2:
@@ -42,5 +43,5 @@ except Exception as e:
     print(e)
 
 if __name__ == "__main__":
-    path = os.path.join(os.pardir,'website','docs')
+    path = os.path.join(os.pardir, "website", "docs")
     dir_to_dict(path)

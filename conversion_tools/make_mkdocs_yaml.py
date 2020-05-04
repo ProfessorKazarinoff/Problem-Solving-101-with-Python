@@ -22,9 +22,11 @@ import os
 import re
 
 
-def combine_yaml(infile1=os.path.join(os.pardir, 'website', 'mkdocs_config.yml'),
-                 infile2=os.path.join(os.pardir, 'conversion_tools', 'TOC.yml'),
-                 outfile_name=os.path.join(os.pardir, 'website', 'mkdocs.yml')):
+def combine_yaml(
+    infile1=os.path.join(os.pardir, "website", "mkdocs_config.yml"),
+    infile2=os.path.join(os.pardir, "conversion_tools", "TOC.yml"),
+    outfile_name=os.path.join(os.pardir, "website", "mkdocs.yml"),
+):
     # combine the files
     filenames = [infile2, infile1]
     with open(outfile_name, "w") as outfile:
@@ -34,9 +36,9 @@ def combine_yaml(infile1=os.path.join(os.pardir, 'website', 'mkdocs_config.yml')
 
 
 def main():
-    config_file = os.path.join(os.pardir, 'conversion_tools', 'TOC.yml')
-    TOC_file = os.path.join(os.pardir, 'website', 'mkdocs_config.yml')
-    mkdocs_yaml_file = os.path.join(os.pardir, 'website', 'mkdocs.yml')
+    config_file = os.path.join(os.pardir, "conversion_tools", "TOC.yml")
+    TOC_file = os.path.join(os.pardir, "website", "mkdocs_config.yml")
+    mkdocs_yaml_file = os.path.join(os.pardir, "website", "mkdocs.yml")
     combine_yaml(config_file, TOC_file, mkdocs_yaml_file)
 
 

@@ -1,4 +1,3 @@
-
 import nb2html
 import copy_images_dir
 import yaml_TOC
@@ -10,6 +9,7 @@ def main():
     copy_images_dir.main()
     yaml_TOC.main()
     make_mkdocs_yaml.main()
+
 
 if __name__ == "__main__":
     main()

@@ -2,7 +2,7 @@
 
 # ## Combine jupyter notebooks
 
-# This script is an investigation of combining two jupyter notebooks into one. 
+# This script is an investigation of combining two jupyter notebooks into one.
 
 # In[1]:
 
@@ -46,26 +46,29 @@ def combine_nbs(nb_path_lst):
         combined_nbnode.cells.extend(nb.cells)
         if not combined_nbnode.metadata:
             combined_nbnode.metadata = nb.metadata.copy()
-    return (combined_nbnode)
+    return combined_nbnode
 
 
 # In[5]:
 
 
-def export_tex(nbnode, outfile='export_tex_out', template='classicm'):
+def export_tex(nbnode, outfile="export_tex_out", template="classicm"):
     latex_exporter = LatexExporter()
     latex_exporter.template_file = template
     (body, resources) = latex_exporter.from_notebook_node(nbnode)
     writer = FilesWriter()
-    writer.write(body, resources, notebook_name=outfile)  # will end up with .tex extension
+    writer.write(
+        body, resources, notebook_name=outfile
+    )  # will end up with .tex extension
 
 
 # In[6]:
 
+
 def main():
-    nb_paths = iter_notebook_paths('notebooks')
+    nb_paths = iter_notebook_paths("notebooks")
     combined_nb = combine_nbs(nb_paths)
-    export_tex(combined_nb, 'out20180528', 'book')
+    export_tex(combined_nb, "out20180528", "book")
 
 
 if __name__ == "__main__":

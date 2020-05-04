@@ -26,13 +26,17 @@ def nbrun(notebook_Path):
     # print(f'Notebook Path {notebook_Path} does not exist or is not a valid path')
     # return
     if Path(notebook_Path).exists():
-        print(f'Running notebook: {notebook_Path}')
+        print(f"Running notebook: {notebook_Path}")
         # run the notebook. See: https://nbconvert.readthedocs.io/en/latest/execute_api.html#executing-notebooks-using-the-python-api-interface
         with open(notebook_Path) as f:
             nb = nbformat.read(f, as_version=4)
-        ep = ExecutePreprocessor(timeout=600, kernel_name='python3')  # configure the notebook executor
-        ep.preprocess(nb, {'metadata': {'path': 'notebook_rundir/'}})  # run the notebook
-        with open('notebook_Path', 'wt') as f:
+        ep = ExecutePreprocessor(
+            timeout=600, kernel_name="python3"
+        )  # configure the notebook executor
+        ep.preprocess(
+            nb, {"metadata": {"path": "notebook_rundir/"}}
+        )  # run the notebook
+        with open("notebook_Path", "wt") as f:
             nbformat.write(nb, f)
 
 
@@ -61,14 +65,14 @@ def run_notebook(notebook_path):
     proc = ExecutePreprocessor(timeout=600, kernal_name="python3")
     proc.allow_errors = True
 
-    proc.preprocess(nb, {'metadata': {"path": '/'}})
+    proc.preprocess(nb, {"metadata": {"path": "/"}})
 
     with open(notebook_path, mode="wt") as f:
         nbformat.write(nb, f)
 
 
 def main():
-    run_notebook('Untitled.ipynb')
+    run_notebook("Untitled.ipynb")
 
 
 if __name__ == "__main__":

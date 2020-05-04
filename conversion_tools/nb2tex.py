@@ -171,9 +171,15 @@ def export(combined_nb: NotebookNode, output_file: Path, pdf=False, template_fil
     exporter = MyLatexPDFExporter() if pdf else MyLatexExporter()
     if template_file is not None:
         exporter.template_file = str(template_file)
-    mypreprocessor = RegexRemovePreprocessor() # Create an instance of the RegexRemovePreprocessor
-    mypreprocessor.patterns = ['\s*\Z']        # supply a re pattern (in a list) to the preprocessor's .patterns attribute 
-    exporter.register_preprocessor(mypreprocessor, enabled=True) # apply the preprocessor to the exporter
+    mypreprocessor = (
+        RegexRemovePreprocessor()
+    )  # Create an instance of the RegexRemovePreprocessor
+    mypreprocessor.patterns = [
+        "\s*\Z"
+    ]  # supply a re pattern (in a list) to the preprocessor's .patterns attribute
+    exporter.register_preprocessor(
+        mypreprocessor, enabled=True
+    )  # apply the preprocessor to the exporter
     writer = FilesWriter(build_directory=str(output_file.parent))
     output, resources = exporter.from_notebook_node(combined_nb, resources)
     writer.write(output, resources, notebook_name=output_file.stem)
@@ -243,10 +249,10 @@ def main():
         os.path.join(os.pardir, "conversion_tools", "templates", "book_PSP101.tplx")
     )  # more template changes needed, but it is a start
     export(nbnode, outfile_Path, pdf=False, template_file=template_file_Path)
-	
-	# do the TOC conversions, this still needs work as the pdf links don't seem to work right
+
+    # do the TOC conversions, this still needs work as the pdf links don't seem to work right
     tex_modify_contents.main()
-	
+
     # Now compile with seperate LaTeX editor. TexWorks Program with XeLaTex Compiler seems to work
 
 

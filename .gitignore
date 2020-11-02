@@ -304,3 +304,6 @@ modules.xml
 .history
 
 # End of https://www.gitignore.io/api/pycharm+all,jupyternotebooks,visualstudiocode
+
+.vscode/
+venv/

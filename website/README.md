@@ -1,4 +1,4 @@
-# Website for Python for Undergraduate Engineers
+# Website for Problem Solving 101 with Python
 
 The future website will be available at:
 
@@ -15,7 +15,7 @@ $ pip install jupyter
 $ git clone https://github.com/ProfessorKazarinoff/Problem-Solving-101-with-Python.git
 ```
 
-Move into the newly created **Problem-Solving-101-with-Python** directory and run the main script in **_nb2mkdocs.py_** to convert the Jupyter notebooks (.ipybn files) in the [notebooks directory](../notebooks) into markdown files (.md files) in the [website/docs](docs/) directory.
+Move into the newly created **Problem-Solving-101-with-Python** directory and run the main script in **_nb2mkdocs.py_** to convert the Jupyter notebooks (.ipynb files) in the [notebooks directory](../notebooks) into markdown files (.md files) in the [website/docs](docs/) directory.
 
 ```
 $ cd Problem-Solving-101-with-Python
@@ -42,11 +42,8 @@ To deploy and host on github pages, edit the **mkdocs.yml** file to include your
 $ mkdocs gh-deploy
 ```
 
-If ```mkdocs gh-deply``` throws an error try:
+If ```mkdocs gh-deploy``` throws an error try:
 
 ```
 $ git push -f origin gh-pages
 ```
-
-
-

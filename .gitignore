@@ -307,3 +307,4 @@ modules.xml
 
 .vscode/
 venv/
+.idea/
